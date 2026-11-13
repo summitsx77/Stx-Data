@@ -124,6 +124,53 @@ jobs:
                   log.append(f'stocks {len(got)}/{len(tick)} with data; missing: ' + ' '.join(sorted(set(tick) - got)))
           open('data/_log_stocks.txt', 'w').write('\n'.join(log) + '\n')
           print('\n'.join(log))
+      - name: Insider
+        shell: python
+        run: |
+          import os, io, time, zipfile, urllib.request, datetime
+          import pandas as pd
+          os.makedirs('data/insider', exist_ok=True)
+          UA = {'User-Agent': 'Stx-Data research (GitHub Actions) stxdata@users.noreply.github.com', 'Accept-Encoding': 'identity'}
+          out = 'data/insider/purchases.csv.gz'
+          done_f = 'data/insider/_quarters_done.txt'
+          done = set(open(done_f).read().split()) if os.path.exists(done_f) else set()
+          old = pd.read_csv(out, dtype=str) if os.path.exists(out) else None
+          today = datetime.date.today()
+          qs = [f'{y}q{q}' for y in range(2006, today.year + 1) for q in range(1, 5) if (y, q) <= (today.year, (today.month - 1) // 3 + 1)]
+          todo = [q for q in qs if q not in done] + [q for q in qs[-3:] if q in done]
+          frames, log = [], []
+          def rd(z, name):
+              n = next(x for x in z.namelist() if x.upper().endswith(name + '.TSV'))
+              return pd.read_csv(io.BytesIO(z.read(n)), sep='\t', dtype=str, on_bad_lines='skip', encoding_errors='replace')
+          for q in todo:
+              url = f'https://www.sec.gov/files/structureddata/data/insider-transactions-data-sets/{q}_form345.zip'
+              try:
+                  b = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120).read()
+                  z = zipfile.ZipFile(io.BytesIO(b))
+                  sub = rd(z, 'SUBMISSION'); own = rd(z, 'REPORTINGOWNER'); nd = rd(z, 'NONDERIV_TRANS')
+                  p = nd[nd['TRANS_CODE'] == 'P']; n_s = int((nd['TRANS_CODE'] == 'S').sum())
+                  keep = [c for c in ['ACCESSION_NUMBER', 'SECURITY_TITLE', 'TRANS_DATE', 'TRANS_CODE', 'TRANS_SHARES', 'TRANS_PRICEPERSHARE',
+                          'TRANS_ACQUIRED_DISP_CD', 'SHRS_OWND_FOLWNG_TRANS', 'DIRECT_INDIRECT_OWNERSHIP'] if c in p.columns]
+                  p = p[keep]
+                  sk = [c for c in ['ACCESSION_NUMBER', 'FILING_DATE', 'PERIOD_OF_REPORT', 'DOCUMENT_TYPE', 'ISSUERCIK', 'ISSUERNAME', 'ISSUERTRADINGSYMBOL', 'AFF10B5ONE'] if c in sub.columns]
+                  ok_cols = [c for c in ['RPTOWNERCIK', 'RPTOWNERNAME', 'RPTOWNER_RELATIONSHIP', 'RPTOWNER_TITLE'] if c in own.columns]
+                  o = own.groupby('ACCESSION_NUMBER')[ok_cols].agg(lambda s: '|'.join(s.dropna().astype(str))).reset_index()
+                  m = p.merge(sub[sk], on='ACCESSION_NUMBER', how='left').merge(o, on='ACCESSION_NUMBER', how='left')
+                  m['QUARTER'] = q
+                  frames.append(m); done.add(q)
+                  log.append(f'{q},OK,P {len(m)}, S {n_s}')
+                  if q == todo[0]: log.append('cols: ' + ' '.join(sub.columns) + ' || ' + ' '.join(own.columns) + ' || ' + ' '.join(nd.columns))
+              except Exception as e:
+                  log.append(f'{q},FAIL {str(e)[:120]}')
+              time.sleep(1)
+          if frames:
+              new = pd.concat(frames)
+              if old is not None:
+                  new = pd.concat([old[~old['QUARTER'].isin(new['QUARTER'].unique())], new])
+              new.to_csv(out, index=False, compression='gzip')
+              open(done_f, 'w').write('\n'.join(sorted(done)) + '\n')
+          open('data/_log_insider.txt', 'w').write('\n'.join(log) + '\n')
+          print('\n'.join(log))
       - name: Commit
         run: |
           git config user.name 'github-actions'
