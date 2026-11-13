@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install yfinance pandas
+      - run: pip install yfinance pandas pyarrow
       - name: Download
         shell: python
         run: |
@@ -63,6 +63,66 @@ jobs:
               except Exception as e:
                   log.append(f'{f},FAIL {e}')
           open('data/_log.txt', 'w').write('\n'.join(log) + '\n')
+          print('\n'.join(log))
+      - name: Stocks
+        shell: python
+        run: |
+          import os, io, time, re, urllib.request
+          import pandas as pd, yfinance as yf
+          os.makedirs('data/stocks', exist_ok=True)
+          U = ['https://www.ishares.com/de/privatanleger/de/produkte/251931/ishares-stoxx-europe-600-ucits-etf-de-fund/1478358465952.ajax?fileType=csv&fileName=EXSA_holdings&dataType=fund',
+               'https://www.ishares.com/uk/professional/en/products/251931/ishares-stoxx-europe-600-ucits-etf-de-fund/1506575576011.ajax?fileType=csv&fileName=EXSA_holdings&dataType=fund',
+               'https://www.ishares.com/ch/professionals/en/products/251931/ishares-stoxx-europe-600-ucits-etf-de-fund/1495092304805.ajax?fileType=csv&fileName=EXSA_holdings&dataType=fund']
+          raw, log = None, []
+          for u in U:
+              try:
+                  b = urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': 'Mozilla/5.0'}), timeout=60).read()
+                  t = b.decode('utf-8-sig', errors='replace')
+                  if t.count('\n') > 300:
+                      raw = t; log.append('holdings OK ' + u[:60]); break
+                  log.append('holdings short ' + u[:60])
+              except Exception as e:
+                  log.append(f'holdings FAIL {e}')
+          if raw:
+              open('data/stocks/holdings_raw.csv', 'w').write(raw)
+              lines = raw.splitlines()
+              h = next(i for i, l in enumerate(lines) if ('Ticker' in l and ('ISIN' in l or 'Name' in l)))
+              df = pd.read_csv(io.StringIO('\n'.join(lines[h:])), sep=None, engine='python', on_bad_lines='skip')
+              df.columns = [c.strip() for c in df.columns]
+              tc = next(c for c in df.columns if 'Ticker' in c)
+              ec = next((c for c in df.columns if c in ('Börse', 'Exchange', 'Boerse')), None)
+              ac = next((c for c in df.columns if c in ('Anlageklasse', 'Asset Class')), None)
+              if ac: df = df[df[ac].astype(str).str.contains('Aktie|Equity', na=False)]
+              SUF = [('xetra','.DE'),('deutsche','.DE'),('frankfurt','.DE'),('paris','.PA'),('amsterdam','.AS'),('brussels','.BR'),('brüssel','.BR'),
+                     ('lisbon','.LS'),('lissabon','.LS'),('dublin','.IR'),('irish','.IR'),('london','.L'),('six','.SW'),('swiss','.SW'),('italiana','.MI'),
+                     ('madrid','.MC'),('mercado continuo','.MC'),('stockholm','.ST'),('copenhagen','.CO'),('kopenhagen','.CO'),('helsinki','.HE'),
+                     ('oslo','.OL'),('wien','.VI'),('wiener','.VI'),('vienna','.VI'),('warsaw','.WA'),('warschau','.WA'),('nordic','.ST'),('athens','.AT'),('athen','.AT'),('prague','.PR'),('prag','.PR')]
+              rows = []
+              for _, r in df.iterrows():
+                  tk = str(r[tc]).strip(); ex = str(r[ec]).lower() if ec else ''
+                  suf = next((s for k, s in SUF if k in ex), '')
+                  y = re.sub(r'[ /]+', '-', tk.rstrip('.')) + suf
+                  rows.append(dict(r, yahoo=y))
+              m = pd.DataFrame(rows); m.to_csv('data/stocks/members.csv', index=False)
+              tick = sorted(set(m['yahoo']))
+              frames = []
+              for i in range(0, len(tick), 40):
+                  part = tick[i:i+40]
+                  for k in range(3):
+                      try:
+                          d = yf.download(part, period='max', auto_adjust=False, actions=False, group_by='column', threads=True, progress=False)
+                          if len(d): frames.append(d[['Adj Close', 'Volume']].loc['2000':].astype('float32')); break
+                      except Exception as e:
+                          print(e)
+                      time.sleep(20)
+                  time.sleep(5)
+              if frames:
+                  big = pd.concat(frames, axis=1)
+                  big.columns = [f'{a}|{b}' for a, b in big.columns]
+                  big.to_parquet('data/stocks/prices.parquet')
+                  got = {c.split('|')[1] for c in big.columns if big[c].notna().any()}
+                  log.append(f'stocks {len(got)}/{len(tick)} with data; missing: ' + ' '.join(sorted(set(tick) - got)))
+          open('data/_log_stocks.txt', 'w').write('\n'.join(log) + '\n')
           print('\n'.join(log))
       - name: Commit
         run: |
