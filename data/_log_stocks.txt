@@ -1,0 +1,4 @@
+holdings short https://www.ishares.com/de/privatanleger/de/produkte/251931/
+holdings FAIL HTTP Error 500: Internal Server Error
+holdings OK https://www.ishares.com/ch/professionals/en/products/251931/
+stocks 600/602 with data; missing: BT.A.L KESK0BU0.HE

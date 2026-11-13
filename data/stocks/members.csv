@@ -1,0 +1,603 @@
+Ticker,Name,Sector,Asset Class,Market Value,Weight (%),Notional Value,Shares,Price,Location,Exchange,Market Currency,yahoo
+ASML,ASML HOLDING,Information Technology,Equity,427’284’432.60,3.94,427’284’432.60,304’377.00,1’403.80,Netherlands,Euronext Amsterdam,EUR,ASML.AS
+ROP,ROCHE PS PAR AG,Health Care,Equity,239’731’763.33,2.21,239’731’763.33,550’934.00,435.14,Switzerland,SIX Swiss Exchange,CHF,ROP.SW
+HSBA,HSBC HOLDINGS PLC,Financials,Equity,218’126’217.19,2.01,218’126’217.19,13’442’576.00,16.23,United Kingdom,London Stock Exchange,GBP,HSBA.L
+NOVN,NOVARTIS AG,Health Care,Equity,213’661’435.76,1.97,213’661’435.76,1’486’676.00,143.72,Switzerland,SIX Swiss Exchange,CHF,NOVN.SW
+AZN,ASTRAZENECA PLC,Health Care,Equity,202’310’751.50,1.87,202’310’751.50,1’216’285.00,166.34,United Kingdom,London Stock Exchange,GBP,AZN.L
+SHELL,SHELL,Energy,Equity,191’669’873.13,1.77,191’669’873.13,4’343’301.00,44.13,United Kingdom,Euronext Amsterdam,EUR,SHELL.AS
+NESN,NESTLE SA,Consumer Staples,Equity,187’718’509.26,1.73,187’718’509.26,2’018’159.00,93.01,Switzerland,SIX Swiss Exchange,CHF,NESN.SW
+SAP,SAP,Information Technology,Equity,166’534’266.55,1.54,166’534’266.55,789’449.00,210.95,Germany,Xetra,EUR,SAP.DE
+SIE,SIEMENS N AG,Industrials,Equity,159’497’154.00,1.47,159’497’154.00,575’802.00,277.00,Germany,Xetra,EUR,SIE.DE
+TTE,TOTALENERGIES,Energy,Equity,142’010’708.88,1.31,142’010’708.88,1’789’224.00,79.37,France,Nyse Euronext - Euronext Paris,EUR,TTE.PA
+ALV,ALLIANZ,Financials,Equity,138’298’834.00,1.28,138’298’834.00,298’315.00,463.60,Germany,Xetra,EUR,ALV.DE
+SAN,BANCO SANTANDER,Financials,Equity,133’115’240.19,1.23,133’115’240.19,11’786’368.00,11.29,Spain,Bolsa De Madrid,EUR,SAN.MC
+IBE,IBERDROLA,Utilities,Equity,113’049’331.20,1.04,113’049’331.20,4’872’816.00,23.20,Spain,Bolsa De Madrid,EUR,IBE.MC
+SU,SCHNEIDER ELECTRIC,Industrials,Equity,110’029’282.50,1.01,110’029’282.50,453’729.00,242.50,France,Nyse Euronext - Euronext Paris,EUR,SU.PA
+UBSG,UBS GROUP AG,Financials,Equity,106’876’147.40,0.99,106’876’147.40,2’395’938.00,44.61,Switzerland,SIX Swiss Exchange,CHF,UBSG.SW
+RR.,ROLLS-ROYCE HOLDINGS PLC,Industrials,Equity,104’575’994.20,0.96,104’575’994.20,6’507’161.00,16.07,United Kingdom,London Stock Exchange,GBP,RR.L
+BBVA,BANCO BILBAO VIZCAYA ARGENTARIA,Financials,Equity,103’563’140.10,0.96,103’563’140.10,4’386’410.00,23.61,Spain,Bolsa De Madrid,EUR,BBVA.MC
+ULVR,UNILEVER PLC,Consumer Staples,Equity,100’683’423.73,0.93,100’683’423.73,1’711’009.00,58.84,United Kingdom,London Stock Exchange,GBP,ULVR.L
+UCG,UNICREDIT,Financials,Equity,99’843’269.76,0.92,99’843’269.76,1’185’224.00,84.24,Italy,Borsa Italiana,EUR,UCG.MI
+AIR,AIRBUS GROUP,Industrials,Equity,97’164’305.00,0.9,97’164’305.00,461’150.00,210.70,France,Nyse Euronext - Euronext Paris,EUR,AIR.PA
+AI,LAIR LIQUIDE SOCIETE ANONYME POUR,Materials,Equity,96’177’617.28,0.89,96’177’617.28,500’508.00,192.16,France,Nyse Euronext - Euronext Paris,EUR,AI.PA
+ABBN,ABB LTD,Industrials,Equity,93’713’648.48,0.86,93’713’648.48,1’224’265.00,76.55,Switzerland,SIX Swiss Exchange,CHF,ABBN.SW
+BATS,BRITISH AMERICAN TOBACCO,Consumer Staples,Equity,92’439’114.39,0.85,92’439’114.39,1’698’762.00,54.42,United Kingdom,London Stock Exchange,GBP,BATS.L
+NOVO B,NOVO NORDISK CLASS B,Health Care,Equity,91’948’921.85,0.85,91’948’921.85,2’520’584.00,36.48,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,NOVO-B.CO
+SAF,SAFRAN SA,Industrials,Equity,90’632’500.00,0.84,90’632’500.00,290’024.00,312.50,France,Nyse Euronext - Euronext Paris,EUR,SAF.PA
+BP.,BP PLC,Energy,Equity,87’529’032.83,0.81,87’529’032.83,12’896’601.00,6.79,United Kingdom,London Stock Exchange,GBP,BP.L
+ENR,SIEMENS ENERGY N AG,Industrials,Equity,84’523’910.92,0.78,84’523’910.92,636’667.00,132.76,Germany,Xetra,EUR,ENR.DE
+OR,LOREAL SA,Consumer Staples,Equity,83’574’914.75,0.77,83’574’914.75,187’115.00,446.65,France,Nyse Euronext - Euronext Paris,EUR,OR.PA
+ZURN,ZURICH INSURANCE GROUP AG,Financials,Equity,81’597’552.57,0.75,81’597’552.57,118’238.00,690.11,Switzerland,SIX Swiss Exchange,CHF,ZURN.SW
+CFR,COMPAGNIE FINANCIERE RICHEMONT SA,Consumer Discretionary,Equity,80’430’667.07,0.74,80’430’667.07,422’206.00,190.50,Switzerland,SIX Swiss Exchange,CHF,CFR.SW
+BNP,BNP PARIBAS SA,Financials,Equity,78’129’932.16,0.72,78’129’932.16,815’808.00,95.77,France,Nyse Euronext - Euronext Paris,EUR,BNP.PA
+MC,LVMH,Consumer Discretionary,Equity,77’427’851.10,0.71,77’427’851.10,192’081.00,403.10,France,Nyse Euronext - Euronext Paris,EUR,MC.PA
+ISP,INTESA SANPAOLO,Financials,Equity,76’697’570.91,0.71,76’697’570.91,12’170’354.00,6.30,Italy,Borsa Italiana,EUR,ISP.MI
+SAN,SANOFI SA,Health Care,Equity,75’734’555.52,0.7,75’734’555.52,874’432.00,86.61,France,Nyse Euronext - Euronext Paris,EUR,SAN.PA
+GSK,GLAXOSMITHKLINE,Health Care,Equity,71’790’822.72,0.66,71’790’822.72,3’178’361.00,22.59,United Kingdom,London Stock Exchange,GBP,GSK.L
+DTE,DEUTSCHE TELEKOM N AG,Communication,Equity,71’175’672.54,0.66,71’175’672.54,2’717’666.00,26.19,Germany,Xetra,EUR,DTE.DE
+INGA,ING GROEP,Financials,Equity,68’092’322.48,0.63,68’092’322.48,2’257’703.00,30.16,Netherlands,Euronext Amsterdam,EUR,INGA.AS
+RIO,RIO TINTO,Materials,Equity,64’381’288.25,0.59,64’381’288.25,842’374.00,76.43,United Kingdom,London Stock Exchange,GBP,RIO.L
+CS,AXA SA,Financials,Equity,63’746’787.28,0.59,63’746’787.28,1’382’194.00,46.12,France,Nyse Euronext - Euronext Paris,EUR,CS.PA
+ABI,ANHEUSER-BUSCH INBEV SA,Consumer Staples,Equity,61’337’530.80,0.57,61’337’530.80,811’343.00,75.60,Belgium,Nyse Euronext - Euronext Brussels,EUR,ABI.BR
+NG.,NATIONAL GRID PLC,Utilities,Equity,61’317’377.38,0.57,61’317’377.38,4’104’641.00,14.94,United Kingdom,London Stock Exchange,GBP,NG.L
+ENEL,ENEL,Utilities,Equity,60’247’748.41,0.56,60’247’748.41,6’115’281.00,9.85,Italy,Borsa Italiana,EUR,ENEL.MI
+BA.,BAE SYSTEMS PLC,Industrials,Equity,56’852’891.34,0.52,56’852’891.34,2’476’985.00,22.95,United Kingdom,London Stock Exchange,GBP,BA.L
+MUV2,MUENCHENER RUECKVERSICHERUNGS-GESE,Financials,Equity,56’851’173.60,0.52,56’851’173.60,99’844.00,569.40,Germany,Xetra,EUR,MUV2.DE
+INVE B,INVESTOR CLASS B,Financials,Equity,56’043’054.28,0.52,56’043’054.28,1’425’513.00,39.31,Sweden,Nasdaq Omx Nordic,SEK,INVE-B.ST
+BARC,BARCLAYS PLC,Financials,Equity,54’748’800.46,0.5,54’748’800.46,10’520’617.00,5.20,United Kingdom,London Stock Exchange,GBP,BARC.L
+IFX,INFINEON TECHNOLOGIES AG,Information Technology,Equity,53’264’450.96,0.49,53’264’450.96,1’021’958.00,52.12,Germany,Xetra,EUR,IFX.DE
+LLOY,LLOYDS BANKING GROUP PLC,Financials,Equity,53’196’261.69,0.49,53’196’261.69,45’329’821.00,1.17,United Kingdom,London Stock Exchange,GBP,LLOY.L
+ITX,INDUSTRIA DE DISENO TEXTIL SA,Consumer Discretionary,Equity,52’305’888.32,0.48,52’305’888.32,870’604.00,60.08,Spain,Bolsa De Madrid,EUR,ITX.MC
+REL,RELX PLC,Industrials,Equity,51’540’469.05,0.48,51’540’469.05,1’435’269.00,35.91,United Kingdom,London Stock Exchange,GBP,REL.L
+DBK,DEUTSCHE BANK AG,Financials,Equity,50’155’980.95,0.46,50’155’980.95,1’490’741.00,33.65,Germany,Xetra,EUR,DBK.DE
+DG,VINCI SA,Industrials,Equity,49’644’751.50,0.46,49’644’751.50,432’634.00,114.75,France,Nyse Euronext - Euronext Paris,EUR,DG.PA
+DB1,DEUTSCHE BOERSE AG,Financials,Equity,47’924’712.50,0.44,47’924’712.50,146’335.00,327.50,Germany,Xetra,EUR,DB1.DE
+GLEN,GLENCORE PLC,Materials,Equity,45’830’017.09,0.42,45’830’017.09,7’424’361.00,6.17,United Kingdom,London Stock Exchange,GBP,GLEN.L
+NWG,NATWEST GROUP PLC,Financials,Equity,45’696’307.90,0.42,45’696’307.90,6’362’621.00,7.18,United Kingdom,London Stock Exchange,GBP,NWG.L
+NDA FI,NORDEA BANK,Financials,Equity,45’242’970.21,0.42,45’242’970.21,2’671’566.00,16.93,Finland,Nasdaq Omx Helsinki Ltd.,EUR,NDA-FI.HE
+EL,ESSILORLUXOTTICA SA,Health Care,Equity,44’868’964.50,0.41,44’868’964.50,245’790.00,182.55,France,Nyse Euronext - Euronext Paris,EUR,EL.PA
+DHL,DHL AG,Industrials,Equity,44’600’673.04,0.41,44’600’673.04,744’337.00,59.92,Germany,Xetra,EUR,DHL.DE
+BAYN,BAYER AG,Health Care,Equity,43’567’159.68,0.4,43’567’159.68,767’568.00,56.76,Germany,Xetra,EUR,BAYN.DE
+ARGX,ARGENX,Health Care,Equity,43’328’798.40,0.4,43’328’798.40,49’496.00,875.40,Belgium,Nyse Euronext - Euronext Brussels,EUR,ARGX.BR
+LSEG,LONDON STOCK EXCHANGE GROUP PLC,Financials,Equity,42’773’960.03,0.39,42’773’960.03,370’765.00,115.37,United Kingdom,London Stock Exchange,GBP,LSEG.L
+CPG,COMPASS GROUP PLC,Consumer Discretionary,Equity,42’556’619.27,0.39,42’556’619.27,1’406’701.00,30.25,United Kingdom,London Stock Exchange,USD,CPG.L
+AAL,ANGLO AMERICAN PLC,Materials,Equity,40’310’305.61,0.37,40’310’305.61,862’606.00,46.73,United Kingdom,London Stock Exchange,GBP,AAL.L
+ENI,ENI,Energy,Equity,40’175’251.20,0.37,40’175’251.20,1’594’256.00,25.20,Italy,Borsa Italiana,EUR,ENI.MI
+GLE,SOCIETE GENERALE SA,Financials,Equity,39’642’717.84,0.37,39’642’717.84,586’344.00,67.61,France,Nyse Euronext - Euronext Paris,EUR,GLE.PA
+LONN,LONZA GROUP AG,Health Care,Equity,39’524’275.31,0.36,39’524’275.31,55’011.00,718.48,Switzerland,SIX Swiss Exchange,CHF,LONN.SW
+DGE,DIAGEO PLC,Consumer Staples,Equity,39’379’397.34,0.36,39’379’397.34,1’753’648.00,22.46,United Kingdom,London Stock Exchange,GBP,DGE.L
+ENGI,ENGIE SA,Utilities,Equity,38’411’574.56,0.35,38’411’574.56,1’551’356.00,24.76,France,Nyse Euronext - Euronext Paris,EUR,ENGI.PA
+BAS,BASF N,Materials,Equity,38’325’154.56,0.35,38’325’154.56,703’472.00,54.48,Germany,Xetra,EUR,BAS.DE
+G,ASSICURAZIONI GENERALI,Financials,Equity,37’661’415.89,0.35,37’661’415.89,840’469.00,44.81,Italy,Borsa Italiana,EUR,G.MI
+SREN,SWISS RE AG,Financials,Equity,37’617’456.50,0.35,37’617’456.50,230’858.00,162.95,Switzerland,SIX Swiss Exchange,CHF,SREN.SW
+RMS,HERMES INTERNATIONAL,Consumer Discretionary,Equity,37’267’269.00,0.34,37’267’269.00,27’534.00,1’353.50,France,Nyse Euronext - Euronext Paris,EUR,RMS.PA
+STAN,STANDARD CHARTERED PLC,Financials,Equity,36’955’393.01,0.34,36’955’393.01,1’391’319.00,26.56,United Kingdom,London Stock Exchange,GBP,STAN.L
+PRX,PROSUS NV CLASS N,Consumer Discretionary,Equity,36’800’529.52,0.34,36’800’529.52,995’416.00,36.97,Netherlands,Euronext Amsterdam,EUR,PRX.AS
+VOLV B,VOLVO CLASS B,Industrials,Equity,36’543’751.32,0.34,36’543’751.32,1’252’173.00,29.18,Sweden,Nasdaq Omx Nordic,SEK,VOLV-B.ST
+ATCO A,ATLAS COPCO CLASS A,Industrials,Equity,35’655’443.32,0.33,35’655’443.32,2’027’961.00,17.58,Sweden,Nasdaq Omx Nordic,SEK,ATCO-A.ST
+RACE,FERRARI,Consumer Discretionary,Equity,35’519’822.70,0.33,35’519’822.70,94’606.00,375.45,Italy,Borsa Italiana,EUR,RACE.MI
+CABK,CAIXABANK SA,Financials,Equity,34’933’354.40,0.32,34’933’354.40,2’803’640.00,12.46,Spain,Bolsa De Madrid,EUR,CABK.MC
+BN,DANONE SA,Consumer Staples,Equity,34’338’788.22,0.32,34’338’788.22,504’537.00,68.06,France,Nyse Euronext - Euronext Paris,EUR,BN.PA
+HOLN,HOLCIM LTD AG,Materials,Equity,34’133’781.80,0.31,34’133’781.80,419’236.00,81.42,Switzerland,SIX Swiss Exchange,CHF,HOLN.SW
+RKT,RECKITT BENCKISER GROUP PLC,Consumer Staples,Equity,33’585’775.60,0.31,33’585’775.60,496’256.00,67.68,United Kingdom,London Stock Exchange,GBP,RKT.L
+EOAN,E.ON N,Utilities,Equity,33’092’278.74,0.31,33’092’278.74,1’758’357.00,18.82,Germany,Xetra,EUR,EOAN.DE
+NOKIA,NOKIA,Information Technology,Equity,32’984’389.01,0.3,32’984’389.01,4’258’248.00,7.75,Finland,Nasdaq Omx Helsinki Ltd.,EUR,NOKIA.HE
+RWE,RWE AG,Utilities,Equity,32’539’220.80,0.3,32’539’220.80,549’649.00,59.20,Germany,Xetra,EUR,RWE.DE
+TSCO,TESCO PLC,Consumer Staples,Equity,32’284’166.63,0.3,32’284’166.63,4’898’460.00,6.59,United Kingdom,London Stock Exchange,GBP,TSCO.L
+SDZ,SANDOZ GROUP AG,Health Care,Equity,32’038’238.70,0.3,32’038’238.70,347’313.00,92.25,Switzerland,SIX Swiss Exchange,CHF,SDZ.SW
+GALD,GALDERMA GROUP N AG,Health Care,Equity,31’329’039.03,0.29,31’329’039.03,148’428.00,211.07,Switzerland,SIX Swiss Exchange,CHF,GALD.SW
+SSE,SSE PLC,Utilities,Equity,30’704’825.25,0.28,30’704’825.25,954’297.00,32.18,United Kingdom,London Stock Exchange,GBP,SSE.L
+DSV,DSV,Industrials,Equity,30’235’086.18,0.28,30’235’086.18,153’966.00,196.38,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,DSV.CO
+SGO,COMPAGNIE DE SAINT GOBAIN SA,Industrials,Equity,29’290’225.00,0.27,29’290’225.00,387’950.00,75.50,France,Nyse Euronext - Euronext Paris,EUR,SGO.PA
+RHM,RHEINMETALL AG,Industrials,Equity,29’092’647.60,0.27,29’092’647.60,36’636.00,794.10,Germany,Xetra,EUR,RHM.DE
+LR,LEGRAND SA,Industrials,Equity,28’750’906.80,0.27,28’750’906.80,207’438.00,138.60,France,Nyse Euronext - Euronext Paris,EUR,LR.PA
+UCB,UCB SA,Health Care,Equity,28’173’370.80,0.26,28’173’370.80,96’716.00,291.30,Belgium,Nyse Euronext - Euronext Brussels,EUR,UCB.BR
+ASM,ASM INTERNATIONAL NV,Information Technology,Equity,28’150’116.40,0.26,28’150’116.40,38’689.00,727.60,Netherlands,Euronext Amsterdam,EUR,ASM.AS
+SAND,SANDVIK,Industrials,Equity,28’138’603.26,0.26,28’138’603.26,833’619.00,33.75,Sweden,Nasdaq Omx Nordic,SEK,SAND.ST
+HLN,HALEON PLC,Health Care,Equity,27’936’820.13,0.26,27’936’820.13,6’880’616.00,4.06,United Kingdom,London Stock Exchange,GBP,HLN.L
+EBS,ERSTE GROUP BANK AG,Financials,Equity,27’807’762.00,0.26,27’807’762.00,235’659.00,118.00,Austria,Wiener Boerse Ag,EUR,EBS.VI
+ASSA B,ASSA ABLOY B,Industrials,Equity,27’768’572.97,0.26,27’768’572.97,783’253.00,35.45,Sweden,Nasdaq Omx Nordic,SEK,ASSA-B.ST
+SWED A,SWEDBANK,Financials,Equity,27’123’488.38,0.25,27’123’488.38,716’158.00,37.87,Sweden,Nasdaq Omx Nordic,SEK,SWED-A.ST
+SIKA,SIKA AG,Materials,Equity,26’766’083.78,0.25,26’766’083.78,127’267.00,210.31,Switzerland,SIX Swiss Exchange,CHF,SIKA.SW
+GIVN,GIVAUDAN SA,Materials,Equity,26’685’233.45,0.25,26’685’233.45,6’035.00,4’421.73,Switzerland,SIX Swiss Exchange,CHF,GIVN.SW
+PRY,PRYSMIAN,Industrials,Equity,26’384’241.00,0.24,26’384’241.00,235’995.00,111.80,Italy,Borsa Italiana,EUR,PRY.MI
+ALC,ALCON AG,Health Care,Equity,25’437’337.73,0.23,25’437’337.73,394’996.00,64.40,Switzerland,SIX Swiss Exchange,CHF,ALC.SW
+VOD,VODAFONE GROUP PLC,Communication,Equity,25’380’997.57,0.23,25’380’997.57,18’068’903.00,1.40,United Kingdom,London Stock Exchange,GBP,VOD.L
+REP,REPSOL,Energy,Equity,25’182’784.76,0.23,25’182’784.76,851’921.00,29.56,Spain,Bolsa De Madrid,EUR,REP.MC
+DANSKE,DANSKE BANK,Financials,Equity,24’951’104.34,0.23,24’951’104.34,502’754.00,49.63,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,DANSKE.CO
+EXPN,EXPERIAN PLC,Industrials,Equity,24’923’475.67,0.23,24’923’475.67,703’196.00,35.44,United Kingdom,London Stock Exchange,GBP,EXPN.L
+ADS,ADIDAS N AG,Consumer Discretionary,Equity,24’810’293.20,0.23,24’810’293.20,140’092.00,177.10,Germany,Xetra,EUR,ADS.DE
+ORA,ORANGE SA,Communication,Equity,24’803’285.88,0.23,24’803’285.88,1’608’514.00,15.42,France,Nyse Euronext - Euronext Paris,EUR,ORA.PA
+AD,KONINKLIJKE AHOLD DELHAIZE,Consumer Staples,Equity,24’432’888.84,0.23,24’432’888.84,693’722.00,35.22,Netherlands,Euronext Amsterdam,EUR,AD.AS
+SEB A,SKANDINAVISKA ENSKILDA BANKEN,Financials,Equity,23’966’337.92,0.22,23’966’337.92,1’194’114.00,20.07,Sweden,Nasdaq Omx Nordic,SEK,SEB-A.ST
+MBG,MERCEDES-BENZ GROUP N AG,Consumer Discretionary,Equity,23’706’360.15,0.22,23’706’360.15,572’410.00,41.41,Germany,Xetra,EUR,MBG.DE
+SLHN,SWISS LIFE HOLDING AG,Financials,Equity,23’329’595.99,0.22,23’329’595.99,22’082.00,1’056.50,Switzerland,SIX Swiss Exchange,CHF,SLHN.SW
+III,3I GROUP FUND PLC,Financials,Equity,23’027’545.62,0.21,23’027’545.62,750’009.00,30.70,United Kingdom,London Stock Exchange,GBP,III.L
+GMAB,GENMAB,Health Care,Equity,22’869’886.42,0.21,22’869’886.42,48’010.00,476.36,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,GMAB.CO
+PRU,PRUDENTIAL PLC,Financials,Equity,22’365’464.09,0.21,22’365’464.09,1’943’884.00,11.51,United Kingdom,London Stock Exchange,GBP,PRU.L
+STMMI,STMICROELECTRONICS,Information Technology,Equity,21’950’781.96,0.2,21’950’781.96,520’284.00,42.19,France,Borsa Italiana,EUR,STMMI.MI
+ADYEN,ADYEN,Financials,Equity,21’855’379.40,0.2,21’855’379.40,24’989.00,874.60,Netherlands,Euronext Amsterdam,EUR,ADYEN.AS
+ERIC B,ERICSSON B,Information Technology,Equity,21’809’540.88,0.2,21’809’540.88,2’269’306.00,9.61,Sweden,Nasdaq Omx Nordic,SEK,ERIC-B.ST
+ABN,ABN AMRO BANK NV,Financials,Equity,21’681’360.90,0.2,21’681’360.90,507’285.00,42.74,Netherlands,Euronext Amsterdam,EUR,ABN.AS
+AMS,AMADEUS IT GROUP,Consumer Discretionary,Equity,21’302’052.10,0.2,21’302’052.10,341’927.00,62.30,Spain,Bolsa De Madrid,EUR,AMS.MC
+IMB,IMPERIAL BRANDS PLC,Consumer Staples,Equity,20’807’161.64,0.19,20’807’161.64,601’480.00,34.59,United Kingdom,London Stock Exchange,GBP,IMB.L
+AV.,AVIVA PLC,Financials,Equity,20’790’135.75,0.19,20’790’135.75,2’359’216.00,8.81,United Kingdom,London Stock Exchange,GBP,AV.L
+FER,FERROVIAL NV,Industrials,Equity,20’722’045.96,0.19,20’722’045.96,378’554.00,54.74,Spain,Bolsa De Madrid,EUR,FER.MC
+KBC,KBC GROEP,Financials,Equity,20’695’562.50,0.19,20’695’562.50,171’250.00,120.85,Belgium,Nyse Euronext - Euronext Brussels,EUR,KBC.BR
+MT,ARCELORMITTAL SA,Materials,Equity,20’470’328.32,0.19,20’470’328.32,343’808.00,59.54,France,Euronext Amsterdam,EUR,MT.AS
+VWS,VESTAS WIND SYSTEMS,Industrials,Equity,19’959’314.17,0.18,19’959’314.17,780’977.00,25.56,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,VWS.CO
+BMPS,BANCA MONTE DEI PASCHI DI SIENA SP,Financials,Equity,19’940’587.20,0.18,19’940’587.20,1’741’536.00,11.45,Italy,Borsa Italiana,EUR,BMPS.MI
+EQNR,EQUINOR,Energy,Equity,19’779’598.70,0.18,19’779’598.70,529’928.00,37.33,Norway,Oslo Bors Asa,NOK,EQNR.OL
+DNB,DNB BANK,Financials,Equity,19’761’347.24,0.18,19’761’347.24,641’823.00,30.79,Norway,Oslo Bors Asa,NOK,DNB.OL
+SAMPO,SAMPO CLASS A,Financials,Equity,19’706’422.84,0.18,19’706’422.84,1’976’572.00,9.97,Finland,Nasdaq Omx Helsinki Ltd.,EUR,SAMPO.HE
+PUB,PUBLICIS GROUPE,Communication,Equity,19’581’224.60,0.18,19’581’224.60,187’201.00,104.60,France,Nyse Euronext - Euronext Paris,EUR,PUB.PA
+EQT,EQT,Financials,Equity,19’081’940.18,0.18,19’081’940.18,667’689.00,28.58,Sweden,Nasdaq Omx Nordic,SEK,EQT.ST
+A5G,AIB GROUP PLC,Financials,Equity,18’619’668.88,0.17,18’619’668.88,1’610’698.00,11.56,Ireland,Irish Stock Exchange - All Market,EUR,A5G.IR
+IHG,INTERCONTINENTAL HOTELS GROUP PLC,Consumer Discretionary,Equity,18’489’240.75,0.17,18’489’240.75,113’320.00,163.16,United Kingdom,London Stock Exchange,USD,IHG.L
+HEIA,HEINEKEN NV,Consumer Staples,Equity,18’386’715.20,0.17,18’386’715.20,220’570.00,83.36,Netherlands,Euronext Amsterdam,EUR,HEIA.AS
+ML,MICHELIN,Consumer Discretionary,Equity,18’267’311.55,0.17,18’267’311.55,543’185.00,33.63,France,Nyse Euronext - Euronext Paris,EUR,ML.PA
+VIE,VEOLIA ENVIRON. SA,Utilities,Equity,18’091’912.30,0.17,18’091’912.30,527’461.00,34.30,France,Nyse Euronext - Euronext Paris,EUR,VIE.PA
+PKO,POWSZECHNA KASA OSZCZEDNOSCI BANK,Financials,Equity,17’992’978.84,0.17,17’992’978.84,678’462.00,26.52,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,PKO.WA
+KNEBV,KONE,Industrials,Equity,17’842’013.76,0.16,17’842’013.76,310’188.00,57.52,Finland,Nasdaq Omx Helsinki Ltd.,EUR,KNEBV.HE
+SHB A,SVENSKA HANDELSBANKEN-A SHS,Financials,Equity,17’769’517.83,0.16,17’769’517.83,1’207’284.00,14.72,Sweden,Nasdaq Omx Nordic,SEK,SHB-A.ST
+HEI,HEIDELBERG MATERIALS AG,Materials,Equity,17’672’297.00,0.16,17’672’297.00,97’637.00,181.00,Germany,Xetra,EUR,HEI.DE
+HO,THALES SA,Industrials,Equity,17’447’961.60,0.16,17’447’961.60,75’729.00,230.40,France,Nyse Euronext - Euronext Paris,EUR,HO.PA
+GEBN,GEBERIT AG,Industrials,Equity,17’406’918.35,0.16,17’406’918.35,27’121.00,641.82,Switzerland,SIX Swiss Exchange,CHF,GEBN.SW
+DTG,DAIMLER TRUCK HOLDING E AG,Industrials,Equity,17’122’781.31,0.16,17’122’781.31,404’507.00,42.33,Germany,Xetra,EUR,DTG.DE
+NXT,NEXT PLC,Consumer Discretionary,Equity,17’109’403.77,0.16,17’109’403.77,90’523.00,189.01,United Kingdom,London Stock Exchange,GBP,NXT.L
+FRE,FRESENIUS N,Health Care,Equity,16’926’221.82,0.16,16’926’221.82,320’451.00,52.82,Germany,Xetra,EUR,FRE.DE
+PHIA,KONINKLIJKE PHILIPS,Health Care,Equity,16’896’889.56,0.16,16’896’889.56,622’812.00,27.13,Netherlands,Euronext Amsterdam,EUR,PHIA.AS
+CAP,CAPGEMINI,Information Technology,Equity,16’655’161.50,0.15,16’655’161.50,134’370.00,123.95,France,Nyse Euronext - Euronext Paris,EUR,CAP.PA
+RYA,RYANAIR HOLDINGS PLC,Industrials,Equity,16’623’880.00,0.15,16’623’880.00,639’380.00,26.00,Ireland,Irish Stock Exchange - All Market,EUR,RYA.IR
+NSIS B,NOVOZYMES B,Materials,Equity,16’534’506.84,0.15,16’534’506.84,273’157.00,60.53,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,NSIS-B.CO
+HEXA B,HEXAGON CLASS B,Information Technology,Equity,16’514’551.42,0.15,16’514’551.42,1’673’530.00,9.87,Sweden,Nasdaq Omx Nordic,SEK,HEXA-B.ST
+NN,NN GROUP,Financials,Equity,16’352’468.76,0.15,16’352’468.76,201’534.00,81.14,Netherlands,Euronext Amsterdam,EUR,NN.AS
+AENA,AENA SME SA,Industrials,Equity,16’307’176.40,0.15,16’307’176.40,570’580.00,28.58,Spain,Bolsa De Madrid,EUR,AENA.MC
+BPE,BPER BANCA,Financials,Equity,15’973’379.93,0.15,15’973’379.93,1’186’377.00,13.46,Italy,Borsa Italiana,EUR,BPE.MI
+WKL,WOLTERS KLUWER,Industrials,Equity,15’829’213.66,0.15,15’829’213.66,179’023.00,88.42,Netherlands,Euronext Amsterdam,EUR,WKL.AS
+SCMN,SWISSCOM AG,Communication,Equity,15’588’616.53,0.14,15’588’616.53,20’236.00,770.34,Switzerland,SIX Swiss Exchange,CHF,SCMN.SW
+LDO,LEONARDO FINMECCANICA SPA,Industrials,Equity,15’563’119.00,0.14,15’563’119.00,307’450.00,50.62,Italy,Borsa Italiana,EUR,LDO.MI
+MRK,MERCK,Health Care,Equity,15’539’454.80,0.14,15’539’454.80,102’503.00,151.60,Germany,Xetra,EUR,MRK.DE
+SAAB B,SAAB CLASS B,Industrials,Equity,15’439’727.55,0.14,15’439’727.55,266’501.00,57.93,Sweden,Nasdaq Omx Nordic,SEK,SAAB-B.ST
+PST,POSTE ITALIANE,Financials,Equity,15’411’381.81,0.14,15’411’381.81,604’131.00,25.51,Italy,Borsa Italiana,EUR,PST.MI
+HBAN,HELVETIA BALOISE HOLDING N AG,Financials,Equity,15’125’135.54,0.14,15’125’135.54,61’325.00,246.64,Switzerland,SIX Swiss Exchange,CHF,HBAN.SW
+LGEN,LEGAL AND GENERAL GROUP PLC,Financials,Equity,15’114’625.11,0.14,15’114’625.11,4’074’572.00,3.71,United Kingdom,London Stock Exchange,GBP,LGEN.L
+SGSN,SGS SA,Industrials,Equity,15’033’439.22,0.14,15’033’439.22,135’201.00,111.19,Switzerland,SIX Swiss Exchange,CHF,SGSN.SW
+ACS,ACS ACTIVIDADES DE CONSTRUCCION Y,Industrials,Equity,14’983’632.95,0.14,14’983’632.95,161’201.00,92.95,Spain,Bolsa De Madrid,EUR,ACS.MC
+BMW,BMW,Consumer Discretionary,Equity,14’969’450.34,0.14,14’969’450.34,258’183.00,57.98,Germany,Xetra,EUR,BMW.DE
+MTX,MTU AERO ENGINES HOLDING AG,Industrials,Equity,14’934’074.40,0.14,14’934’074.40,41’692.00,358.20,Germany,Xetra,EUR,MTX.DE
+DSFIR,DSM FIRMENICH AG,Materials,Equity,14’824’610.30,0.14,14’824’610.30,139’723.00,106.10,Netherlands,Euronext Amsterdam,EUR,DSFIR.AS
+UMG,UNIVERSAL MUSIC GROUP,Communication,Equity,14’822’126.48,0.14,14’822’126.48,867’806.00,17.08,Netherlands,Euronext Amsterdam,EUR,UMG.AS
+DSY,DASSAULT SYSTEMES,Information Technology,Equity,14’619’735.62,0.13,14’619’735.62,576’943.00,25.34,France,Nyse Euronext - Euronext Paris,EUR,DSY.PA
+BIRG,BANK OF IRELAND GROUP PLC,Financials,Equity,14’579’935.92,0.13,14’579’935.92,743’116.00,19.62,Ireland,Irish Stock Exchange - All Market,EUR,BIRG.IR
+HNR1,HANNOVER RUECK,Financials,Equity,14’135’202.60,0.13,14’135’202.60,47’981.00,294.60,Germany,Xetra,EUR,HNR1.DE
+SAB,BANCO DE SABADELL,Financials,Equity,14’034’415.98,0.13,14’034’415.98,3’744’508.00,3.75,Spain,Bolsa De Madrid,EUR,SAB.MC
+ACA,CREDIT AGRICOLE SA,Financials,Equity,13’736’802.21,0.13,13’736’802.21,865’583.00,15.87,France,Nyse Euronext - Euronext Paris,EUR,ACA.PA
+PGHN,PARTNERS GROUP HOLDING AG,Financials,Equity,13’181’344.28,0.12,13’181’344.28,17’799.00,740.56,Switzerland,SIX Swiss Exchange,CHF,PGHN.SW
+PKN,ORLEN,Energy,Equity,13’173’701.87,0.12,13’173’701.87,453’975.00,29.02,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,PKN.WA
+KPN,KONINKLIJKE KPN NV,Communication,Equity,12’941’399.21,0.12,12’941’399.21,2’952’635.00,4.38,Netherlands,Euronext Amsterdam,EUR,KPN.AS
+VACN,VAT GROUP AG,Industrials,Equity,12’920’400.67,0.12,12’920’400.67,21’440.00,602.63,Switzerland,SIX Swiss Exchange,CHF,VACN.SW
+BT.A,BT GROUP PLC,Communication,Equity,12’761’632.05,0.12,12’761’632.05,4’995’949.00,2.55,United Kingdom,London Stock Exchange,GBP,BT.A.L
+SHL,SIEMENS HEALTHINEERS AG,Health Care,Equity,12’693’086.72,0.12,12’693’086.72,291’661.00,43.52,Germany,Xetra,EUR,SHL.DE
+HLMA,HALMA PLC,Information Technology,Equity,12’673’658.31,0.12,12’673’658.31,297’078.00,42.66,United Kingdom,London Stock Exchange,GBP,HLMA.L
+CBK,COMMERZBANK AG,Financials,Equity,12’639’034.72,0.12,12’639’034.72,314’717.00,40.16,Germany,Xetra,EUR,CBK.DE
+BAER,JULIUS BAER GRUPPE AG,Financials,Equity,12’475’417.44,0.12,12’475’417.44,159’946.00,78.00,Switzerland,SIX Swiss Exchange,CHF,BAER.SW
+KRZ,KERRY GROUP PLC,Consumer Staples,Equity,12’283’874.75,0.11,12’283’874.75,123’767.00,99.25,Ireland,Irish Stock Exchange - All Market,EUR,KRZ.IR
+SOON,SONOVA HOLDING AG,Health Care,Equity,12’101’447.08,0.11,12’101’447.08,39’523.00,306.19,Switzerland,SIX Swiss Exchange,CHF,SOON.SW
+ANTO,ANTOFAGASTA PLC,Materials,Equity,11’847’318.26,0.11,11’847’318.26,299’109.00,39.61,United Kingdom,London Stock Exchange,GBP,ANTO.L
+EDP,EDP ENERGIAS DE PORTUGAL,Utilities,Equity,11’787’926.96,0.11,11’787’926.96,2’330’551.00,5.06,Portugal,Nyse Euronext - Euronext Lisbon,EUR,EDP.LS
+KRX,KINGSPAN GROUP PLC,Industrials,Equity,11’679’269.70,0.11,11’679’269.70,118’331.00,98.70,Ireland,Irish Stock Exchange - All Market,EUR,KRX.IR
+NTGY,NATURGY ENERGY GROUP SA,Utilities,Equity,11’565’785.44,0.11,11’565’785.44,386’557.00,29.92,Spain,Bolsa De Madrid,EUR,NTGY.MC
+KOG,KONGSBERG GRUPPEN,Industrials,Equity,11’563’806.67,0.11,11’563’806.67,346’360.00,33.39,Norway,Oslo Bors Asa,NOK,KOG.OL
+ESSITY B,ESSITY CLASS B,Consumer Staples,Equity,11’459’784.14,0.11,11’459’784.14,442’833.00,25.88,Sweden,Nasdaq Omx Nordic,SEK,ESSITY-B.ST
+EPI A,EPIROC CLASS A,Industrials,Equity,11’400’103.13,0.11,11’400’103.13,500’837.00,22.76,Sweden,Nasdaq Omx Nordic,SEK,EPI-A.ST
+ETE,NATIONAL BANK OF GREECE,Financials,Equity,11’354’217.41,0.1,11’354’217.41,655’177.00,17.33,Greece,Athens Exchange S.A. Cash Market,EUR,ETE.AT
+BAMI,BANCO BPM,Financials,Equity,11’254’633.29,0.1,11’254’633.29,767’187.00,14.67,Italy,Borsa Italiana,EUR,BAMI.MI
+ALFA,ALFA LAVAL,Industrials,Equity,11’100’311.14,0.1,11’100’311.14,224’912.00,49.35,Sweden,Nasdaq Omx Nordic,SEK,ALFA.ST
+ALE,ALLEGRO SA,Consumer Discretionary,Equity,11’021’208.45,0.1,11’021’208.45,798’263.00,13.81,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,ALE.WA
+VOW3,VOLKSWAGEN NON-VOTING PREF AG,Consumer Discretionary,Equity,11’019’639.36,0.1,11’019’639.36,158’876.00,69.36,Germany,Xetra,EUR,VOW3.DE
+FBK,FINECOBANK BANCA FINECO,Financials,Equity,10’945’374.00,0.1,10’945’374.00,476’300.00,22.98,Italy,Borsa Italiana,EUR,FBK.MI
+TRN,TERNA RETE ELETTRICA NAZIONALE,Utilities,Equity,10’928’359.01,0.1,10’928’359.01,1’120’168.00,9.76,Italy,Borsa Italiana,EUR,TRN.MI
+STMN,STRAUMANN HOLDING AG,Health Care,Equity,10’888’813.29,0.1,10’888’813.29,94’300.00,115.47,Switzerland,SIX Swiss Exchange,CHF,STMN.SW
+TEF,TELEFONICA SA,Communication,Equity,10’883’270.35,0.1,10’883’270.35,3’105’070.00,3.50,Spain,Bolsa De Madrid,EUR,TEF.MC
+RI,PERNOD RICARD SA,Consumer Staples,Equity,10’862’830.50,0.1,10’862’830.50,152’525.00,71.22,France,Nyse Euronext - Euronext Paris,EUR,RI.PA
+INF,INFORMA PLC,Communication,Equity,10’791’076.65,0.1,10’791’076.65,1’022’353.00,10.56,United Kingdom,London Stock Exchange,GBP,INF.L
+SGRO,SEGRO REIT PLC,Real Estate,Equity,10’757’200.39,0.1,10’757’200.39,974’708.00,11.04,United Kingdom,London Stock Exchange,GBP,SGRO.L
+UU.,UNITED UTILITIES GROUP PLC,Utilities,Equity,10’720’813.10,0.1,10’720’813.10,581’585.00,18.43,United Kingdom,London Stock Exchange,GBP,UU.L
+KNIN,KUEHNE UND NAGEL INTERNATIONAL AG,Industrials,Equity,10’588’291.06,0.1,10’588’291.06,41’775.00,253.46,Switzerland,SIX Swiss Exchange,CHF,KNIN.SW
+HEN3,HENKEL & KGAA PREF AG,Consumer Staples,Equity,10’530’133.20,0.1,10’530’133.20,120’207.00,87.60,Germany,Xetra,EUR,HEN3.DE
+ELE,ENDESA SA,Utilities,Equity,10’497’276.00,0.1,10’497’276.00,234’576.00,44.75,Spain,Bolsa De Madrid,EUR,ELE.MC
+BOL,BOLIDEN,Materials,Equity,10’461’042.62,0.1,10’461’042.62,221’952.00,47.13,Sweden,Nasdaq Omx Nordic,SEK,BOL.ST
+BG,BAWAG GROUP AG,Financials,Equity,10’445’865.20,0.1,10’445’865.20,60’311.00,173.20,Austria,Wiener Boerse Ag,EUR,BG.VI
+KER,KERING SA,Consumer Discretionary,Equity,10’407’750.08,0.1,10’407’750.08,54’986.00,189.28,France,Nyse Euronext - Euronext Paris,EUR,KER.PA
+SCHP,SCHINDLER HOLDING PAR AG,Industrials,Equity,10’373’413.39,0.1,10’373’413.39,31’067.00,333.90,Switzerland,SIX Swiss Exchange,CHF,SCHP.SW
+ENX,EURONEXT NV,Financials,Equity,10’174’237.20,0.09,10’174’237.20,60’778.00,167.40,France,Nyse Euronext - Euronext Paris,EUR,ENX.PA
+CLNX,CELLNEX TELECOM,Communication,Equity,10’052’695.50,0.09,10’052’695.50,379’347.00,26.50,Spain,Bolsa De Madrid,EUR,CLNX.MC
+LOGN,LOGITECH INTERNATIONAL,Information Technology,Equity,10’050’253.53,0.09,10’050’253.53,111’302.00,90.30,Switzerland,SIX Swiss Exchange,CHF,LOGN.SW
+ADM,ADMIRAL GROUP PLC,Financials,Equity,9’936’971.91,0.09,9’936’971.91,213’958.00,46.44,United Kingdom,London Stock Exchange,GBP,ADM.L
+WRT1V,WARTSILA,Industrials,Equity,9’899’361.00,0.09,9’899’361.00,377’550.00,26.22,Finland,Nasdaq Omx Helsinki Ltd.,EUR,WRT1V.HE
+SY1,SYMRISE AG,Materials,Equity,9’879’662.48,0.09,9’879’662.48,103’517.00,95.44,Germany,Xetra,EUR,SY1.DE
+IAG,INTERNATIONAL AIRLINES GROUP,Industrials,Equity,9’833’374.09,0.09,9’833’374.09,1’791’717.00,5.49,Spain,London Stock Exchange,GBP,IAG.L
+SRG,SNAM,Utilities,Equity,9’768’539.16,0.09,9’768’539.16,1’583’745.00,6.17,Italy,Borsa Italiana,EUR,SRG.MI
+CARL B,CARLSBERG AS CL B,Consumer Staples,Equity,9’767’183.00,0.09,9’767’183.00,72’435.00,134.84,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,CARL-B.CO
+EN,BOUYGUES SA,Industrials,Equity,9’758’144.34,0.09,9’758’144.34,222’687.00,43.82,France,Nyse Euronext - Euronext Paris,EUR,EN.PA
+UNI,UNIPOL ASSICURAZIONI SPA,Financials,Equity,9’684’149.28,0.09,9’684’149.28,365’164.00,26.52,Italy,Borsa Italiana,EUR,UNI.MI
+SGE,THE SAGE GROUP,Information Technology,Equity,9’672’575.41,0.09,9’672’575.41,696’611.00,13.89,United Kingdom,London Stock Exchange,GBP,SGE.L
+AGS,AGEAS,Financials,Equity,9’625’978.75,0.09,9’625’978.75,121’925.00,78.95,Belgium,Nyse Euronext - Euronext Brussels,EUR,AGS.BR
+VNA,VONOVIA SE,Real Estate,Equity,9’486’681.38,0.09,9’486’681.38,557’876.00,17.00,Germany,Xetra,EUR,VNA.DE
+SN.,SMITH AND NEPHEW PLC,Health Care,Equity,9’355’275.14,0.09,9’355’275.14,676’676.00,13.83,United Kingdom,London Stock Exchange,GBP,SN.L
+BESI,BE SEMICONDUCTOR INDUSTRIES NV,Information Technology,Equity,9’355’599.00,0.09,9’355’599.00,58’564.00,159.75,Netherlands,Euronext Amsterdam,EUR,BESI.AS
+DPLM,DIPLOMA PLC,Industrials,Equity,9’196’805.15,0.08,9’196’805.15,104’676.00,87.86,United Kingdom,London Stock Exchange,GBP,DPLM.L
+EUROB,EUROBANK SA,Financials,Equity,9’184’875.12,0.08,9’184’875.12,1’889’892.00,4.86,Greece,Athens Exchange S.A. Cash Market,EUR,EUROB.AT
+SPSN,SWISS PRIME SITE AG,Real Estate,Equity,9’148’783.61,0.08,9’148’783.61,63’201.00,144.76,Switzerland,SIX Swiss Exchange,CHF,SPSN.SW
+MKS,MARKS AND SPENCER GROUP PLC,Consumer Staples,Equity,9’104’952.52,0.08,9’104’952.52,1’667’357.00,5.46,United Kingdom,London Stock Exchange,GBP,MKS.L
+NESTE,NESTE,Energy,Equity,9’080’428.32,0.08,9’080’428.32,331’887.00,27.36,Finland,Nasdaq Omx Helsinki Ltd.,EUR,NESTE.HE
+ORNBV,ORION CLASS B,Health Care,Equity,9’031’699.60,0.08,9’031’699.60,87’857.00,102.80,Finland,Nasdaq Omx Helsinki Ltd.,EUR,ORNBV.HE
+METSO,METSO CORPORATION,Industrials,Equity,9’006’040.87,0.08,9’006’040.87,514’337.00,17.51,Finland,Nasdaq Omx Helsinki Ltd.,EUR,METSO.HE
+UPM,UPM-KYMMENE,Materials,Equity,8’996’152.00,0.08,8’996’152.00,408’916.00,22.00,Finland,Nasdaq Omx Helsinki Ltd.,EUR,UPM.HE
+ASRNL,ASR NEDERLAND,Financials,Equity,8’977’183.94,0.08,8’977’183.94,113’549.00,79.06,Netherlands,Euronext Amsterdam,EUR,ASRNL.AS
+ITRK,INTERTEK GROUP PLC,Industrials,Equity,8’869’793.57,0.08,8’869’793.57,124’853.00,71.04,United Kingdom,London Stock Exchange,GBP,ITRK.L
+BNZL,BUNZL,Industrials,Equity,8’776’778.86,0.08,8’776’778.86,253’538.00,34.62,United Kingdom,London Stock Exchange,GBP,BNZL.L
+PEO,BANK PEKAO SA,Financials,Equity,8’755’861.09,0.08,8’755’861.09,143’629.00,60.96,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,PEO.WA
+URW,UNIBAIL RODAMCO WE STAPLED UNITS,Real Estate,Equity,8’601’978.84,0.08,8’601’978.84,92’118.00,93.38,France,Nyse Euronext - Euronext Paris,EUR,URW.PA
+CCH,COCA COLA HBC AG,Consumer Staples,Equity,8’594’926.86,0.08,8’594’926.86,165’829.00,51.83,United Kingdom,London Stock Exchange,GBP,CCH.L
+BVI,BUREAU VERITAS SA,Industrials,Equity,8’490’236.85,0.08,8’490’236.85,282’537.00,30.05,France,Nyse Euronext - Euronext Paris,EUR,BVI.PA
+TPEIR,PIRAEUS BANK,Financials,Equity,8’467’316.36,0.08,8’467’316.36,829’316.00,10.21,Greece,Athens Exchange S.A. Cash Market,EUR,TPEIR.AT
+G1A,GEA GROUP AG,Industrials,Equity,8’457’164.10,0.08,8’457’164.10,115’614.00,73.15,Germany,Xetra,EUR,G1A.DE
+SVT,SEVERN TRENT PLC,Utilities,Equity,8’411’359.08,0.08,8’411’359.08,213’199.00,39.45,United Kingdom,London Stock Exchange,GBP,SVT.L
+AC,ACCOR SA,Consumer Discretionary,Equity,8’399’824.80,0.08,8’399’824.80,160’302.00,52.40,France,Nyse Euronext - Euronext Paris,EUR,AC.PA
+AKZA,AKZO NOBEL NV,Materials,Equity,8’399’102.28,0.08,8’399’102.28,132’311.00,63.48,Netherlands,Euronext Amsterdam,EUR,AKZA.AS
+EDV,ENDEAVOUR MINING,Materials,Equity,8’390’912.04,0.08,8’390’912.04,169’856.00,49.40,United Kingdom,London Stock Exchange,GBP,EDV.L
+OMV,OMV,Energy,Equity,8’274’942.50,0.08,8’274’942.50,114’850.00,72.05,Austria,Wiener Boerse Ag,EUR,OMV.VI
+SOBI,SWEDISH ORPHAN BIOVITRUM,Health Care,Equity,8’253’332.78,0.08,8’253’332.78,188’165.00,43.86,Sweden,Nasdaq Omx Nordic,SEK,SOBI.ST
+FORTUM,FORTUM,Utilities,Equity,8’230’383.23,0.08,8’230’383.23,353’387.00,23.29,Finland,Nasdaq Omx Helsinki Ltd.,EUR,FORTUM.HE
+FGR,EIFFAGE SA,Industrials,Equity,8’222’611.50,0.08,8’222’611.50,75’645.00,108.70,France,Nyse Euronext - Euronext Paris,EUR,FGR.PA
+BCP,BANCO COMERCIAL PORTUGUES SA,Financials,Equity,8’204’084.35,0.08,8’204’084.35,7’121’601.00,1.15,Portugal,Nyse Euronext - Euronext Lisbon,EUR,BCP.LS
+RTO,RENTOKIL INITIAL PLC,Industrials,Equity,8’121’522.52,0.07,8’121’522.52,1’931’920.00,4.20,United Kingdom,London Stock Exchange,GBP,RTO.L
+TELIA,TELIA COMPANY,Communication,Equity,8’118’873.84,0.07,8’118’873.84,1’835’123.00,4.42,Sweden,Nasdaq Omx Nordic,SEK,TELIA.ST
+ERF,EUROFINS SCIENTIFIC,Health Care,Equity,7’941’296.00,0.07,7’941’296.00,90’242.00,88.00,France,Nyse Euronext - Euronext Paris,EUR,ERF.PA
+PNDORA,PANDORA,Consumer Discretionary,Equity,7’858’770.34,0.07,7’858’770.34,61’196.00,128.42,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,PNDORA.CO
+COLO B,COLOPLAST B,Health Care,Equity,7’746’525.92,0.07,7’746’525.92,117’415.00,65.98,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,COLO-B.CO
+PSON,PEARSON PLC,Consumer Discretionary,Equity,7’639’799.66,0.07,7’639’799.66,493’235.00,15.49,United Kingdom,London Stock Exchange,GBP,PSON.L
+MONC,MONCLER,Consumer Discretionary,Equity,7’621’646.04,0.07,7’621’646.04,173’298.00,43.98,Italy,Borsa Italiana,EUR,MONC.MI
+AGN,AEGON,Financials,Equity,7’616’868.55,0.07,7’616’868.55,970’549.00,7.85,Netherlands,Euronext Amsterdam,EUR,AGN.AS
+MAERSK B,A P MOLLER MAERSK B,Industrials,Equity,7’550’289.56,0.07,7’550’289.56,2’837.00,2’661.36,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,MAERSK-B.CO
+PZU,PZU SA,Financials,Equity,7’460’998.31,0.07,7’460’998.31,441’156.00,16.91,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,PZU.WA
+SKA B,SKANSKA B,Industrials,Equity,7’399’623.06,0.07,7’399’623.06,268’595.00,27.55,Sweden,Nasdaq Omx Nordic,SEK,SKA-B.ST
+AKRBP,AKER BP,Energy,Equity,7’381’984.90,0.07,7’381’984.90,242’585.00,30.43,Norway,Oslo Bors Asa,NOK,AKRBP.OL
+SMIN,SMITHS GROUP PLC,Industrials,Equity,7’374’545.96,0.07,7’374’545.96,227’422.00,32.43,United Kingdom,London Stock Exchange,GBP,SMIN.L
+BKT,BANKINTER,Financials,Equity,7’367’772.73,0.07,7’367’772.73,495’479.00,14.87,Spain,Bolsa De Madrid,EUR,BKT.MC
+QIA,QIAGEN,Health Care,Equity,7’297’265.43,0.07,7’297’265.43,160’839.00,45.37,Germany,Deutsche Boerse Xetra,EUR,QIA.DE
+MOWI,MOWI,Consumer Staples,Equity,7’291’088.48,0.07,7’291’088.48,339’782.00,21.46,Norway,Oslo Bors Asa,NOK,MOWI.OL
+ORSTED,ORSTED A/S,Utilities,Equity,7’154’214.54,0.07,7’154’214.54,372’173.00,19.22,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,ORSTED.CO
+HEIO,HEINEKEN HOLDING NV,Consumer Staples,Equity,7’125’727.95,0.07,7’125’727.95,89’463.00,79.65,Netherlands,Euronext Amsterdam,EUR,HEIO.AS
+IMI,IMI PLC,Industrials,Equity,7’064’695.50,0.07,7’064’695.50,201’022.00,35.14,United Kingdom,London Stock Exchange,GBP,IMI.L
+MICC,MAGNUM ICE CREAM,Consumer Staples,Equity,7’037’898.62,0.06,7’037’898.62,397’352.00,17.71,Netherlands,Euronext Amsterdam,EUR,MICC.AS
+LISP,CHOCOLADEFABRIKEN LINDT & SPRUENGL,Consumer Staples,Equity,7’018’784.58,0.06,7’018’784.58,769.00,9’127.13,Switzerland,SIX Swiss Exchange,CHF,LISP.SW
+CA,CARREFOUR SA,Consumer Staples,Equity,7’011’228.15,0.06,7’011’228.15,502’597.00,13.95,France,Nyse Euronext - Euronext Paris,EUR,CA.PA
+RXL,REXEL SA,Industrials,Equity,6’924’342.18,0.06,6’924’342.18,189’138.00,36.61,France,Nyse Euronext - Euronext Paris,EUR,RXL.PA
+NHY,NORSK HYDRO,Materials,Equity,6’886’990.61,0.06,6’886’990.61,1’039’633.00,6.62,Norway,Oslo Bors Asa,NOK,NHY.OL
+KGH,KGHM POLSKA MIEDZ SA,Materials,Equity,6’870’783.06,0.06,6’870’783.06,105’232.00,65.29,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,KGH.WA
+CNA,CENTRICA PLC,Utilities,Equity,6’863’416.32,0.06,6’863’416.32,3’701’648.00,1.85,United Kingdom,London Stock Exchange,GBP,CNA.L
+RBI,RAIFFEISEN BANK INTERNATIONAL AG,Financials,Equity,6’740’935.80,0.06,6’740’935.80,104’999.00,64.20,Austria,Wiener Boerse Ag,EUR,RBI.VI
+TEN,TENARIS SA,Energy,Equity,6’725’181.09,0.06,6’725’181.09,244’641.00,27.49,Italy,Borsa Italiana,EUR,TEN.MI
+TEL,TELENOR,Communication,Equity,6’665’993.63,0.06,6’665’993.63,518’208.00,12.86,Norway,Oslo Bors Asa,NOK,TEL.OL
+SKF B,SKF B,Industrials,Equity,6’636’993.53,0.06,6’636’993.53,263’269.00,25.21,Sweden,Nasdaq Omx Nordic,SEK,SKF-B.ST
+SDLF,STANDARD LIFE PLC,Financials,Equity,6’606’020.88,0.06,6’606’020.88,590’248.00,11.19,United Kingdom,London Stock Exchange,GBP,SDLF.L
+CON,CONTINENTAL AG,Consumer Discretionary,Equity,6’527’915.68,0.06,6’527’915.68,87’788.00,74.36,Germany,Xetra,EUR,CON.DE
+TREL B,TRELLEBORG B,Industrials,Equity,6’508’806.26,0.06,6’508’806.26,152’474.00,42.69,Sweden,Nasdaq Omx Nordic,SEK,TREL-B.ST
+LI,KLEPIERRE REIT SA,Real Estate,Equity,6’444’484.96,0.06,6’444’484.96,174’742.00,36.88,France,Nyse Euronext - Euronext Paris,EUR,LI.PA
+WISE,WISE PLC CLASS A,Financials,Equity,6’443’216.09,0.06,6’443’216.09,644’339.00,10.00,United Kingdom,London Stock Exchange,GBP,WISE.L
+EVO,EVOLUTION,Consumer Discretionary,Equity,6’391’833.48,0.06,6’391’833.48,82’074.00,77.88,Sweden,Nasdaq Omx Nordic,SEK,EVO.ST
+INDU C,INDUSTRIVARDEN SERIES,Financials,Equity,6’327’382.66,0.06,6’327’382.66,128’204.00,49.35,Sweden,Nasdaq Omx Nordic,SEK,INDU-C.ST
+LPP,LPP SA,Consumer Discretionary,Equity,6’303’697.78,0.06,6’303’697.78,977.00,6’452.10,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,LPP.WA
+MNG,M&G PLC,Financials,Equity,6’292’962.43,0.06,6’292’962.43,1’591’669.00,3.95,United Kingdom,London Stock Exchange,GBP,MNG.L
+HSX,HISCOX LTD,Financials,Equity,6’293’186.90,0.06,6’293’186.90,270’864.00,23.23,United Kingdom,London Stock Exchange,GBP,HSX.L
+STB,STOREBRAND,Financials,Equity,6’279’108.64,0.06,6’279’108.64,323’994.00,19.38,Norway,Oslo Bors Asa,NOK,STB.OL
+TEL2 B,TELE2 B,Communication,Equity,6’277’097.56,0.06,6’277’097.56,426’736.00,14.71,Sweden,Nasdaq Omx Nordic,SEK,TEL2-B.ST
+SECU B,SECURITAS B,Industrials,Equity,6’240’292.43,0.06,6’240’292.43,427’251.00,14.61,Sweden,Nasdaq Omx Nordic,SEK,SECU-B.ST
+BEAN,BELIMO N AG,Industrials,Equity,6’203’316.85,0.06,6’203’316.85,7’470.00,830.43,Switzerland,SIX Swiss Exchange,CHF,BEAN.SW
+FME,FRESENIUS MEDICAL CARE AG,Health Care,Equity,6’176’960.79,0.06,6’176’960.79,151’359.00,40.81,Germany,Xetra,EUR,FME.DE
+KGF,KINGFISHER PLC,Consumer Discretionary,Equity,6’169’436.94,0.06,6’169’436.94,1’393’373.00,4.43,United Kingdom,London Stock Exchange,GBP,KGF.L
+TLX,TALANX AG,Financials,Equity,6’165’390.00,0.06,6’165’390.00,47’100.00,130.90,Germany,Xetra,EUR,TLX.DE
+WEIR,WEIR PLC,Industrials,Equity,6’062’915.21,0.06,6’062’915.21,211’398.00,28.68,United Kingdom,London Stock Exchange,GBP,WEIR.L
+SPIE,SPIE SA,Industrials,Equity,6’058’958.68,0.06,6’058’958.68,132’061.00,45.88,France,Nyse Euronext - Euronext Paris,EUR,SPIE.PA
+STLAM,STELLANTIS,Consumer Discretionary,Equity,5’988’665.73,0.06,5’988’665.73,1’610’939.00,3.72,Italy,Borsa Italiana,EUR,STLAM.MI
+ADDT B,ADDTECH CLASS B,Industrials,Equity,5’980’506.03,0.06,5’980’506.03,197’761.00,30.24,Sweden,Nasdaq Omx Nordic,SEK,ADDT-B.ST
+ALPHA,ALPHA BANK SA,Financials,Equity,5’934’493.98,0.05,5’934’493.98,1’224’617.00,4.85,Greece,Athens Exchange S.A. Cash Market,EUR,ALPHA.AT
+EXO,EXOR NV,Financials,Equity,5’895’323.25,0.05,5’895’323.25,79’185.00,74.45,Netherlands,Euronext Amsterdam,EUR,EXO.AS
+GALP,GALP ENERGIA SGPS SA CLASS B,Energy,Equity,5’892’641.00,0.05,5’892’641.00,310’139.00,19.00,Portugal,Nyse Euronext - Euronext Lisbon,EUR,GALP.LS
+BEI,BEIERSDORF AG,Consumer Staples,Equity,5’890’642.96,0.05,5’890’642.96,69’844.00,84.34,Germany,Xetra,EUR,BEI.DE
+EBP,ERSTE BANK POLSKA SA,Financials,Equity,5’863’205.34,0.05,5’863’205.34,32’837.00,178.55,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,EBP.WA
+PSPN,PSP SWISS PROPERTY AG,Real Estate,Equity,5’826’349.85,0.05,5’826’349.85,34’808.00,167.38,Switzerland,SIX Swiss Exchange,CHF,PSPN.SW
+ORK,ORKLA,Consumer Staples,Equity,5’780’475.30,0.05,5’780’475.30,583’451.00,9.91,Norway,Oslo Bors Asa,NOK,ORK.OL
+SBRY,SAINSBURY(J) PLC,Consumer Staples,Equity,5’674’273.58,0.05,5’674’273.58,1’359’454.00,4.17,United Kingdom,London Stock Exchange,GBP,SBRY.L
+ACLN,ACCELLERON N AG,Industrials,Equity,5’668’704.66,0.05,5’668’704.66,75’334.00,75.25,Switzerland,SIX Swiss Exchange,CHF,ACLN.SW
+BNR,BRENNTAG,Industrials,Equity,5’646’860.86,0.05,5’646’860.86,95’033.00,59.42,Germany,Xetra,EUR,BNR.DE
+DHER,DELIVERY HERO,Consumer Discretionary,Equity,5’602’096.50,0.05,5’602’096.50,152’438.00,36.75,Germany,Xetra,EUR,DHER.DE
+STJ,ST JAMESS PLACE PLC,Financials,Equity,5’561’934.05,0.05,5’561’934.05,401’952.00,13.84,United Kingdom,London Stock Exchange,GBP,STJ.L
+SRT3,SARTORIUS PREF AG,Health Care,Equity,5’554’093.80,0.05,5’554’093.80,18’853.00,294.60,Germany,Xetra,EUR,SRT3.DE
+MRO,MELROSE INDUSTRIES PLC,Industrials,Equity,5’542’296.26,0.05,5’542’296.26,947’638.00,5.85,United Kingdom,London Stock Exchange,GBP,MRO.L
+ALSYDB,AL SYDBANK,Financials,Equity,5’524’967.51,0.05,5’524’967.51,54’060.00,102.20,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,ALSYDB.CO
+ELI,ELIA GROUP SA,Utilities,Equity,5’515’485.80,0.05,5’515’485.80,41’099.00,134.20,Belgium,Nyse Euronext - Euronext Brussels,EUR,ELI.BR
+LTMC,LOTTOMATICA GROUP,Consumer Discretionary,Equity,5’473’043.48,0.05,5’473’043.48,195’187.00,28.04,Italy,Borsa Italiana,EUR,LTMC.MI
+PPC,PUBLIC POWER CORPORATION SA,Utilities,Equity,5’448’720.80,0.05,5’448’720.80,230’878.00,23.60,Greece,Athens Exchange S.A. Cash Market,EUR,PPC.AT
+ABF,ASSOCIATED BRITISH FOODS PLC,Consumer Staples,Equity,5’435’880.28,0.05,5’435’880.28,228’894.00,23.75,United Kingdom,London Stock Exchange,GBP,ABF.L
+KESKOB,KESKO CORP CLASS B,Consumer Staples,Equity,5’422’151.84,0.05,5’422’151.84,213’976.00,25.34,Finland,Nasdaq Omx Helsinki Ltd.,EUR,KESKOB.HE
+G24,SCOUT24 N,Communication,Equity,5’385’588.00,0.05,5’385’588.00,59’280.00,90.85,Germany,Xetra,EUR,G24.DE
+GTT,GAZTRANSPORT & TECHNIGAZ SA,Energy,Equity,5’382’795.00,0.05,5’382’795.00,28’785.00,187.00,France,Nyse Euronext - Euronext Paris,EUR,GTT.PA
+SPX,SPIRAX GROUP PLC,Industrials,Equity,5’377’637.47,0.05,5’377’637.47,58’958.00,91.21,United Kingdom,London Stock Exchange,GBP,SPX.L
+TRYG,TRYG,Financials,Equity,5’350’306.88,0.05,5’350’306.88,244’326.00,21.90,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,TRYG.CO
+DCC,DCC ENERGY PLC,Energy,Equity,5’327’587.89,0.05,5’327’587.89,68’951.00,77.27,United Kingdom,London Stock Exchange,GBP,DCC.L
+SUBC,SUBSEA,Energy,Equity,5’285’721.90,0.05,5’285’721.90,173’806.00,30.41,Norway,Oslo Bors Asa,NOK,SUBC.OL
+HM B,HENNES & MAURITZ,Consumer Discretionary,Equity,5’256’758.53,0.05,5’256’758.53,330’200.00,15.92,Sweden,Nasdaq Omx Nordic,SEK,HM-B.ST
+HOT,HOCHTIEF AG,Industrials,Equity,5’230’016.00,0.05,5’230’016.00,13’984.00,374.00,Germany,Xetra,EUR,HOT.DE
+ICG,ICG PLC,Financials,Equity,5’184’579.43,0.05,5’184’579.43,221’664.00,23.39,United Kingdom,London Stock Exchange,GBP,ICG.L
+KCR,KONECRANES,Industrials,Equity,5’183’689.50,0.05,5’183’689.50,174’535.00,29.70,Finland,Nasdaq Omx Helsinki Ltd.,EUR,KCR.HE
+BEIJ B,BEIJER REF CLASS B,Industrials,Equity,5’156’339.33,0.05,5’156’339.33,353’912.00,14.57,Sweden,Nasdaq Omx Nordic,SEK,BEIJ-B.ST
+NKT,NKT,Industrials,Equity,5’112’300.92,0.05,5’112’300.92,43’183.00,118.39,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,NKT.CO
+ZAL,ZALANDO,Consumer Discretionary,Equity,5’110’412.25,0.05,5’110’412.25,184’159.00,27.75,Germany,Xetra,EUR,ZAL.DE
+GAW,GAMES WORKSHOP GROUP PLC,Consumer Discretionary,Equity,5’102’018.14,0.05,5’102’018.14,25’523.00,199.90,United Kingdom,London Stock Exchange,GBP,GAW.L
+SCA B,SVENSKA CELLULOSA B,Materials,Equity,5’004’251.40,0.05,5’004’251.40,465’565.00,10.75,Sweden,Nasdaq Omx Nordic,SEK,SCA-B.ST
+FRO,FRONTLINE PLC,Energy,Equity,4’996’854.54,0.05,4’996’854.54,120’875.00,41.34,Norway,Oslo Bors Asa,NOK,FRO.OL
+ABVX,ABIVAX SA,Health Care,Equity,4’976’925.10,0.05,4’976’925.10,59’747.00,83.30,France,Nyse Euronext - Euronext Paris,EUR,ABVX.PA
+JYSK,JYSKE BANK,Financials,Equity,4’956’284.26,0.05,4’956’284.26,32’246.00,153.70,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,JYSK.CO
+DIM,SARTORIUS STEDIM BIOTECH SA,Health Care,Equity,4’950’590.40,0.05,4’950’590.40,21’828.00,226.80,France,Nyse Euronext - Euronext Paris,EUR,DIM.PA
+BGEO,LION FINANCE GROUP PLC,Financials,Equity,4’926’669.87,0.05,4’926’669.87,30’197.00,163.15,United Kingdom,London Stock Exchange,GBP,BGEO.L
+BAB,BABCOCK INTERNATIONAL GROUP PLC,Industrials,Equity,4’911’856.89,0.05,4’911’856.89,394’565.00,12.45,United Kingdom,London Stock Exchange,GBP,BAB.L
+LIFCO B,LIFCO CLASS B,Industrials,Equity,4’900’660.72,0.05,4’900’660.72,188’256.00,26.03,Sweden,Nasdaq Omx Nordic,SEK,LIFCO-B.ST
+RILBA,RINGKJOBING LANDBOBANK,Financials,Equity,4’900’076.04,0.05,4’900’076.04,19’715.00,248.55,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,RILBA.CO
+YAR,YARA INTERNATIONAL,Materials,Equity,4’892’175.45,0.05,4’892’175.45,126’709.00,38.61,Norway,Oslo Bors Asa,NOK,YAR.OL
+KBX,KNORR BREMSE AG,Industrials,Equity,4’886’182.00,0.05,4’886’182.00,49’859.00,98.00,Germany,Xetra,EUR,KBX.DE
+INDT,INDUTRADE,Industrials,Equity,4’863’414.72,0.04,4’863’414.72,200’757.00,24.23,Sweden,Nasdaq Omx Nordic,SEK,INDT.ST
+ACKB,ACKERMANS & VAN HAAREN NV,Industrials,Equity,4’842’696.00,0.04,4’842’696.00,17’546.00,276.00,Belgium,Nyse Euronext - Euronext Brussels,EUR,ACKB.BR
+UHR,THE SWATCH GROUP AG,Consumer Discretionary,Equity,4’837’751.08,0.04,4’837’751.08,23’400.00,206.74,Switzerland,SIX Swiss Exchange,CHF,UHR.SW
+EDEN,EDENRED,Financials,Equity,4’815’341.39,0.04,4’815’341.39,188’911.00,25.49,France,Nyse Euronext - Euronext Paris,EUR,EDEN.PA
+IPN,IPSEN SA,Health Care,Equity,4’797’829.40,0.04,4’797’829.40,28’678.00,167.30,France,Nyse Euronext - Euronext Paris,EUR,IPN.PA
+EMSN,EMS-CHEMIE HOLDING AG,Materials,Equity,4’777’667.75,0.04,4’777’667.75,5’216.00,915.96,Switzerland,SIX Swiss Exchange,CHF,EMSN.SW
+AED,AEDIFICA NV,Real Estate,Equity,4’741’821.45,0.04,4’741’821.45,72’339.00,65.55,Belgium,Nyse Euronext - Euronext Brussels,EUR,AED.BR
+LAND,LAND SECURITIES GROUP REIT PLC,Real Estate,Equity,4’700’363.16,0.04,4’700’363.16,576’198.00,8.16,United Kingdom,London Stock Exchange,GBP,LAND.L
+ANA,ACCIONA,Utilities,Equity,4’689’514.80,0.04,4’689’514.80,21’258.00,220.60,Spain,Bolsa De Madrid,EUR,ANA.MC
+IDR,INDRA SISTEMAS SA,Information Technology,Equity,4’659’217.60,0.04,4’659’217.60,78’070.00,59.68,Spain,Bolsa De Madrid,EUR,IDR.MC
+TKA,THYSSENKRUPP AG,Materials,Equity,4’645’505.62,0.04,4’645’505.62,371’938.00,12.49,Germany,Xetra,EUR,TKA.DE
+RNO,RENAULT SA,Consumer Discretionary,Equity,4’643’407.44,0.04,4’643’407.44,158’424.00,29.31,France,Nyse Euronext - Euronext Paris,EUR,RNO.PA
+AMUN,AMUNDI SA,Financials,Equity,4’625’556.80,0.04,4’625’556.80,47’393.00,97.60,France,Nyse Euronext - Euronext Paris,EUR,AMUN.PA
+GBLB,GROUPE BRUXELLES LAMBERT NV,Financials,Equity,4’613’934.00,0.04,4’613’934.00,58’110.00,79.40,Belgium,Nyse Euronext - Euronext Brussels,EUR,GBLB.BR
+IMCD,IMCD NV,Industrials,Equity,4’591’019.40,0.04,4’591’019.40,44’878.00,102.30,Netherlands,Euronext Amsterdam,EUR,IMCD.AS
+CTEC,CONVATEC GROUP PLC,Health Care,Equity,4’578’902.98,0.04,4’578’902.98,1’509’597.00,3.03,United Kingdom,London Stock Exchange,GBP,CTEC.L
+ISS,ISS A S,Industrials,Equity,4’567’527.25,0.04,4’567’527.25,109’578.00,41.68,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,ISS.CO
+LOTB,LOTUS BAKERIES NV,Consumer Staples,Equity,4’553’080.00,0.04,4’553’080.00,322.00,14’140.00,Belgium,Nyse Euronext - Euronext Brussels,EUR,LOTB.BR
+FRES,FRESNILLO PLC,Materials,Equity,4’539’113.07,0.04,4’539’113.07,150’539.00,30.15,United Kingdom,London Stock Exchange,GBP,FRES.L
+SPM,SAIPEM,Energy,Equity,4’515’133.63,0.04,4’515’133.63,1’043’479.00,4.33,Italy,Borsa Italiana,EUR,SPM.MI
+EVK,EVONIK INDUSTRIES AG,Materials,Equity,4’508’915.20,0.04,4’508’915.20,215’120.00,20.96,Germany,Xetra,EUR,EVK.DE
+AM,DASSAULT AVIATION SA,Industrials,Equity,4’503’571.60,0.04,4’503’571.60,14’641.00,307.60,France,Nyse Euronext - Euronext Paris,EUR,AM.PA
+IG,ITALGAS,Utilities,Equity,4’470’624.00,0.04,4’470’624.00,490’200.00,9.12,Italy,Borsa Italiana,EUR,IG.MI
+NIBE B,NIBE INDUSTRIER CLASS B,Industrials,Equity,4’455’304.09,0.04,4’455’304.09,1’102’477.00,4.04,Sweden,Nasdaq Omx Nordic,SEK,NIBE-B.ST
+AUTO,AUTOTRADER GROUP PLC,Communication,Equity,4’452’009.61,0.04,4’452’009.61,661’093.00,6.73,United Kingdom,London Stock Exchange,GBP,AUTO.L
+REC,RECORDATI INDUSTRIA CHIMICA E FARM,Health Care,Equity,4’450’959.45,0.04,4’450’959.45,84’861.00,52.45,Italy,Borsa Italiana,EUR,REC.MI
+WTB,WHITBREAD PLC,Consumer Discretionary,Equity,4’448’112.34,0.04,4’448’112.34,132’009.00,33.70,United Kingdom,London Stock Exchange,GBP,WTB.L
+SYENS,SYENSQO NV,Materials,Equity,4’444’320.00,0.04,4’444’320.00,55’554.00,80.00,Belgium,Nyse Euronext - Euronext Brussels,EUR,SYENS.BR
+STERV,STORA ENSO CLASS R,Materials,Equity,4’352’786.12,0.04,4’352’786.12,458’961.00,9.48,Finland,Nasdaq Omx Helsinki Ltd.,EUR,STERV.HE
+SAVE,NORDNET,Financials,Equity,4’328’898.93,0.04,4’328’898.93,135’306.00,31.99,Sweden,Nasdaq Omx Nordic,SEK,SAVE.ST
+CRDA,CRODA INTERNATIONAL PLC,Materials,Equity,4’308’333.52,0.04,4’308’333.52,97’199.00,44.33,United Kingdom,London Stock Exchange,GBP,CRDA.L
+BTRW,BARRATT REDROW PLC,Consumer Discretionary,Equity,4’259’117.50,0.04,4’259’117.50,1’092’131.00,3.90,United Kingdom,London Stock Exchange,GBP,BTRW.L
+JMT,JERONIMO MARTINS SA,Consumer Staples,Equity,4’246’344.77,0.04,4’246’344.77,217’873.00,19.49,Portugal,Nyse Euronext - Euronext Lisbon,EUR,JMT.LS
+BBY,BALFOUR BEATTY PLC,Industrials,Equity,4’239’761.36,0.04,4’239’761.36,396’196.00,10.70,United Kingdom,London Stock Exchange,GBP,BBY.L
+SSAB B,SSAB CLASS B,Materials,Equity,4’236’969.82,0.04,4’236’969.82,488’316.00,8.68,Sweden,Nasdaq Omx Nordic,SEK,SSAB-B.ST
+LHA,DEUTSCHE LUFTHANSA AG,Industrials,Equity,4’230’272.16,0.04,4’230’272.16,476’382.00,8.88,Germany,Xetra,EUR,LHA.DE
+HWDN,HOWDEN JOINERY GROUP PLC,Industrials,Equity,4’213’261.09,0.04,4’213’261.09,412’644.00,10.21,United Kingdom,London Stock Exchange,GBP,HWDN.L
+SCR,SCOR,Financials,Equity,4’203’513.60,0.04,4’203’513.60,119’418.00,35.20,France,Nyse Euronext - Euronext Paris,EUR,SCR.PA
+GETI B,GETINGE B,Health Care,Equity,4’172’111.26,0.04,4’172’111.26,166’569.00,25.05,Sweden,Nasdaq Omx Nordic,SEK,GETI-B.ST
+ANDR,ANDRITZ AG,Industrials,Equity,4’148’946.40,0.04,4’148’946.40,48’469.00,85.60,Austria,Wiener Boerse Ag,EUR,ANDR.VI
+NEX,NEXANS SA,Industrials,Equity,4’134’917.70,0.04,4’134’917.70,31’113.00,132.90,France,Nyse Euronext - Euronext Paris,EUR,NEX.PA
+GF,GEORG FISCHER AG,Industrials,Equity,4’128’988.60,0.04,4’128’988.60,64’528.00,63.99,Switzerland,SIX Swiss Exchange,CHF,GF.SW
+ELISA,ELISA,Communication,Equity,4’076’294.00,0.04,4’076’294.00,119’891.00,34.00,Finland,Nasdaq Omx Helsinki Ltd.,EUR,ELISA.HE
+SB1NO,SPAREBANK SR-NORGE,Financials,Equity,4’055’198.18,0.04,4’055’198.18,180’786.00,22.43,Norway,Oslo Bors Asa,NOK,SB1NO.OL
+MBK,MBANK SA,Financials,Equity,4’055’735.17,0.04,4’055’735.17,10’570.00,383.70,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,MBK.WA
+BLND,BRITISH LAND REIT,Real Estate,Equity,4’046’587.42,0.04,4’046’587.42,787’287.00,5.14,United Kingdom,London Stock Exchange,GBP,BLND.L
+RMV,RIGHTMOVE PLC,Communication,Equity,4’033’936.13,0.04,4’033’936.13,597’737.00,6.75,United Kingdom,London Stock Exchange,GBP,RMV.L
+WPP,WPP PLC,Communication,Equity,4’008’957.12,0.04,4’008’957.12,796’474.00,5.03,United Kingdom,London Stock Exchange,GBP,WPP.L
+GET,GETLINK,Industrials,Equity,3’976’725.48,0.04,3’976’725.48,196’091.00,20.28,France,Nyse Euronext - Euronext Paris,EUR,GET.PA
+GJF,GJENSIDIGE FORSIKRING,Financials,Equity,3’975’132.90,0.04,3’975’132.90,151’836.00,26.18,Norway,Oslo Bors Asa,NOK,GJF.OL
+SW,SODEXO SA,Consumer Discretionary,Equity,3’934’915.20,0.04,3’934’915.20,64’296.00,61.20,France,Nyse Euronext - Euronext Paris,EUR,SW.PA
+NDX1,NORDEX,Industrials,Equity,3’930’319.12,0.04,3’930’319.12,93’892.00,41.86,Germany,Xetra,EUR,NDX1.DE
+BMED,BANCA MEDIOLANUM,Financials,Equity,3’909’065.36,0.04,3’909’065.36,166’769.00,23.44,Italy,Borsa Italiana,EUR,BMED.MI
+AVOL,AVOLTA AG,Consumer Discretionary,Equity,3’895’677.35,0.04,3’895’677.35,73’073.00,53.31,Switzerland,SIX Swiss Exchange,CHF,AVOL.SW
+GALE,GALENICA AG,Health Care,Equity,3’883’825.02,0.04,3’883’825.02,39’725.00,97.77,Switzerland,SIX Swiss Exchange,CHF,GALE.SW
+LMP,LONDONMETRIC PROPERTY REIT PLC,Real Estate,Equity,3’859’867.99,0.04,3’859’867.99,1’718’881.00,2.25,United Kingdom,London Stock Exchange,GBP,LMP.L
+MRL,MERLIN PROPERTIES REIT,Real Estate,Equity,3’807’095.60,0.04,3’807’095.60,319’924.00,11.90,Spain,Bolsa De Madrid,EUR,MRL.MC
+P911,DR ING HC F PORSCHE PRF AG,Consumer Discretionary,Equity,3’804’169.86,0.04,3’804’169.86,82’377.00,46.18,Germany,Xetra,EUR,P911.DE
+TUB,FINANCIERE DE TUBIZE SA,Health Care,Equity,3’785’552.00,0.03,3’785’552.00,15’760.00,240.20,Belgium,Nyse Euronext - Euronext Brussels,EUR,TUB.BR
+ABDN,ABERDEEN GROUP PLC,Financials,Equity,3’763’004.23,0.03,3’763’004.23,1’358’556.00,2.77,United Kingdom,London Stock Exchange,GBP,ABDN.L
+VER,VERBUND AG,Utilities,Equity,3’749’291.25,0.03,3’749’291.25,51’325.00,73.05,Austria,Wiener Boerse Ag,EUR,VER.VI
+HAG,HENSOLDT AG,Industrials,Equity,3’712’053.58,0.03,3’712’053.58,44’951.00,82.58,Germany,Xetra,EUR,HAG.DE
+SIGN,SIG GROUP N AG,Materials,Equity,3’692’005.83,0.03,3’692’005.83,220’000.00,16.78,Switzerland,SIX Swiss Exchange,CHF,SIGN.SW
+PSN,PERSIMMON PLC,Consumer Discretionary,Equity,3’663’516.09,0.03,3’663’516.09,244’358.00,14.99,United Kingdom,London Stock Exchange,GBP,PSN.L
+SQN,SWISSQUOTE GROUP HOLDING SA,Financials,Equity,3’659’589.28,0.03,3’659’589.28,97’184.00,37.66,Switzerland,SIX Swiss Exchange,CHF,SQN.SW
+BRBY,BURBERRY GROUP PLC,Consumer Discretionary,Equity,3’649’113.72,0.03,3’649’113.72,278’916.00,13.08,United Kingdom,London Stock Exchange,GBP,BRBY.L
+MTLN,METLEN ENERGY & METALS PLC,Industrials,Equity,3’597’475.20,0.03,3’597’475.20,78’240.00,45.98,Greece,Athens Exchange S.A. Cash Market,EUR,MTLN.AT
+EMG,MAN GROUP PLC,Financials,Equity,3’558’449.86,0.03,3’558’449.86,935’434.00,3.80,United Kingdom,London Stock Exchange,GBP,EMG.L
+ROR,ROTORK PLC,Industrials,Equity,3’558’462.22,0.03,3’558’462.22,603’006.00,5.90,United Kingdom,London Stock Exchange,GBP,ROR.L
+SOF,SOFINA SA,Financials,Equity,3’545’942.40,0.03,3’545’942.40,13’104.00,270.60,Belgium,Nyse Euronext - Euronext Brussels,EUR,SOF.BR
+FHZN,FLUGHAFEN ZUERICH AG,Industrials,Equity,3’540’680.36,0.03,3’540’680.36,15’154.00,233.65,Switzerland,SIX Swiss Exchange,CHF,FHZN.SW
+TE,TECHNIP ENERGIES,Energy,Equity,3’538’304.88,0.03,3’538’304.88,100’749.00,35.12,France,Nyse Euronext - Euronext Paris,EUR,TE.PA
+BARN,BARRY CALLEBAUT AG,Consumer Staples,Equity,3’530’471.37,0.03,3’530’471.37,2’686.00,1’314.39,Switzerland,SIX Swiss Exchange,CHF,BARN.SW
+DEMANT,DEMANT,Health Care,Equity,3’525’112.89,0.03,3’525’112.89,71’183.00,49.52,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,DEMANT.CO
+BCVN,BC VAUD N,Financials,Equity,3’513’311.66,0.03,3’513’311.66,23’345.00,150.49,Switzerland,SIX Swiss Exchange,CHF,BCVN.SW
+RED,REDEIA CORPORACION SA,Utilities,Equity,3’494’159.85,0.03,3’494’159.85,223’269.00,15.65,Spain,Bolsa De Madrid,EUR,RED.MC
+CAST,CASTELLUM,Real Estate,Equity,3’489’543.10,0.03,3’489’543.10,284’798.00,12.25,Sweden,Nasdaq Omx Nordic,SEK,CAST.ST
+TEMN,TEMENOS AG,Information Technology,Equity,3’476’249.66,0.03,3’476’249.66,40’797.00,85.21,Switzerland,SIX Swiss Exchange,CHF,TEMN.SW
+SBMO,SBM OFFSHORE,Energy,Equity,3’455’639.84,0.03,3’455’639.84,102’359.00,33.76,Netherlands,Euronext Amsterdam,EUR,SBMO.AS
+BBOX,TRITAX BIG BOX REIT PLC,Real Estate,Equity,3’446’997.85,0.03,3’446’997.85,1’948’376.00,1.77,United Kingdom,London Stock Exchange,GBP,BBOX.L
+VK,VALLOUREC SA,Energy,Equity,3’443’197.48,0.03,3’443’197.48,175’539.00,19.61,France,Nyse Euronext - Euronext Paris,EUR,VK.PA
+TPRO,TECHNOPROBE SPA,Information Technology,Equity,3’441’382.20,0.03,3’441’382.20,145’206.00,23.70,Italy,Borsa Italiana,EUR,TPRO.MI
+BIM,BIOMERIEUX SA,Health Care,Equity,3’412’967.40,0.03,3’412’967.40,37’017.00,92.20,France,Nyse Euronext - Euronext Paris,EUR,BIM.PA
+AZA,AVANZA BANK HOLDING,Financials,Equity,3’409’304.73,0.03,3’409’304.73,99’695.00,34.20,Sweden,Nasdaq Omx Nordic,SEK,AZA.ST
+SECT B,SECTRA CLASS B,Health Care,Equity,3’363’081.68,0.03,3’363’081.68,115’990.00,28.99,Sweden,Nasdaq Omx Nordic,SEK,SECT-B.ST
+WDP,WAREHOUSES DE PAUW NV,Real Estate,Equity,3’356’985.19,0.03,3’356’985.19,171’013.00,19.63,Belgium,Nyse Euronext - Euronext Brussels,EUR,WDP.BR
+LUND B,LUNDBERGFORETAGEN CLASS B,Financials,Equity,3’354’190.91,0.03,3’354’190.91,60’876.00,55.10,Sweden,Nasdaq Omx Nordic,SEK,LUND-B.ST
+EDPR,EDP RENEWABLES SA,Utilities,Equity,3’344’149.80,0.03,3’344’149.80,239’724.00,13.95,Portugal,Nyse Euronext - Euronext Lisbon,EUR,EDPR.LS
+VOE,VOESTALPINE AG,Materials,Equity,3’316’300.66,0.03,3’316’300.66,86’407.00,38.38,Austria,Wiener Boerse Ag,EUR,VOE.VI
+VALMT,VALMET CORP,Industrials,Equity,3’309’043.92,0.03,3’309’043.92,114’738.00,28.84,Finland,Nasdaq Omx Helsinki Ltd.,EUR,VALMT.HE
+ALK B,ALK-ABELLO CLASS B,Health Care,Equity,3’293’518.45,0.03,3’293’518.45,99’357.00,33.15,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,ALK-B.CO
+RS1,RS GROUP PLC,Industrials,Equity,3’289’100.59,0.03,3’289’100.59,337’152.00,9.76,United Kingdom,London Stock Exchange,GBP,RS1.L
+BKG,BERKELEY GROUP HOLDINGS (THE),Consumer Discretionary,Equity,3’276’995.10,0.03,3’276’995.10,76’901.00,42.61,United Kingdom,London Stock Exchange,GBP,BKG.L
+GL9,GLANBIA PLC,Consumer Staples,Equity,3’270’294.09,0.03,3’270’294.09,165’417.00,19.77,Ireland,Irish Stock Exchange - All Market,EUR,GL9.IR
+DIE,DIETEREN (D) SA,Consumer Discretionary,Equity,3’265’328.00,0.03,3’265’328.00,18’553.00,176.00,Belgium,Nyse Euronext - Euronext Brussels,EUR,DIE.BR
+RAND,RANDSTAD HOLDING,Industrials,Equity,3’263’471.64,0.03,3’263’471.64,79’326.00,41.14,Netherlands,Euronext Amsterdam,EUR,RAND.AS
+VAR,VAR ENERGI,Energy,Equity,3’243’830.55,0.03,3’243’830.55,692’457.00,4.68,Norway,Oslo Bors Asa,NOK,VAR.OL
+INVP,INVESTEC PLC,Financials,Equity,3’235’715.87,0.03,3’235’715.87,419’750.00,7.71,United Kingdom,London Stock Exchange,GBP,INVP.L
+ELIS,ELIS SA,Industrials,Equity,3’232’328.40,0.03,3’232’328.40,132’690.00,24.36,France,Nyse Euronext - Euronext Paris,EUR,ELIS.PA
+AKE,ARKEMA SA,Materials,Equity,3’214’646.80,0.03,3’214’646.80,54’764.00,58.70,France,Nyse Euronext - Euronext Paris,EUR,AKE.PA
+PAH3,PORSCHE AUTOMOBIL HOLDING PREF,Consumer Discretionary,Equity,3’213’941.72,0.03,3’213’941.72,127’588.00,25.19,Germany,Xetra,EUR,PAH3.DE
+SALM,SALMAR,Consumer Staples,Equity,3’212’494.43,0.03,3’212’494.43,57’311.00,56.05,Norway,Oslo Bors Asa,NOK,SALM.OL
+LEG,LEG IMMOBILIEN N,Real Estate,Equity,3’165’229.08,0.03,3’165’229.08,63’738.00,49.66,Germany,Xetra,EUR,LEG.DE
+ENG,ENAGAS SA,Utilities,Equity,3’160’245.76,0.03,3’160’245.76,176’353.00,17.92,Spain,Bolsa De Madrid,EUR,ENG.MC
+OCTV SDB,OCTAVE INTELLIGENCE SDR PLC,Information Technology,Equity,3’160’891.25,0.03,3’160’891.25,167’437.00,18.88,Sweden,Nasdaq Omx Nordic,SEK,OCTV-SDB.ST
+NEM,NEMETSCHEK,Information Technology,Equity,3’153’861.20,0.03,3’153’861.20,48’973.00,64.40,Germany,Xetra,EUR,NEM.DE
+CDR,CD PROJEKT RED,Communication,Equity,3’132’034.77,0.03,3’132’034.77,50’329.00,62.23,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,CDR.WA
+IGG,IG GROUP HOLDINGS PLC,Financials,Equity,3’131’736.36,0.03,3’131’736.36,270’421.00,11.58,United Kingdom,London Stock Exchange,GBP,IGG.L
+LAGR B,LAGERCRANTZ GROUP CLASS B,Information Technology,Equity,3’130’398.41,0.03,3’130’398.41,144’043.00,21.73,Sweden,Nasdaq Omx Nordic,SEK,LAGR-B.ST
+DNP,DINO POLSKA,Consumer Staples,Equity,3’120’822.33,0.03,3’120’822.33,364’176.00,8.57,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,DNP.WA
+ADEN,ADECCO GROUP AG,Industrials,Equity,3’116’131.30,0.03,3’116’131.30,126’233.00,24.69,Switzerland,SIX Swiss Exchange,CHF,ADEN.SW
+AALB,AALBERTS,Industrials,Equity,3’108’404.00,0.03,3’108’404.00,73’450.00,42.32,Netherlands,Euronext Amsterdam,EUR,AALB.AS
+ZAB,ZABKA GROUP SOCIETE ANONYME SA,Consumer Staples,Equity,3’100’538.49,0.03,3’100’538.49,430’481.00,7.20,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,ZAB.WA
+UNI,UNICAJA BANCO SA,Financials,Equity,3’099’865.68,0.03,3’099’865.68,890’766.00,3.48,Spain,Bolsa De Madrid,EUR,UNI.MC
+MOH,MOTOR OIL (HELLAS) CORINTH REFINER,Energy,Equity,3’085’695.50,0.03,3’085’695.50,51’130.00,60.35,Greece,Athens Exchange S.A. Cash Market,EUR,MOH.AT
+CPR,DAVIDE CAMPARI MILANO NV,Consumer Staples,Equity,3’084’762.49,0.03,3’084’762.49,448’758.00,6.87,Italy,Borsa Italiana,EUR,CPR.MI
+MYCR,MYCRONIC,Information Technology,Equity,3’063’433.01,0.03,3’063’433.01,112’154.00,27.31,Sweden,Nasdaq Omx Nordic,SEK,MYCR.ST
+ZEG,ZEGONA COMMUNICATIONS PLC,Communication,Equity,3’048’366.51,0.03,3’048’366.51,145’027.00,21.02,United Kingdom,London Stock Exchange,GBP,ZEG.L
+ADP,AEROPORTS DE PARIS SA,Industrials,Equity,3’047’148.00,0.03,3’047’148.00,26’044.00,117.00,France,Nyse Euronext - Euronext Paris,EUR,ADP.PA
+AZM,AZIMUT HOLDING,Financials,Equity,3’025’830.35,0.03,3’025’830.35,81’449.00,37.15,Italy,Borsa Italiana,EUR,AZM.MI
+AIXA,AIXTRON,Information Technology,Equity,2’993’722.74,0.03,2’993’722.74,87’306.00,34.29,Germany,Xetra,EUR,AIXA.DE
+MAP,MAPFRE SA,Financials,Equity,2’985’577.88,0.03,2’985’577.88,700’511.00,4.26,Spain,Bolsa De Madrid,EUR,MAP.MC
+CVC,CVC CAPITAL PARTNERS PLC,Financials,Equity,2’980’568.16,0.03,2’980’568.16,200’307.00,14.88,Netherlands,Euronext Amsterdam,EUR,CVC.AS
+UMI,UMICORE SA,Materials,Equity,2’977’572.24,0.03,2’977’572.24,159’741.00,18.64,Belgium,Nyse Euronext - Euronext Brussels,EUR,UMI.BR
+BFT,BENEFIT SYSTEMS,Industrials,Equity,2’967’577.62,0.03,2’967’577.62,2’213.00,1’340.97,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,BFT.WA
+SRP,SERCO GROUP PLC,Industrials,Equity,2’953’619.15,0.03,2’953’619.15,863’373.00,3.42,United Kingdom,London Stock Exchange,GBP,SRP.L
+NDA,AURUBIS AG,Materials,Equity,2’923’129.30,0.03,2’923’129.30,20’629.00,141.70,Germany,Xetra,EUR,NDA.DE
+A2A,A2A,Utilities,Equity,2’917’931.77,0.03,2’917’931.77,1’265’914.00,2.31,Italy,Borsa Italiana,EUR,A2A.MI
+VEND,VEND MARKETPLACES ASA,Communication,Equity,2’897’419.95,0.03,2’897’419.95,130’102.00,22.27,Norway,Oslo Bors Asa,NOK,VEND.OL
+CCC,COMPUTACENTER PLC,Information Technology,Equity,2’894’959.64,0.03,2’894’959.64,49’077.00,58.99,United Kingdom,London Stock Exchange,GBP,CCC.L
+DRX,DRAX GROUP PLC,Utilities,Equity,2’894’154.59,0.03,2’894’154.59,284’452.00,10.17,United Kingdom,London Stock Exchange,GBP,DRX.L
+ALO,ALSTOM SA,Industrials,Equity,2’885’933.62,0.03,2’885’933.62,276’961.00,10.42,France,Nyse Euronext - Euronext Paris,EUR,ALO.PA
+BZU,BUZZI,Materials,Equity,2’874’254.10,0.03,2’874’254.10,65’235.00,44.06,Italy,Borsa Italiana,EUR,BZU.MI
+ROSE,ROSEBANK INDUSTRIES PLC,Industrials,Equity,2’873’744.56,0.03,2’873’744.56,706’115.00,4.07,United Kingdom,London Stock Exchange,GBP,ROSE.L
+SAGA B,SAGAX CLASS B,Real Estate,Equity,2’861’437.39,0.03,2’861’437.39,169’679.00,16.86,Sweden,Nasdaq Omx Nordic,SEK,SAGA-B.ST
+TEP,TELEPERFORMANCE,Industrials,Equity,2’854’994.60,0.03,2’854’994.60,40’042.00,71.30,France,Nyse Euronext - Euronext Paris,EUR,TEP.PA
+TECN,TECAN GROUP AG,Health Care,Equity,2’833’728.59,0.03,2’833’728.59,10’051.00,281.93,Switzerland,SIX Swiss Exchange,CHF,TECN.SW
+KBCA,KBC ANCORA NV,Financials,Equity,2’823’918.20,0.03,2’823’918.20,28’993.00,97.40,Belgium,Nyse Euronext - Euronext Brussels,EUR,KBCA.BR
+EVD,CTS EVENTIM AG,Communication,Equity,2’796’589.50,0.03,2’796’589.50,45’473.00,61.50,Germany,Xetra,EUR,EVD.DE
+JMAT,JOHNSON MATTHEY PLC,Materials,Equity,2’788’724.25,0.03,2’788’724.25,95’954.00,29.06,United Kingdom,London Stock Exchange,GBP,JMAT.L
+AYV,AYVENS SA,Industrials,Equity,2’779’100.16,0.03,2’779’100.16,281’856.00,9.86,France,Nyse Euronext - Euronext Paris,EUR,AYV.PA
+GEKTERNA,GEK TERNA,Industrials,Equity,2’764’266.68,0.03,2’764’266.68,66’899.00,41.32,Greece,Athens Exchange S.A. Cash Market,EUR,GEKTERNA.AT
+ING,ING BANK SLASKI SA,Financials,Equity,2’759’870.23,0.03,2’759’870.23,25’468.00,108.37,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,ING.WA
+GFC,GECINA SA,Real Estate,Equity,2’749’769.70,0.03,2’749’769.70,42’402.00,64.85,France,Nyse Euronext - Euronext Paris,EUR,GFC.PA
+ARCAD,ARCADIS NV,Industrials,Equity,2’735’384.40,0.03,2’735’384.40,57’855.00,47.28,Netherlands,Euronext Amsterdam,EUR,ARCAD.AS
+ALLN,ALLREAL HOLDING AG,Real Estate,Equity,2’729’111.00,0.03,2’729’111.00,12’953.00,210.69,Switzerland,SIX Swiss Exchange,CHF,ALLN.SW
+MNDI,MONDI PLC,Materials,Equity,2’723’522.56,0.03,2’723’522.56,289’920.00,9.39,United Kingdom,London Stock Exchange,GBP,MNDI.L
+GRF,GRIFOLS CLASS A,Health Care,Equity,2’716’294.28,0.03,2’716’294.28,236’611.00,11.48,Spain,Bolsa De Madrid,EUR,GRF.MC
+MTO,MITIE GROUP PLC,Industrials,Equity,2’694’314.57,0.02,2’694’314.57,1’078’013.00,2.50,United Kingdom,London Stock Exchange,GBP,MTO.L
+IP,INTERPUMP GROUP,Industrials,Equity,2’671’800.48,0.02,2’671’800.48,66’996.00,39.88,Italy,Borsa Italiana,EUR,IP.MI
+ENT,ENTAIN PLC,Consumer Discretionary,Equity,2’646’933.73,0.02,2’646’933.73,462’520.00,5.72,United Kingdom,London Stock Exchange,GBP,ENT.L
+VSURE,VERISURE PLC,Industrials,Equity,2’630’468.66,0.02,2’630’468.66,244’581.00,10.76,Sweden,Nasdaq Omx Nordic,EUR,VSURE.ST
+BME,B&M EUROPEAN VALUE RETAIL PLC,Consumer Discretionary,Equity,2’624’389.39,0.02,2’624’389.39,785’833.00,3.34,United Kingdom,London Stock Exchange,GBP,BME.L
+TUI1,TUI N AG,Consumer Discretionary,Equity,2’614’063.07,0.02,2’614’063.07,337’647.00,7.74,United Kingdom,Xetra,EUR,TUI1.DE
+RAA,RATIONAL AG,Industrials,Equity,2’599’551.50,0.02,2’599’551.50,4’123.00,630.50,Germany,Xetra,EUR,RAA.DE
+BAMNB,BAM GROEP KONINKLIJKE NV,Industrials,Equity,2’590’461.00,0.02,2’590’461.00,191’886.00,13.50,Netherlands,Euronext Amsterdam,EUR,BAMNB.AS
+SUN,SULZER AG,Industrials,Equity,2’580’866.03,0.02,2’580’866.03,12’941.00,199.43,Switzerland,SIX Swiss Exchange,CHF,SUN.SW
+BGN,BANCA GENERALI,Financials,Equity,2’575’997.40,0.02,2’575’997.40,43’959.00,58.60,Italy,Borsa Italiana,EUR,BGN.MI
+CWK,CRANSWICK PLC,Consumer Staples,Equity,2’574’738.98,0.02,2’574’738.98,39’109.00,65.84,United Kingdom,London Stock Exchange,GBP,CWK.L
+MIL,BANK MILLENNIUM SA,Financials,Equity,2’557’737.90,0.02,2’557’737.90,474’038.00,5.40,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,MIL.WA
+QQ.,QINETIQ GROUP PLC,Industrials,Equity,2’556’940.21,0.02,2’556’940.21,408’437.00,6.26,United Kingdom,London Stock Exchange,GBP,QQ.L
+TW.,TAYLOR WIMPEY PLC,Consumer Discretionary,Equity,2’551’866.70,0.02,2’551’866.70,2’708’878.00,0.94,United Kingdom,London Stock Exchange,GBP,TW.L
+ACX,ACERINOX,Materials,Equity,2’547’438.58,0.02,2’547’438.58,159’514.00,15.97,Spain,Bolsa De Madrid,EUR,ACX.MC
+MANTA,MANDATUM,Financials,Equity,2’544’853.56,0.02,2’544’853.56,436’136.00,5.84,Finland,Nasdaq Omx Helsinki Ltd.,EUR,MANTA.HE
+BPT,BRIDGEPOINT GROUP PLC,Financials,Equity,2’538’409.17,0.02,2’538’409.17,511’245.00,4.97,United Kingdom,London Stock Exchange,GBP,BPT.L
+LOOMIS,LOOMIS CLASS B,Industrials,Equity,2’533’611.69,0.02,2’533’611.69,53’428.00,47.42,Sweden,Nasdaq Omx Nordic,SEK,LOOMIS.ST
+PIRC,PIRELLI & C,Consumer Discretionary,Equity,2’521’993.42,0.02,2’521’993.42,374’183.00,6.74,Italy,Borsa Italiana,EUR,PIRC.MI
+BELA,JUMBO,Consumer Discretionary,Equity,2’484’881.50,0.02,2’484’881.50,87’805.00,28.30,Greece,Athens Exchange S.A. Cash Market,EUR,BELA.AT
+BALD B,FASTIGHETS BALDER CLASS B,Real Estate,Equity,2’476’841.29,0.02,2’476’841.29,517’381.00,4.79,Sweden,Nasdaq Omx Nordic,SEK,BALD-B.ST
+HER,HERA,Utilities,Equity,2’454’655.50,0.02,2’454’655.50,656’325.00,3.74,Italy,Borsa Italiana,EUR,HER.MI
+FLS,FLSMIDTH AND CO CLASS B,Industrials,Equity,2’451’715.63,0.02,2’451’715.63,30’344.00,80.80,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,FLS.CO
+SOI,SOITEC SA,Information Technology,Equity,2’447’626.50,0.02,2’447’626.50,22’590.00,108.35,France,Nyse Euronext - Euronext Paris,EUR,SOI.PA
+EZJ,EASYJET,Industrials,Equity,2’443’921.12,0.02,2’443’921.12,296’329.00,8.25,United Kingdom,London Stock Exchange,GBP,EZJ.L
+RUI,RUBIS,Utilities,Equity,2’430’665.62,0.02,2’430’665.62,67’481.00,36.02,France,Nyse Euronext - Euronext Paris,EUR,RUI.PA
+REY,REPLY,Information Technology,Equity,2’422’220.40,0.02,2’422’220.40,18’378.00,131.80,Italy,Borsa Italiana,EUR,REY.MI
+ATS,AT & S AUSTRIA TECHNOLOGIE & SYSTE,Information Technology,Equity,2’413’953.60,0.02,2’413’953.60,19’128.00,126.20,Austria,Wiener Boerse Ag,EUR,ATS.VI
+HUBN,HUBER & SUHNER AG,Industrials,Equity,2’400’426.34,0.02,2’400’426.34,12’875.00,186.44,Switzerland,SIX Swiss Exchange,CHF,HUBN.SW
+BC,BRUNELLO CUCINELLI,Consumer Discretionary,Equity,2’399’374.00,0.02,2’399’374.00,27’700.00,86.62,Italy,Borsa Italiana,EUR,BC.MI
+DLG,DELONGHI,Consumer Discretionary,Equity,2’392’629.00,0.02,2’392’629.00,50’907.00,47.00,Italy,Borsa Italiana,EUR,DLG.MI
+ACP,ASSECO POLAND SA,Information Technology,Equity,2’384’890.46,0.02,2’384’890.46,45’698.00,52.19,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,ACP.WA
+INCH,INCHCAPE PLC,Consumer Discretionary,Equity,2’365’942.52,0.02,2’365’942.52,307’158.00,7.70,United Kingdom,London Stock Exchange,GBP,INCH.L
+NOD,NORDIC SEMICONDUCTOR,Information Technology,Equity,2’344’905.85,0.02,2’344’905.85,132’416.00,17.71,Norway,Oslo Bors Asa,NOK,NOD.OL
+TBCG,TBC BANK GROUP PLC,Financials,Equity,2’327’421.26,0.02,2’327’421.26,35’644.00,65.30,United Kingdom,London Stock Exchange,GBP,TBCG.L
+PNN,PENNON GROUP PLC,Utilities,Equity,2’326’761.13,0.02,2’326’761.13,580’594.00,4.01,United Kingdom,London Stock Exchange,GBP,PNN.L
+FNTN,FREENET AG,Communication,Equity,2’326’045.40,0.02,2’326’045.40,97’733.00,23.80,Germany,Xetra,EUR,FNTN.DE
+BWY,BELLWAY PLC,Consumer Discretionary,Equity,2’324’499.55,0.02,2’324’499.55,85’699.00,27.12,United Kingdom,London Stock Exchange,GBP,BWY.L
+VPK,KONINKLIJKE VOPAK,Energy,Equity,2’318’370.60,0.02,2’318’370.60,42’461.00,54.60,Netherlands,Euronext Amsterdam,EUR,VPK.AS
+PAF,PAN AFRICAN RESOURCES PLC,Materials,Equity,2’311’147.09,0.02,2’311’147.09,1’707’148.00,1.35,United Kingdom,London Stock Exchange,GBP,PAF.L
+SFZN,SIEGFRIED HOLDING AG,Health Care,Equity,2’304’841.28,0.02,2’304’841.28,29’815.00,77.30,Switzerland,SIX Swiss Exchange,CHF,SFZN.SW
+HIK,HIKMA PHARMACEUTICALS PLC,Health Care,Equity,2’293’331.88,0.02,2’293’331.88,116’539.00,19.68,United Kingdom,London Stock Exchange,GBP,HIK.L
+TCAP,TP ICAP GROUP PLC,Financials,Equity,2’278’380.43,0.02,2’278’380.43,606’568.00,3.76,United Kingdom,London Stock Exchange,GBP,TCAP.L
+NEXI,NEXI,Financials,Equity,2’278’473.57,0.02,2’278’473.57,508’815.00,4.48,Italy,Borsa Italiana,EUR,NEXI.MI
+SUNN,SUNRISE N CLASS A LTD,Communication,Equity,2’275’685.22,0.02,2’275’685.22,49’247.00,46.21,Switzerland,SIX Swiss Exchange,CHF,SUNN.SW
+AAK,AAK,Consumer Staples,Equity,2’274’578.06,0.02,2’274’578.06,141’950.00,16.02,Sweden,Nasdaq Omx Nordic,SEK,AAK.ST
+ALLFG,ALLFUNDS GROUP PLC,Financials,Equity,2’253’823.32,0.02,2’253’823.32,225’834.00,9.98,Netherlands,Euronext Amsterdam,EUR,ALLFG.AS
+VZN,VZ HOLDING AG,Financials,Equity,2’251’361.33,0.02,2’251’361.33,11’748.00,191.64,Switzerland,SIX Swiss Exchange,CHF,VZN.SW
+KTY,GRUPA KETY,Materials,Equity,2’247’527.11,0.02,2’247’527.11,7’709.00,291.55,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,KTY.WA
+BC8,BECHTLE AG,Information Technology,Equity,2’246’265.56,0.02,2’246’265.56,65’527.00,34.28,Germany,Xetra,EUR,BC8.DE
+ITV,ITV PLC,Communication,Equity,2’247’118.13,0.02,2’247’118.13,2’912’790.00,0.77,United Kingdom,London Stock Exchange,GBP,ITV.L
+VONN,VONTOBEL HOLDING AG,Financials,Equity,2’242’171.16,0.02,2’242’171.16,21’822.00,102.75,Switzerland,SIX Swiss Exchange,CHF,VONN.SW
+LATO B,LATOUR INVESTMENT CLASS B,Industrials,Equity,2’242’433.82,0.02,2’242’433.82,107’240.00,20.91,Sweden,Nasdaq Omx Nordic,SEK,LATO-B.ST
+PLUS,PLUS500,Financials,Equity,2’234’891.99,0.02,2’234’891.99,55’767.00,40.08,United Kingdom,London Stock Exchange,GBP,PLUS.L
+R3NK,RENK GROUP AG,Industrials,Equity,2’210’081.43,0.02,2’210’081.43,64’679.00,34.17,Germany,Xetra,EUR,R3NK.DE
+SBNOR,SPAREBANKEN NORGE,Financials,Equity,2’192’770.84,0.02,2’192’770.84,111’944.00,19.59,Norway,Oslo Bors Asa,NOK,SBNOR.OL
+BKW,BKW N AG,Utilities,Equity,2’171’524.68,0.02,2’171’524.68,15’855.00,136.96,Switzerland,SIX Swiss Exchange,CHF,BKW.SW
+IFCN,INFICON HOLDING AG,Information Technology,Equity,2’160’050.77,0.02,2’160’050.77,12’300.00,175.61,Switzerland,SIX Swiss Exchange,CHF,IFCN.SW
+UTG,UNITE GROUP REIT PLC,Real Estate,Equity,2’158’381.71,0.02,2’158’381.71,370’411.00,5.83,United Kingdom,London Stock Exchange,GBP,UTG.L
+SWEC B,SWECO CLASS B,Industrials,Equity,2’156’529.64,0.02,2’156’529.64,168’728.00,12.78,Sweden,Nasdaq Omx Nordic,SEK,SWEC-B.ST
+HILS,HILL AND SMITH PLC,Materials,Equity,2’142’783.02,0.02,2’142’783.02,61’201.00,35.01,United Kingdom,London Stock Exchange,GBP,HILS.L
+SOP,SOPRA STERIA GROUP,Information Technology,Equity,2’116’492.00,0.02,2’116’492.00,10’760.00,196.70,France,Nyse Euronext - Euronext Paris,EUR,SOP.PA
+PUM,PUMA,Consumer Discretionary,Equity,2’109’612.78,0.02,2’109’612.78,79’578.00,26.51,Germany,Xetra,EUR,PUM.DE
+HTO,HELLENIC TELECOMMUNICATIONS ORGANI,Communication,Equity,2’107’615.80,0.02,2’107’615.80,110’636.00,19.05,Greece,Athens Exchange S.A. Cash Market,EUR,HTO.AT
+DKSH,DKSH HOLDING AG,Industrials,Equity,2’100’615.76,0.02,2’100’615.76,24’747.00,84.88,Switzerland,SIX Swiss Exchange,CHF,DKSH.SW
+RBREW,ROYAL UNIBREW,Consumer Staples,Equity,2’099’440.40,0.02,2’099’440.40,34’954.00,60.06,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,RBREW.CO
+FPE3,FUCHS PREF,Materials,Equity,2’081’822.40,0.02,2’081’822.40,47’880.00,43.48,Germany,Xetra,EUR,FPE3.DE
+MOBN,MOBIMO HOLDING AG,Real Estate,Equity,2’079’792.41,0.02,2’079’792.41,5’512.00,377.32,Switzerland,SIX Swiss Exchange,CHF,MOBN.SW
+VATN,VALIANT HOLDING AG,Financials,Equity,2’070’641.00,0.02,2’070’641.00,12’291.00,168.47,Switzerland,SIX Swiss Exchange,CHF,VATN.SW
+HUH1V,HUHTAMAKI,Materials,Equity,2’069’882.40,0.02,2’069’882.40,77’640.00,26.66,Finland,Nasdaq Omx Helsinki Ltd.,EUR,HUH1V.HE
+BOL,BOLLORE,Energy,Equity,2’065’964.11,0.02,2’065’964.11,557’164.00,3.71,France,Nyse Euronext - Euronext Paris,EUR,BOL.PA
+ROCK B,ROCKWOOL CLASS B,Industrials,Equity,2’054’194.70,0.02,2’054’194.70,71’159.00,28.87,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,ROCK-B.CO
+SFSN,SFS GROUP AG,Industrials,Equity,2’042’458.77,0.02,2’042’458.77,13’010.00,156.99,Switzerland,SIX Swiss Exchange,CHF,SFSN.SW
+TOM,TOMRA SYSTEMS,Industrials,Equity,2’043’025.11,0.02,2’043’025.11,214’813.00,9.51,Norway,Oslo Bors Asa,NOK,TOM.OL
+SCT,SOFTCAT PLC,Information Technology,Equity,2’039’553.90,0.02,2’039’553.90,103’141.00,19.77,United Kingdom,London Stock Exchange,GBP,SCT.L
+PUIG,PUIG BRANDS SA CLASS B,Consumer Staples,Equity,2’035’469.24,0.02,2’035’469.24,101’066.00,20.14,Spain,Bolsa De Madrid,EUR,PUIG.MC
+SHC,SHAFTESBURY CAPITAL REIT PLC,Real Estate,Equity,2’014’042.13,0.02,2’014’042.13,1’134’576.00,1.78,United Kingdom,London Stock Exchange,GBP,SHC.L
+TGS,TGS NOPEC GEOPHYSICAL,Energy,Equity,2’002’243.32,0.02,2’002’243.32,153’511.00,13.04,Norway,Oslo Bors Asa,NOK,TGS.OL
+AKER,AKER,Industrials,Equity,2’001’928.90,0.02,2’001’928.90,18’758.00,106.72,Norway,Oslo Bors Asa,NOK,AKER.OL
+KGX,KION GROUP AG,Industrials,Equity,1’979’292.92,0.02,1’979’292.92,57’739.00,34.28,Germany,Xetra,EUR,KGX.DE
+FDJU,FDJ UNITED,Consumer Discretionary,Equity,1’974’363.68,0.02,1’974’363.68,90’236.00,21.88,France,Nyse Euronext - Euronext Paris,EUR,FDJU.PA
+QLT,QUILTER PLC,Financials,Equity,1’974’859.96,0.02,1’974’859.96,854’398.00,2.31,United Kingdom,London Stock Exchange,GBP,QLT.L
+SCYR,SACYR,Industrials,Equity,1’963’565.10,0.02,1’963’565.10,461’798.00,4.25,Spain,Bolsa De Madrid,EUR,SCYR.MC
+PHP,PRIMARY HEALTH PROPERTIES REIT PLC,Real Estate,Equity,1’958’803.22,0.02,1’958’803.22,1’681’838.00,1.16,United Kingdom,London Stock Exchange,GBP,PHP.L
+CMBN,CEMBRA MONEY BANK AG,Financials,Equity,1’943’154.09,0.02,1’943’154.09,20’991.00,92.57,Switzerland,SIX Swiss Exchange,CHF,CMBN.SW
+COTN,COMET HOLDING AG,Information Technology,Equity,1’930’089.70,0.02,1’930’089.70,5’620.00,343.43,Switzerland,SIX Swiss Exchange,CHF,COTN.SW
+AAF,AIRTEL AFRICA PLC,Communication,Equity,1’889’188.18,0.02,1’889’188.18,549’920.00,3.44,United Kingdom,London Stock Exchange,GBP,AAF.L
+AXFO,AXFOOD,Consumer Staples,Equity,1’883’895.44,0.02,1’883’895.44,74’568.00,25.26,Sweden,Nasdaq Omx Nordic,SEK,AXFO.ST
+FR,VALEO,Consumer Discretionary,Equity,1’881’986.40,0.02,1’881’986.40,163’296.00,11.53,France,Nyse Euronext - Euronext Paris,EUR,FR.PA
+COV,COVIVIO SA,Real Estate,Equity,1’831’687.44,0.02,1’831’687.44,40’813.00,44.88,France,Nyse Euronext - Euronext Paris,EUR,COV.PA
+XTB,XTB,Financials,Equity,1’812’088.66,0.02,1’812’088.66,59’033.00,30.70,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,XTB.WA
+TEG,TAG IMMOBILIEN AG,Real Estate,Equity,1’810’764.60,0.02,1’810’764.60,158’839.00,11.40,Germany,Xetra,EUR,TEG.DE
+HOLM B,HOLMEN CLASS B,Materials,Equity,1’758’169.65,0.02,1’758’169.65,65’056.00,27.03,Sweden,Nasdaq Omx Nordic,SEK,HOLM-B.ST
+DLN,DERWENT LONDON REIT PLC,Real Estate,Equity,1’711’371.31,0.02,1’711’371.31,72’281.00,23.68,United Kingdom,London Stock Exchange,GBP,DLN.L
+AG1,AUTO1 GROUP,Consumer Discretionary,Equity,1’654’548.84,0.02,1’654’548.84,106’883.00,15.48,Germany,Xetra,EUR,AG1.DE
+ZEAL,ZEALAND PHARMA,Health Care,Equity,1’569’717.49,0.01,1’569’717.49,47’876.00,32.79,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,ZEAL.CO
+SDF,K+S N AG,Materials,Equity,1’568’869.10,0.01,1’568’869.10,123’533.00,12.70,Germany,Xetra,EUR,SDF.DE
+HIAB,HIAB CORPORATION CLASS B,Industrials,Equity,1’498’444.35,0.01,1’498’444.35,29’181.00,51.35,Finland,Nasdaq Omx Helsinki Ltd.,EUR,HIAB.HE
+GBF,BILFINGER,Industrials,Equity,1’493’633.60,0.01,1’493’633.60,24’208.00,61.70,Germany,Xetra,EUR,GBF.DE
+FTK,FLATEXDEGIRO N,Financials,Equity,1’479’652.12,0.01,1’479’652.12,64’954.00,22.78,Germany,Xetra,EUR,FTK.DE
+HOC,HOCHSCHILD MINING PLC,Materials,Equity,1’292’778.42,0.01,1’292’778.42,228’817.00,5.65,United Kingdom,London Stock Exchange,GBP,HOC.L
+CSG,CSG CLASS A NV,Industrials,Equity,1’231’346.04,0.01,1’231’346.04,116’826.00,10.54,Netherlands,Euronext Amsterdam,EUR,CSG.AS
+KESK0BU0,KESKO OYJ,Other,Equity,142’780.41,0.0,142’780.41,213’976.00,0.67,Finland,Nasdaq Omx Helsinki Ltd.,EUR,KESK0BU0.HE
+IVG,IVECO GROUP NV,Industrials,Equity,0.00,0.0,0.00,0.00,0.00,Italy,Borsa Italiana,EUR,IVG.MI
