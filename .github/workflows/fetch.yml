@@ -1,0 +1,73 @@
+name: fetch-data
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/fetch.yml']
+  schedule:
+    - cron: '17 4 * * 2-6'
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install yfinance pandas
+      - name: Download
+        shell: python
+        run: |
+          import os, io, time, zipfile, urllib.request
+          import pandas as pd, yfinance as yf
+          os.makedirs('data/yahoo', exist_ok=True)
+          os.makedirs('data/french', exist_ok=True)
+          T = ['EXSA.DE','^STOXX','^STOXX50E','CEMR.DE',
+               'EXV1.DE','EXV2.DE','EXV3.DE','EXV4.DE','EXV5.DE','EXV6.DE','EXV7.DE','EXV8.DE','EXV9.DE',
+               'EXH1.DE','EXH2.DE','EXH3.DE','EXH4.DE','EXH5.DE','EXH6.DE','EXH7.DE','EXH8.DE','EXH9.DE','EXI5.DE']
+          log, meta = [], []
+          for t in T:
+              ok = False
+              for k in range(3):
+                  try:
+                      tk = yf.Ticker(t)
+                      df = tk.history(period='max', auto_adjust=False, actions=True)
+                      if len(df):
+                          df.to_csv('data/yahoo/' + t.replace('^', 'IDX_') + '.csv')
+                          log.append(f'{t},{len(df)},{df.index[0].date()},{df.index[-1].date()}')
+                          try:
+                              i = tk.info
+                              meta.append((t, i.get('longName') or i.get('shortName'), i.get('isin', '')))
+                          except Exception:
+                              meta.append((t, '', ''))
+                          ok = True
+                          break
+                  except Exception as e:
+                      print(t, e)
+                  time.sleep(10 * (k + 1))
+              if not ok:
+                  log.append(f'{t},FAIL')
+              time.sleep(3)
+          pd.DataFrame(meta, columns=['ticker', 'name', 'isin']).to_csv('data/yahoo/_meta.csv', index=False)
+          base = 'https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/'
+          for f in ['Europe_Mom_Factor_CSV.zip', 'Europe_Mom_Factor_Daily_CSV.zip',
+                    'Europe_6_Portfolios_ME_Prior_12_2_CSV.zip', 'Europe_25_Portfolios_ME_Prior_12_2_CSV.zip',
+                    'Europe_3_Factors_CSV.zip']:
+              try:
+                  req = urllib.request.Request(base + f, headers={'User-Agent': 'Mozilla/5.0'})
+                  z = zipfile.ZipFile(io.BytesIO(urllib.request.urlopen(req, timeout=60).read()))
+                  for n in z.namelist():
+                      open('data/french/' + n, 'wb').write(z.read(n))
+                  log.append(f'{f},OK')
+              except Exception as e:
+                  log.append(f'{f},FAIL {e}')
+          open('data/_log.txt', 'w').write('\n'.join(log) + '\n')
+          print('\n'.join(log))
+      - name: Commit
+        run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@users.noreply.github.com'
+          git add data
+          git commit -m "data $(date -u +%F)" || exit 0
+          git push
