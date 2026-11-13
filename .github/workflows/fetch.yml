@@ -126,11 +126,14 @@ jobs:
           print('\n'.join(log))
       - name: Insider
         shell: python
+        env:
+          SEC_UA: ${{ secrets.SEC_UA }}
         run: |
           import os, io, time, zipfile, urllib.request, datetime
           import pandas as pd
           os.makedirs('data/insider', exist_ok=True)
-          UA = {'User-Agent': 'Stx-Data research (GitHub Actions) stxdata@users.noreply.github.com', 'Accept-Encoding': 'identity'}
+          import gzip
+          UA = {'User-Agent': os.environ.get('SEC_UA', ''), 'Accept-Encoding': 'gzip, deflate', 'Host': 'www.sec.gov'}
           out = 'data/insider/purchases.csv.gz'
           done_f = 'data/insider/_quarters_done.txt'
           done = set(open(done_f).read().split()) if os.path.exists(done_f) else set()
@@ -142,10 +145,14 @@ jobs:
           def rd(z, name):
               n = next(x for x in z.namelist() if x.upper().endswith(name + '.TSV'))
               return pd.read_csv(io.BytesIO(z.read(n)), sep='\t', dtype=str, on_bad_lines='skip', encoding_errors='replace')
+          if not UA['User-Agent'].strip():
+              log.append('SEC_UA secret missing - insider step skipped'); todo = []
           for q in todo:
               url = f'https://www.sec.gov/files/structureddata/data/insider-transactions-data-sets/{q}_form345.zip'
               try:
-                  b = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120).read()
+                  resp = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120)
+                  b = resp.read()
+                  if resp.headers.get('Content-Encoding', '') == 'gzip': b = gzip.decompress(b)
                   z = zipfile.ZipFile(io.BytesIO(b))
                   sub = rd(z, 'SUBMISSION'); own = rd(z, 'REPORTINGOWNER'); nd = rd(z, 'NONDERIV_TRANS')
                   p = nd[nd['TRANS_CODE'] == 'P']; n_s = int((nd['TRANS_CODE'] == 'S').sum())
