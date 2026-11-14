@@ -1,8 +1,8 @@
 Squeeze-out Barabfindung: 1 Meldungen, 1 erkannt
-Squeeze-out Abfindung Aktie: 4 Meldungen, 1 erkannt
+Squeeze-out Abfindung Aktie: 5 Meldungen, 1 erkannt
 verschmelzungsrechtlicher Squeeze-out: 0 Meldungen, 0 erkannt
 Beherrschungs- und Gewinnabführungsvertrag Abfindung: 0 Meldungen, 0 erkannt
 Beherrschungsvertrag Barabfindung: 0 Meldungen, 0 erkannt
 Delisting Erwerbsangebot je Aktie: 5 Meldungen, 2 erkannt
-Übernahmeangebot je Aktie Annahmefrist: 12 Meldungen, 2 erkannt
+Übernahmeangebot je Aktie Annahmefrist: 11 Meldungen, 2 erkannt
 Fälle: 13, neu: 0
