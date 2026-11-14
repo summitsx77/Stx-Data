@@ -4,13 +4,5 @@ verschmelzungsrechtlicher Squeeze-out: 0 Meldungen, 0 erkannt
 Beherrschungs- und Gewinnabführungsvertrag Abfindung: 0 Meldungen, 0 erkannt
 Beherrschungsvertrag Barabfindung: 0 Meldungen, 0 erkannt
 Delisting Erwerbsangebot je Aktie: 5 Meldungen, 2 erkannt
-Übernahmeangebot je Aktie Annahmefrist: 13 Meldungen, 3 erkannt
-Nachsuche Santander Bank Polska: kein Betrag gefunden
-Nachsuche Fernheizwerk Neukölln AG: kein Betrag gefunden
-Nachsuche Northern Data: kein Betrag gefunden
-Nachsuche Covestro: kein Betrag gefunden
-Nachsuche Ludwig Beck AG: kein Betrag gefunden
-Nachsuche RHÖN-KLINIKUM AG: kein Betrag gefunden
-Nachsuche Klöckner: kein Betrag gefunden
-Nachsuche Centrotherm: kein Betrag gefunden
-Fälle: 13, neu: 1
+Übernahmeangebot je Aktie Annahmefrist: 13 Meldungen, 2 erkannt
+Fälle: 13, neu: 0

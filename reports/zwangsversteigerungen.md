@@ -11,5 +11,5 @@ Quelle: ZVG-Portal der Justiz (nur Terminliste). **NEU** = seit dem letzten Lauf
 
 | Termin | Objekt | Ort | Verkehrswert € | Gericht / Az. | Hinweis | Link |
 |---|---|---|---|---|---|---|
-| 2026-11-17 08:45 | Wohnhaus mit 2 abgeschlossenen Wohnungen | 93194 Walderbach | 379.000 | in Bayern 0001 K 0130/2023 |  | [Details](https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=49377&land_abk=by) |
+| 2026-11-17 08:45 | Wohnhaus mit 2 abgeschlossenen Wohnungen | 93194 Walderbach | 379.000 |  0001 K 0130/2023 |  | [Details](https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=49377&land_abk=by) |
 

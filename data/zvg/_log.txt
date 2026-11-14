@@ -1,4 +1,9 @@
-Formularfelder: ['art', 'az1', 'az2', 'az3', 'az4', 'btermin', 'ger_id', 'ger_name', 'hnr', 'land_abk', 'obj', 'order_by', 'ort', 'ortsteil', 'plz', 'str', 'vtermin']
+Felder ['art', 'az1', 'az2', 'az3', 'az4', 'btermin', 'ger_id', 'ger_name', 'hnr', 'land_abk', 'obj', 'order_by', 'ort', 'ortsteil', 'plz', 'str', 'vtermin']
+Soll laut Portal: 426
+POST erste Seite: 10 Einträge
+GET all=1: 0 Einträge
+Formular alle: kein Blätter-Formular gefunden: 0 Einträge
 Einträge Bayern: 10
-ohne Wertgrenzen (Bayern): 0
+Diagnose: Rohseiten in _roh.html.gz (unvollständig: True, auffällige Einträge: 9)
+ohne Wertgrenzen (Bayern): 10 (Soll 21)
 Region: 1 aktuell, 0 neu
