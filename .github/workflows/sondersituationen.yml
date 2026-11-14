@@ -1,0 +1,43 @@
+# Sondersituationen (Squeeze-out-Monitor) + Zwangsversteigerungs-Vorfilter
+# Täglicher Lauf; Berichte in reports/, Daten in data/sonder und data/zvg, Meldungen als GitHub-Issue.
+name: sondersituationen
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/sondersituationen.yml', 'routinen/**']
+  schedule:
+    - cron: '41 5 * * *'
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: sondersituationen
+  cancel-in-progress: false
+jobs:
+  lauf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 yfinance pandas
+      - name: Squeeze-out-Monitor
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python routinen/sonder.py
+      - name: Zwangsversteigerungen
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python routinen/zvg.py
+      - name: Commit
+        run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@users.noreply.github.com'
+          for p in data/sonder data/zvg reports; do if [ -e "$p" ]; then git add "$p"; fi; done
+          git commit -m "sondersituationen $(date -u +%F)" || exit 0
+          git pull --rebase
+          git push
