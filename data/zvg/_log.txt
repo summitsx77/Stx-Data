@@ -4,4 +4,4 @@ POST erste Seite: 10 Einträge
 POST all=1: 426 Einträge
 Einträge Bayern: 426
 ohne Wertgrenzen (Bayern): 21 (Soll 21)
-Region: 11 aktuell, 10 neu
+Region: 11 aktuell, 0 neu
