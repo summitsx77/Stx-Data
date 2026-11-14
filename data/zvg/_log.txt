@@ -1,4 +1,4 @@
 Formularfelder: ['art', 'az1', 'az2', 'az3', 'az4', 'btermin', 'ger_id', 'ger_name', 'hnr', 'land_abk', 'obj', 'order_by', 'ort', 'ortsteil', 'plz', 'str', 'vtermin']
 Einträge Bayern: 10
 ohne Wertgrenzen (Bayern): 0
-Region: 1 aktuell, 1 neu
+Region: 1 aktuell, 0 neu

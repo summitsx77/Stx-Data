@@ -1,8 +1,16 @@
-Squeeze-out Barabfindung: 9 Meldungen, 6 erkannt
-Squeeze-out Abfindung Aktie: 7 Meldungen, 5 erkannt
+Squeeze-out Barabfindung: 1 Meldungen, 1 erkannt
+Squeeze-out Abfindung Aktie: 4 Meldungen, 1 erkannt
 verschmelzungsrechtlicher Squeeze-out: 0 Meldungen, 0 erkannt
-Beherrschungs- und Gewinnabführungsvertrag Abfindung: 3 Meldungen, 1 erkannt
+Beherrschungs- und Gewinnabführungsvertrag Abfindung: 0 Meldungen, 0 erkannt
 Beherrschungsvertrag Barabfindung: 0 Meldungen, 0 erkannt
-Delisting Erwerbsangebot je Aktie: 10 Meldungen, 3 erkannt
-Übernahmeangebot je Aktie Annahmefrist: 12 Meldungen, 3 erkannt
-Fälle: 12, neu: 12
+Delisting Erwerbsangebot je Aktie: 5 Meldungen, 2 erkannt
+Übernahmeangebot je Aktie Annahmefrist: 13 Meldungen, 3 erkannt
+Nachsuche Santander Bank Polska: kein Betrag gefunden
+Nachsuche Fernheizwerk Neukölln AG: kein Betrag gefunden
+Nachsuche Northern Data: kein Betrag gefunden
+Nachsuche Covestro: kein Betrag gefunden
+Nachsuche Ludwig Beck AG: kein Betrag gefunden
+Nachsuche RHÖN-KLINIKUM AG: kein Betrag gefunden
+Nachsuche Klöckner: kein Betrag gefunden
+Nachsuche Centrotherm: kein Betrag gefunden
+Fälle: 13, neu: 1
