@@ -10,6 +10,7 @@ SCHWELLE = 0.02        # Signal, wenn Kurs höchstens 2 % über Abfindung/Angebo
 UNTERGRENZE = -0.10    # deutlich darunter: eher Erkennungsfehler -> "prüfen"
 ORDNER = 'data/sonder'
 FAELLE = ORDNER + '/faelle.csv'
+HANDPFLEGE = 'routinen/handpflege.csv'   # key,firma,typ,betrag,ticker,status,notiz – hat Vorrang
 BERICHT = 'reports/sondersituationen.md'
 SUCHEN = [
     'Squeeze-out Barabfindung',
@@ -22,7 +23,8 @@ SUCHEN = [
 ]
 SPALTEN = ['key', 'firma', 'typ', 'betrag_auto', 'betrag', 'ticker_auto', 'yahoo_name', 'ticker', 'status',
            'erst_gesehen', 'zuletzt_gesehen', 'n_meldungen', 'quelle', 'link',
-           'kurs', 'kurs_datum', 'aufschlag_pct', 'signal', 'gemeldet']
+           'kurs', 'kurs_datum', 'aufschlag_pct', 'signal', 'gemeldet', 'nachgesucht']
+BOERSEN = ['.DE', '.F', '.MU', '.SG', '.DU', '.HM', '.BE', '.HA']   # nur deutsche Handelsplätze
 UA = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) personal-monitor'}
 TYPNAME = {'SO': 'Squeeze-out', 'BGAV': 'Beherrschungsvertrag', 'DEL': 'Delisting', 'UEB': 'Übernahmeangebot'}
 RANG = {'SO': 4, 'BGAV': 3, 'DEL': 2, 'UEB': 1}
@@ -124,20 +126,24 @@ def norm(s):
 def yahoo_suche(name):
     such = re.sub(r'[\s-]*\b(AG|SE|KGaA)\b.*$', '', name).strip() or name
     quotes = []
-    try:
-        r = requests.get('https://query2.finance.yahoo.com/v1/finance/search',
-                         params={'q': such, 'quotesCount': 10, 'newsCount': 0, 'lang': 'de-DE', 'region': 'DE'},
-                         headers=UA, timeout=30)
-        quotes = r.json().get('quotes', [])
-    except Exception as e:
-        print('yahoo search', name, e)
+    umschrift = such
+    for a, b in (('ä', 'ae'), ('ö', 'oe'), ('ü', 'ue'), ('Ä', 'Ae'), ('Ö', 'Oe'), ('Ü', 'Ue'), ('ß', 'ss')):
+        umschrift = umschrift.replace(a, b)
+    for q in dict.fromkeys([such, umschrift]):
+        try:
+            r = requests.get('https://query2.finance.yahoo.com/v1/finance/search',
+                             params={'q': q, 'quotesCount': 10, 'newsCount': 0, 'lang': 'de-DE', 'region': 'DE'},
+                             headers=UA, timeout=30)
+            quotes += r.json().get('quotes', [])
+        except Exception as e:
+            print('yahoo search', q, e)
     if not quotes:
         try:
             import yfinance as yf
             quotes = yf.Search(such, max_results=10, news_count=0).quotes
         except Exception as e:
             print('yf.Search', name, e)
-    rang = ['.DE', '.F', '.MU', '.SG', '.DU', '.HM', '.BE', '.HA', '.VI']
+    rang = BOERSEN
     erstes_wort = norm(name.split()[0])
     beste = None
     for q in quotes:
@@ -148,9 +154,11 @@ def yahoo_suche(name):
         if erstes_wort[:4] not in norm(nm):
             continue
         suf = '.' + sym.split('.')[-1] if '.' in sym else ''
-        r_ = rang.index(suf) if suf in rang else 99
+        if suf not in rang:
+            continue
+        r_ = rang.index(suf)
         if beste is None or r_ < beste[0]:
-            beste = (r_, sym, nm)
+            beste = (r_, sym, ' '.join(nm.split()))
     return (beste[1], beste[2]) if beste else (None, None)
 
 def kurs(sym):
@@ -160,6 +168,35 @@ def kurs(sym):
     if not len(h):
         return None, None
     return float(h.iloc[-1]), h.index[-1].date().isoformat()
+
+def betrag_nachsuchen(f):
+    """Gezielte Suche nach dem Betrag, wenn die erste Meldung keinen enthielt."""
+    such = re.sub(r'[\s-]*\b(AG|SE|KGaA)\b.*$', '', f['firma']).strip() or f['firma']
+    kern = norm(such)[:8]
+    treffer = []
+    for q in (f'"{such}" Abfindung', f'"{such}" Angebot je Aktie'):
+        try:
+            items = news(q, 365)
+        except Exception as ex:
+            print('Nachsuche', q, ex)
+            continue
+        for it in items:
+            t = it['titel']
+            tl = t.lower()
+            if kern not in norm(t):
+                continue
+            if f['typ'] in ('SO', 'BGAV') and 'abfindung' not in tl:
+                continue
+            if f['typ'] in ('DEL', 'UEB') and not ('angebot' in tl or 'abfindung' in tl):
+                continue
+            b = betrag_von(t)
+            if b:
+                treffer.append((it['datum'], b, it))
+        time.sleep(2)
+    if not treffer:
+        return None
+    datum, b, it = max(treffer, key=lambda x: x[0])
+    return b, it
 
 # ---------- Ablage ----------
 def lade():
@@ -175,6 +212,26 @@ def speichere(faelle):
         w.writeheader()
         for k in sorted(faelle, key=lambda k: faelle[k]['zuletzt_gesehen'], reverse=True):
             w.writerow(faelle[k])
+
+def handpflege(faelle, heute):
+    if not os.path.exists(HANDPFLEGE):
+        return
+    with open(HANDPFLEGE, newline='', encoding='utf-8') as fh:
+        for r in csv.DictReader(fh):
+            k = (r.get('key') or '').strip()
+            if not k:
+                continue
+            f = faelle.get(k)
+            if f is None:
+                f = {s: '' for s in SPALTEN}
+                f.update(key=k, firma=r.get('firma') or k, typ=r.get('typ') or 'SO', status='aktiv',
+                         erst_gesehen=heute, zuletzt_gesehen=heute, n_meldungen='0')
+                faelle[k] = f
+            for feld in ('betrag', 'ticker', 'status'):
+                if (r.get(feld) or '').strip():
+                    f[feld] = r[feld].strip()
+            if (r.get('typ') or '').strip():
+                f['typ'] = r['typ'].strip()
 
 def einarbeiten(faelle, ereignisse, heute, gesehen):
     neu = []
@@ -211,9 +268,12 @@ def bewerten(f):
         return ''
     b = zahl(f['betrag']) or zahl(f['betrag_auto'])
     k = zahl(f['kurs'])
+    if not (f['ticker'] or f['ticker_auto']):
+        f['aufschlag_pct'] = ''
+        return 'ohne Ticker'
     if not b or not k:
         f['aufschlag_pct'] = ''
-        return 'Daten fehlen'
+        return 'Vorstufe' if f['typ'] == 'UEB' else 'Daten fehlen'
     a = k / b - 1
     f['aufschlag_pct'] = f'{a * 100:.2f}'
     if f['typ'] == 'UEB':
@@ -253,15 +313,16 @@ def bericht(faelle, stand):
              'Betrag und Ticker sind automatisch erkannt und vor jedem Kauf an der Originalmeldung zu prüfen.', '']
     for titel, liste in [('Günstig', g('GÜNSTIG')), ('Prüfen (Kurs deutlich unter Betrag – Erkennung fraglich)', g('PRÜFEN')),
                          ('Beobachten', g('beobachten')), ('Daten fehlen (Betrag oder Kurs)', g('Daten fehlen')),
-                         ('Übernahmeangebote (mögliche Vorstufe)', g('Vorstufe'))]:
+                         ('Übernahmeangebote (mögliche Vorstufe)', g('Vorstufe')),
+                         ('Ohne deutsche Börsennotierung gefunden', g('ohne Ticker'))]:
         teile += [f'## {titel} ({len(liste)})', '']
         if liste:
             teile += [kopf] + [zeile(f) for f in sorted(liste, key=lambda f: f['zuletzt_gesehen'], reverse=True)]
         teile.append('')
     teile += ['## Pflege', '',
-              'In `data/sonder/faelle.csv` dürfen `betrag`, `ticker` und `status` (aktiv / erledigt / ignoriert) '
-              'von Hand gesetzt werden; sie haben Vorrang. Eigene Fälle: neue Zeile mit `key`, `firma`, `typ` '
-              '(SO, BGAV, DEL, UEB), `betrag`, `ticker`.']
+              'Korrekturen und eigene Fälle gehören in `routinen/handpflege.csv` (Spalten key, firma, typ, betrag, '
+              'ticker, status, notiz); sie haben Vorrang vor der automatischen Erkennung. `key` = Firmenname klein '
+              'ohne Rechtsform (wie in `data/sonder/faelle.csv`). typ: SO, BGAV, DEL, UEB; status: aktiv, erledigt, ignoriert.']
     os.makedirs(os.path.dirname(BERICHT), exist_ok=True)
     open(BERICHT, 'w', encoding='utf-8').write('\n'.join(teile) + '\n')
 
@@ -282,14 +343,34 @@ def main():
     gf = ORDNER + '/_gesehen.txt'
     gesehen = set(open(gf).read().split()) if os.path.exists(gf) else set()
     neu = einarbeiten(faelle, ereignisse, heute, gesehen)
+    handpflege(faelle, heute)
     os.makedirs(ORDNER, exist_ok=True)
     open(gf, 'w').write('\n'.join(sorted(gesehen)[-5000:]) + '\n')
+    nachsuchen_heute = 0
+    vor_7_tagen = (datetime.date.today() - datetime.timedelta(days=7)).isoformat()
     for f in faelle.values():
         if f['status'] in ('erledigt', 'ignoriert'):
+            f['signal'] = ''
             continue
-        if not f['ticker'] and not f['ticker_auto']:
+        ta = f['ticker_auto']
+        if ta and ('.' + ta.split('.')[-1] if '.' in ta else '') not in BOERSEN:
+            f['ticker_auto'] = f['yahoo_name'] = ''   # ausländische Notierung verwerfen
+        if not f['ticker'] and not f['ticker_auto'] and f['nachgesucht'] != heute:
             f['ticker_auto'], f['yahoo_name'] = [x or '' for x in yahoo_suche(f['firma'])]
             time.sleep(1)
+        f['yahoo_name'] = ' '.join(f['yahoo_name'].split())
+        if (not f['betrag'] and not f['betrag_auto'] and (f['ticker'] or f['ticker_auto'])
+                and nachsuchen_heute < 12 and (f['nachgesucht'] or '0') <= vor_7_tagen):
+            nachsuchen_heute += 1
+            f['nachgesucht'] = heute
+            gefunden = betrag_nachsuchen(f)
+            if gefunden:
+                b, it = gefunden
+                f['betrag_auto'] = f'{b:.2f}'
+                f['quelle'], f['link'] = it['quelle'], it['link']
+                log.append(f'Nachsuche {f["firma"]}: {b:.2f} € ({it["datum"]})')
+            else:
+                log.append(f'Nachsuche {f["firma"]}: kein Betrag gefunden')
         sym = f['ticker'] or f['ticker_auto']
         f['kurs'] = f['kurs_datum'] = ''
         if sym:
