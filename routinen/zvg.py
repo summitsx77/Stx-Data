@@ -1,6 +1,6 @@
 # Zwangsversteigerungs-Vorfilter: liest die Terminliste des ZVG-Portals (Bayern), filtert die
 # Zielregionen nach Postleitzahl und meldet neue Termine. Detailseiten und Gutachten werden
-# nicht automatisch abgerufen (robots.txt des Portals) - der Bericht verlinkt sie zum Öffnen von Hand.
+# nicht automatisch abgerufen (robots.txt des Portals) - der Bericht verlinkt die Portalsuche (Aktenzeichen eintragen, dann Detailansicht).
 import os, re, csv, gzip, time, datetime, urllib.parse
 import requests
 from bs4 import BeautifulSoup
@@ -224,9 +224,9 @@ def speichere(alle):
             w.writerow(e)
 
 def link(e):
-    if e['zvg_id']:
-        return f'[Details]({BASE}index.php?button=showZvg&zvg_id={e["zvg_id"]}&land_abk={LAND_ABK})'
-    return ''
+    # Detailseiten öffnet das Portal nur aus der eigenen Trefferliste (Referer-Prüfung);
+    # Direktlinks liefern "error". Daher Link auf die Suche, Aktenzeichen steht in der Zeile.
+    return f'[Suche]({BASE}index.php?button=Termine%20suchen)'
 
 def wert_fmt(v):
     try:
