@@ -25,7 +25,7 @@ MONATE = {m: i + 1 for i, m in enumerate(['januar', 'februar', 'märz', 'april',
 
 # ---------- Abruf ----------
 def formular_daten(html, wertgrenzen):
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = suppe(html)
     form = None
     for f in soup.find_all('form'):
         if any(o.get_text(strip=True) == LAND for o in f.find_all('option')):
@@ -64,25 +64,73 @@ def formular_daten(html, wertgrenzen):
     aktion = urllib.parse.urljoin(BASE, form.get('action') or 'index.php?button=Suchen')
     return aktion, daten
 
+def alle_seiten_formular(s, html):
+    """Sendet das Blätter-Formular mit der Option 'alle' ab (so wie der Browser beim Umschalten)."""
+    soup = suppe(html)
+    for sel in soup.find_all('select'):
+        opt = [o for o in sel.find_all('option') if o.get_text(strip=True).lower() == 'alle']
+        if not opt or not sel.get('name'):
+            continue
+        form = sel.find_parent('form')
+        daten = {sel['name']: opt[0].get('value', 'alle')}
+        ziel, methode = BASE + 'index.php?button=Suchen', 'post'
+        if form is not None:
+            for el in form.find_all('input'):
+                if el.get('name') and (el.get('type') or 'text').lower() in ('hidden', 'text'):
+                    daten.setdefault(el['name'], el.get('value', ''))
+            ziel = urllib.parse.urljoin(BASE, form.get('action') or ziel)
+            methode = (form.get('method') or 'get').lower()
+        r = s.post(ziel, data=daten, timeout=120) if methode == 'post' else s.get(ziel, params=daten, timeout=120)
+        return r.text, f'{methode.upper()} {ziel} {daten}'
+    return '', 'kein Blätter-Formular gefunden'
+
 def abrufen(wertgrenzen=False):
+    """Liefert (html_liste, protokoll). Versucht nacheinander mehrere Wege zur Gesamtliste."""
     s = requests.Session()
     s.headers.update(UA)
     r = s.get(BASE + 'index.php?button=Termine%20suchen', timeout=60)
     r.raise_for_status()
     aktion, daten = formular_daten(r.text, wertgrenzen)
+    s.headers['Referer'] = BASE + 'index.php?button=Termine%20suchen'
     r2 = s.post(aktion, data=daten, timeout=90)
     r2.raise_for_status()
-    r3 = s.get(BASE + 'index.php?button=Suchen&all=1', timeout=120)
-    r3.raise_for_status()
-    seiten = [r3.text, r2.text]
-    return seiten, daten
+    soll = gesamtzahl(r2.text)
+    kandidaten = [('POST erste Seite', r2.text)]
+    s.headers['Referer'] = aktion
+    try:
+        kandidaten.append(('GET all=1', s.get(BASE + 'index.php?button=Suchen&all=1', timeout=120).text))
+    except Exception as ex:
+        kandidaten.append((f'GET all=1 Fehler {ex}', ''))
+    try:
+        h, info = alle_seiten_formular(s, r2.text)
+        kandidaten.append(('Formular alle: ' + info, h))
+    except Exception as ex:
+        kandidaten.append((f'Formular alle Fehler {ex}', ''))
+    beste, protokoll = None, [f'Felder {sorted(daten)}', f'Soll laut Portal: {soll}']
+    for name, h in kandidaten:
+        n = len(parse(h)) if h else 0
+        protokoll.append(f'{name[:160]}: {n} Einträge')
+        if beste is None or n > beste[0]:
+            beste = (n, h)
+    return beste[1], soll, protokoll, kandidaten
 
 # ---------- Auswertung ----------
+def suppe(html):
+    for p in ('html5lib', 'lxml', 'html.parser'):
+        try:
+            return BeautifulSoup(html, p)
+        except Exception:
+            continue
+
 def text(el):
     return re.sub(r'\s+', ' ', el.get_text(' ', strip=True)).strip()
 
+def gesamtzahl(html):
+    m = re.search(r'Insgesamt\s+(\d+)', text(suppe(html)))
+    return int(m.group(1)) if m else None
+
 def parse(html):
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = suppe(html)
     eintraege, cur = [], None
     for tr in soup.find_all('tr'):
         zellen = tr.find_all(['td', 'th'], recursive=False)
@@ -103,7 +151,7 @@ def parse(html):
         elif cur is None:
             continue
         elif label == 'Amtsgericht':
-            cur['gericht'] = re.sub(r'\s+in Bayern$', '', wert)
+            cur['gericht'] = re.sub(r'\s*in Bayern$', '', wert).strip()
         elif label.startswith('Objekt'):
             cur['objekt_lage'] = wert
         elif label.startswith('Verkehrswert'):
@@ -229,19 +277,26 @@ def main():
     heute = datetime.date.today().isoformat()
     os.makedirs(ORDNER, exist_ok=True)
     log = []
-    seiten, daten = abrufen(False)
-    eintraege = parse(seiten[0]) or parse(seiten[1])
-    log.append(f'Formularfelder: {sorted(daten)}')
-    log.append(f'Einträge Bayern: {len(eintraege)}')
-    if not eintraege:
+    html, soll, protokoll, kandidaten = abrufen(False)
+    eintraege = parse(html)
+    log += protokoll + [f'Einträge Bayern: {len(eintraege)}']
+    auffaellig = [e for e in eintraege if e['zvg_id'] and (not e['gericht'] or not e['plz'])]
+    if not eintraege or (soll and len(eintraege) < soll) or auffaellig:
         with gzip.open(ORDNER + '/_roh.html.gz', 'wt', encoding='utf-8') as f:
-            f.write(seiten[0] + '\n<!-- ===== POST-Antwort ===== -->\n' + seiten[1])
-        open(ORDNER + '/_log.txt', 'w').write('\n'.join(log) + '\nKEINE EINTRÄGE - Rohdaten in _roh.html.gz\n')
+            for name, h in kandidaten:
+                f.write(f'\n<!-- ===== {name} ===== -->\n{h}')
+        log.append(f'Diagnose: Rohseiten in _roh.html.gz (unvollständig: {soll and len(eintraege) < soll}, '
+                   f'auffällige Einträge: {len(auffaellig)})')
+    elif os.path.exists(ORDNER + '/_roh.html.gz'):
+        os.remove(ORDNER + '/_roh.html.gz')
+    if not eintraege:
+        open(ORDNER + '/_log.txt', 'w').write('\n'.join(log) + '\n')
         raise SystemExit('ZVG: keine Einträge erkannt')
     try:
-        ohne = {schluessel(e) for e in (parse(abrufen(True)[0][0]))}
-        log.append(f'ohne Wertgrenzen (Bayern): {len(ohne)}')
-        if len(ohne) >= len(eintraege):
+        h2, soll2, prot2, _ = abrufen(True)
+        ohne = {schluessel(e) for e in parse(h2)}
+        log.append(f'ohne Wertgrenzen (Bayern): {len(ohne)} (Soll {soll2})')
+        if soll and soll2 is not None and soll2 >= soll:
             log.append('Filter Wertgrenzen wirkungslos - Kennzeichnung ausgelassen')
             ohne = set()
     except Exception as ex:
