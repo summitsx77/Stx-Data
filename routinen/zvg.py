@@ -1,7 +1,7 @@
 # Zwangsversteigerungs-Vorfilter: liest die Terminliste des ZVG-Portals (Bayern), filtert die
 # Zielregionen nach Postleitzahl und meldet neue Termine. Detailseiten und Gutachten werden
 # nicht automatisch abgerufen (robots.txt des Portals) - der Bericht verlinkt sie zum Öffnen von Hand.
-import os, re, csv, gzip, datetime, urllib.parse
+import os, re, csv, gzip, time, datetime, urllib.parse
 import requests
 from bs4 import BeautifulSoup
 
@@ -64,54 +64,46 @@ def formular_daten(html, wertgrenzen):
     aktion = urllib.parse.urljoin(BASE, form.get('action') or 'index.php?button=Suchen')
     return aktion, daten
 
-def alle_seiten_formular(s, html):
-    """Sendet das Blätter-Formular mit der Option 'alle' ab (so wie der Browser beim Umschalten)."""
-    soup = suppe(html)
-    for sel in soup.find_all('select'):
-        opt = [o for o in sel.find_all('option') if o.get_text(strip=True).lower() == 'alle']
-        if not opt or not sel.get('name'):
-            continue
-        form = sel.find_parent('form')
-        daten = {sel['name']: opt[0].get('value', 'alle')}
-        ziel, methode = BASE + 'index.php?button=Suchen', 'post'
-        if form is not None:
-            for el in form.find_all('input'):
-                if el.get('name') and (el.get('type') or 'text').lower() in ('hidden', 'text'):
-                    daten.setdefault(el['name'], el.get('value', ''))
-            ziel = urllib.parse.urljoin(BASE, form.get('action') or ziel)
-            methode = (form.get('method') or 'get').lower()
-        r = s.post(ziel, data=daten, timeout=120) if methode == 'post' else s.get(ziel, params=daten, timeout=120)
-        return r.text, f'{methode.upper()} {ziel} {daten}'
-    return '', 'kein Blätter-Formular gefunden'
-
 def abrufen(wertgrenzen=False):
-    """Liefert (html_liste, protokoll). Versucht nacheinander mehrere Wege zur Gesamtliste."""
+    """Liefert (html, soll, protokoll, kandidaten). Das Portal liefert die Gesamtliste, wenn dieselben
+    Suchfelder erneut per POST an index.php?button=Suchen&all=1 gehen (so wie die Auswahl 'alle')."""
     s = requests.Session()
     s.headers.update(UA)
     r = s.get(BASE + 'index.php?button=Termine%20suchen', timeout=60)
     r.raise_for_status()
     aktion, daten = formular_daten(r.text, wertgrenzen)
-    s.headers['Referer'] = BASE + 'index.php?button=Termine%20suchen'
     r2 = s.post(aktion, data=daten, timeout=90)
     r2.raise_for_status()
     soll = gesamtzahl(r2.text)
     kandidaten = [('POST erste Seite', r2.text)]
-    s.headers['Referer'] = aktion
     try:
-        kandidaten.append(('GET all=1', s.get(BASE + 'index.php?button=Suchen&all=1', timeout=120).text))
+        kandidaten.append(('POST all=1', s.post(BASE + 'index.php?button=Suchen&all=1', data=daten, timeout=180).text))
     except Exception as ex:
-        kandidaten.append((f'GET all=1 Fehler {ex}', ''))
-    try:
-        h, info = alle_seiten_formular(s, r2.text)
-        kandidaten.append(('Formular alle: ' + info, h))
-    except Exception as ex:
-        kandidaten.append((f'Formular alle Fehler {ex}', ''))
-    beste, protokoll = None, [f'Felder {sorted(daten)}', f'Soll laut Portal: {soll}']
+        kandidaten.append((f'POST all=1 Fehler {ex}', ''))
+    protokoll = [f'Felder {sorted(daten)}', f'Soll laut Portal: {soll}']
+    beste = None
     for name, h in kandidaten:
         n = len(parse(h)) if h else 0
         protokoll.append(f'{name[:160]}: {n} Einträge')
         if beste is None or n > beste[0]:
             beste = (n, h)
+    if soll and beste[0] < soll:   # Rückfall: seitenweise blättern wie die Seitenknöpfe des Portals
+        teile = [beste[1]]
+        for seite in range(2, (soll + 9) // 10 + 1):
+            l = (seite - 1) // 10 * 10 + 1
+            url = f'{BASE}index.php?button=Suchen&seite={seite}&l={l}&r={l + 10}&all=&order_by=-1&desc=-1'
+            try:
+                teile.append(s.post(url, data=daten, timeout=90).text)
+            except Exception as ex:
+                protokoll.append(f'Seite {seite}: {ex}')
+                break
+            time.sleep(1)
+        gesamt = '\n'.join(teile)
+        n = len(parse(gesamt))
+        protokoll.append(f'Blättern {len(teile)} Seiten: {n} Einträge')
+        kandidaten.append(('Blättern', gesamt))
+        if n > beste[0]:
+            beste = (n, gesamt)
     return beste[1], soll, protokoll, kandidaten
 
 # ---------- Auswertung ----------
@@ -151,7 +143,7 @@ def parse(html):
         elif cur is None:
             continue
         elif label == 'Amtsgericht':
-            cur['gericht'] = re.sub(r'\s*in Bayern$', '', wert).strip()
+            cur['gericht'] = re.sub(r'\s*in Bayern$', '', wert).strip()   # Portal liefert den Namen nicht immer
         elif label.startswith('Objekt'):
             cur['objekt_lage'] = wert
         elif label.startswith('Verkehrswert'):
@@ -280,7 +272,7 @@ def main():
     html, soll, protokoll, kandidaten = abrufen(False)
     eintraege = parse(html)
     log += protokoll + [f'Einträge Bayern: {len(eintraege)}']
-    auffaellig = [e for e in eintraege if e['zvg_id'] and (not e['gericht'] or not e['plz'])]
+    auffaellig = [e for e in eintraege if e['zvg_id'] and not e['plz']]
     if not eintraege or (soll and len(eintraege) < soll) or auffaellig:
         with gzip.open(ORDNER + '/_roh.html.gz', 'wt', encoding='utf-8') as f:
             for name, h in kandidaten:
