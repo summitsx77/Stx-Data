@@ -2,7 +2,7 @@ name: value-data
 on:
   workflow_dispatch:
   push:
-    paths: ['.github/workflows/Value.yml', 'routinen/value_fetch.py']
+    paths: ['.github/workflows/Value.yml', 'routinen/value_fetch.py', 'routinen/value_cik_muster.csv']
   schedule:
     - cron: '41 2 * * 0'   # sonntags; holt die jüngsten Quartale und Faktordaten nach
 permissions:
