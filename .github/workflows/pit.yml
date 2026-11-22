@@ -1,0 +1,127 @@
+name: pit-europe
+# Point-in-time-Mitglieder des STOXX Europe 600 (iShares EXSA, Monatsende ab 2008) + Kurse aller jemaligen Mitglieder.
+# Zweck: Backtest einer Europa-Momentum-Strategie ohne Survivorship-Bias. Läuft nur manuell bzw. bei Änderung dieser Datei.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/pit.yml']
+permissions:
+  contents: write
+concurrency:
+  group: pit-europe
+jobs:
+  pit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install yfinance pandas pyarrow
+      - name: Holdings je Monatsende
+        shell: python
+        run: |
+          import os, time, datetime as dt, urllib.request
+          os.makedirs('data/pit/holdings', exist_ok=True)
+          U = ['https://www.ishares.com/ch/professionals/en/products/251931/ishares-stoxx-europe-600-ucits-etf-de-fund/1495092304805.ajax?fileType=csv&fileName=EXSA_holdings&dataType=fund&asOfDate={d}',
+               'https://www.ishares.com/uk/professional/en/products/251931/ishares-stoxx-europe-600-ucits-etf-de-fund/1506575576011.ajax?fileType=csv&fileName=EXSA_holdings&dataType=fund&asOfDate={d}']
+          today = dt.date.today(); log = []
+          y, m = 2008, 1
+          while (y, m) < (today.year, today.month):
+              f = f'data/pit/holdings/{y}-{m:02d}.csv'
+              if not os.path.exists(f):
+                  nxt = dt.date(y + (m == 12), m % 12 + 1, 1); d = nxt - dt.timedelta(1)
+                  got = None
+                  for _ in range(6):                      # letzter Werktag, bei Feiertag rückwärts
+                      while d.weekday() >= 5: d -= dt.timedelta(1)
+                      for u in U:
+                          try:
+                              b = urllib.request.urlopen(urllib.request.Request(u.format(d=d.strftime('%Y%m%d')), headers={'User-Agent': 'Mozilla/5.0'}), timeout=60).read()
+                              t = b.decode('utf-8-sig', errors='replace')
+                              if t.count('\n') > 300: got = (d, t); break
+                          except Exception as e:
+                              print(d, e)
+                          time.sleep(2)
+                      if got: break
+                      d -= dt.timedelta(1)
+                  if got:
+                      open(f, 'w').write(got[1]); log.append(f'{y}-{m:02d},{got[0]},{got[1].count(chr(10))}')
+                  else:
+                      log.append(f'{y}-{m:02d},FAIL')
+                  time.sleep(2)
+              m += 1
+              if m > 12: m, y = 1, y + 1
+          open('data/pit/_log_holdings.txt', 'a').write('\n'.join(log) + '\n'); print('\n'.join(log))
+      - name: Mitgliederliste und Kurse
+        shell: python
+        run: |
+          import os, io, re, glob, time, unicodedata
+          import pandas as pd, yfinance as yf
+          SUF = [('xetra','.DE'),('deutsche','.DE'),('frankfurt','.DE'),('paris','.PA'),('amsterdam','.AS'),('brussels','.BR'),('brüssel','.BR'),
+                 ('lisbon','.LS'),('lissabon','.LS'),('dublin','.IR'),('irish','.IR'),('london','.L'),('six','.SW'),('swiss','.SW'),('virt-x','.SW'),('italiana','.MI'),
+                 ('madrid','.MC'),('mercado continuo','.MC'),('stockholm','.ST'),('copenhagen','.CO'),('kopenhagen','.CO'),('helsinki','.HE'),
+                 ('oslo','.OL'),('wien','.VI'),('wiener','.VI'),('vienna','.VI'),('warsaw','.WA'),('warschau','.WA'),('nordic','.ST'),('athens','.AT'),('athen','.AT'),('prague','.PR'),('prag','.PR')]
+          norm = lambda s: re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', str(s)).encode('ascii', 'ignore').decode().lower().replace(' plc', '').replace(' ag', '').replace(' sa', '').replace(' nv', ''))
+          rows = []
+          for f in sorted(glob.glob('data/pit/holdings/*.csv')):
+              L = open(f).read().splitlines()
+              h = next((i for i, l in enumerate(L) if 'Ticker' in l and ('Name' in l or 'ISIN' in l)), None)
+              if h is None: continue
+              df = pd.read_csv(io.StringIO('\n'.join(L[h:])), sep=None, engine='python', on_bad_lines='skip', thousands=None)
+              df.columns = [c.strip() for c in df.columns]
+              col = lambda *k: next((c for c in df.columns if c in k), None)
+              tc, nc, ec, ac, wc, sc, cc, ic = col('Ticker'), col('Name'), col('Exchange', 'Börse'), col('Asset Class', 'Anlageklasse'), col('Weight (%)', 'Gewichtung (%)'), col('Sector', 'Sektor'), col('Market Currency', 'Currency', 'Marktwährung'), col('ISIN')
+              if ac: df = df[df[ac].astype(str).str.contains('Equity|Aktie', na=False)]
+              for _, r in df.iterrows():
+                  tk = str(r[tc]).strip(); ex = str(r[ec]).lower() if ec else ''
+                  suf = next((s for k, s in SUF if k in ex), '')
+                  w = str(r[wc]).replace('’', '').replace("'", '').replace(',', '.') if wc else ''
+                  rows.append(dict(monat=os.path.basename(f)[:7], ticker=tk, name=r[nc] if nc else '', isin=r[ic] if ic else '', sektor=r[sc] if sc else '',
+                                   boerse=r[ec] if ec else '', waehrung=r[cc] if cc else '', gewicht=pd.to_numeric(w, errors='coerce'),
+                                   yahoo=re.sub(r'[ /]+', '-', tk.rstrip('.')) + suf))
+          P = pd.DataFrame(rows)
+          cur = pd.read_csv('data/stocks/members.csv') if os.path.exists('data/stocks/members.csv') else pd.DataFrame(columns=['Name', 'yahoo'])
+          byname = {norm(n): y for n, y in zip(cur.get('Name', []), cur.get('yahoo', []))}
+          tick = sorted(set(P.yahoo) | set(byname.values()))
+          frames = []
+          def dl(part):
+              for k in range(3):
+                  try:
+                      d = yf.download(part, start='2007-01-01', auto_adjust=False, actions=False, group_by='column', threads=True, progress=False)
+                      if len(d): return d[['Adj Close', 'Close']].astype('float32')
+                  except Exception as e: print(e)
+                  time.sleep(20)
+          for i in range(0, len(tick), 40):
+              d = dl(tick[i:i + 40]); time.sleep(5)
+              if d is not None: frames.append(d)
+          FX = ['EURGBP=X', 'EURCHF=X', 'EURSEK=X', 'EURDKK=X', 'EURNOK=X', 'EURPLN=X', 'EURCZK=X', 'EURUSD=X']
+          d = dl(FX)
+          if d is not None: frames.append(d)
+          big = pd.concat(frames, axis=1); big = big.loc[:, ~big.columns.duplicated()]
+          big.columns = [f'{a}|{b}' for a, b in big.columns]
+          have = {c.split('|')[1] for c in big.columns if c.startswith('Adj Close|') and big[c].notna().sum() > 20}
+          # Ersatz über den Namen: historischer Ticker ohne Kurse, aber gleiches Unternehmen unter heutigem Ticker
+          P['yahoo_kurs'] = [y if y in have else (byname.get(norm(n)) if byname.get(norm(n)) in have else '') for y, n in zip(P.yahoo, P.name)]
+          P.to_csv('data/pit/members_pit.csv', index=False)
+          big.to_parquet('data/pit/prices.parquet')
+          # Abdeckung: Anteil des Indexgewichts je Monat mit Kurs am Monatsende
+          adj = big[[c for c in big.columns if c.startswith('Adj Close|')]]; adj.columns = [c.split('|')[1] for c in adj.columns]
+          me = adj.resample('ME').last()
+          cov = []
+          for mo, g in P.groupby('monat'):
+              t = pd.Timestamp(mo) + pd.offsets.MonthEnd(0)
+              ok = g.yahoo_kurs.map(lambda y: bool(y) and t in me.index and pd.notna(me.at[t, y]) if y in me.columns else False)
+              cov.append(dict(monat=mo, titel=len(g), mit_kurs=int(ok.sum()), gewicht_mit_kurs=round(float(g.gewicht[ok].sum() / g.gewicht.sum() * 100), 2) if g.gewicht.sum() else None))
+          C = pd.DataFrame(cov); C.to_csv('data/pit/_coverage.csv', index=False)
+          miss = P[P.yahoo_kurs == ''].groupby(['yahoo', 'name']).monat.agg(['min', 'max', 'count']).reset_index().sort_values('count', ascending=False)
+          miss.to_csv('data/pit/_missing.csv', index=False)
+          print(C.describe().to_string()); print('fehlend:', len(miss))
+      - name: Commit
+        run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@users.noreply.github.com'
+          git add data/pit
+          git commit -m "pit europe $(date -u +%F)" || exit 0
+          git pull --rebase
+          git push
