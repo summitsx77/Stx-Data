@@ -2,7 +2,7 @@ name: value-data
 on:
   workflow_dispatch:
   push:
-    paths: ['.github/workflows/Value.yml', 'routinen/value_fetch.py', 'routinen/value_cik_muster.csv']
+    paths: ['.github/workflows/value.yml', 'routinen/value_fetch.py', 'routinen/value_cik_muster.csv']
   schedule:
     - cron: '41 2 * * 0'   # sonntags; holt die jüngsten Quartale und Faktordaten nach
 permissions:
@@ -30,6 +30,13 @@ jobs:
         run: |
           git config user.name 'github-actions'
           git config user.email 'github-actions@users.noreply.github.com'
-          git add data/value
-          git commit -m "value $(date -u +%F)" || exit 0
-          for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 20; done
+          rm -rf /tmp/vsave && cp -r data/value /tmp/vsave
+          for i in 1 2 3; do
+            git fetch -q --depth 1 origin main && git reset -q --hard origin/main
+            rm -rf data/value && cp -r /tmp/vsave data/value
+            git add -A data/value
+            git commit -q -m "value $(date -u +%F)" || exit 0
+            git push -q origin HEAD:main && exit 0
+            sleep 20
+          done
+          echo 'Push fehlgeschlagen'; exit 1
