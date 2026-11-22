@@ -2,9 +2,9 @@ name: sec-fundamentals
 on:
   workflow_dispatch:
   push:
-    paths: ['.github/workflows/sec.yml', 'routinen/sec_fetch.py', 'routinen/cik_overrides.csv']
+    paths: ['.github/workflows/Sec.yml', 'routinen/sec_fetch.py', 'routinen/cik_overrides.csv']
   schedule:
-    - cron: '23 3 * * 0'   # sonntags; der Erstabruf braucht mehrere Läufe (12 Quartale je Lauf)
+    - cron: '23 3 * * 0'   # sonntags; der Erstabruf braucht mehrere Läufe (30 Quartale je Lauf)
 permissions:
   contents: write
 concurrency:
@@ -23,7 +23,7 @@ jobs:
       - name: SEC-Daten
         env:
           SEC_UA: ${{ secrets.SEC_UA }}
-          MAX_Q: '12'
+          MAX_Q: '30'
         run: python routinen/sec_fetch.py
       - name: Commit
         run: |
