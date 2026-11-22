@@ -1,0 +1,15 @@
+2026-11-22 11:13 UTC
+cik_map: 856 von 910 Labels zugeordnet
+fsds 2009q1: 0 Werte, 0 Firmen
+fsds 2009q2: 249 Werte, 11 Firmen
+fsds 2009q3: 10687 Werte, 334 Firmen
+fsds 2009q4: 11492 Werte, 362 Firmen
+fsds 2010q1: 10374 Werte, 367 Firmen
+fsds 2010q2: 8108 Werte, 360 Firmen
+fsds 2010q3: 19090 Werte, 573 Firmen
+fsds 2010q4: 20205 Werte, 600 Firmen
+fsds 2011q1: 25193 Werte, 605 Firmen
+fsds 2011q2: 14750 Werte, 610 Firmen
+fsds 2011q3: 21898 Werte, 641 Firmen
+fsds 2011q4: 22447 Werte, 644 Firmen
+8-K: 242271 Meldungen, 830 Firmen
