@@ -1,0 +1,116 @@
+name: pe-trusts
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/pe.yml']
+  schedule:
+    - cron: '23 5 * * 5'
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install yfinance pandas pyarrow mstarpy
+      - name: Kurse und NAV
+        shell: python
+        run: |
+          import os, json, time, datetime as dt
+          import pandas as pd, yfinance as yf
+          os.makedirs('data/pe/prices', exist_ok=True)
+          os.makedirs('data/pe/nav', exist_ok=True)
+          os.makedirs('data/pe/raw', exist_ok=True)
+          log = []
+          # Trusts: Kuerzel, Yahoo-Ticker, Suchbegriffe Morningstar (ISIN zuerst, dann Name)
+          TR = [
+            ('III',  'III.L',  ['GB00B1YW4409', '3i Group']),
+            ('HGT',  'HGT.L',  ['GB00BJ0LT190', 'HgCapital Trust']),
+            ('OCI',  'OCI.L',  ['Oakley Capital Investments']),
+            ('PIN',  'PIN.L',  ['Pantheon International']),
+            ('HVPE', 'HVPE.L', ['HarbourVest Global Private Equity']),
+            ('PPET', 'PPET.L', ['GB0030474687', 'Patria Private Equity Trust', 'abrdn Private Equity Opportunities']),
+            ('ICGT', 'ICGT.L', ['ICG Enterprise Trust']),
+            ('NBPE', 'NBPE.L', ['NB Private Equity Partners']),
+            ('PEY',  'PEY.L',  ['Princess Private Equity']),
+            ('APAX', 'APAX.L', ['Apax Global Alpha']),
+            ('GROW', 'GROW.L', ['Molten Ventures', 'Draper Esprit']),
+            ('CHRY', 'CHRY.L', ['Chrysalis Investments']),
+            ('INOV', 'INOV.L', ['Schroders Capital Global Innovation', 'Schroder UK Public Private']),
+            ('AUGM', 'AUGM.L', ['Augmentum Fintech']),
+            ('SSIT', 'SSIT.L', ['Seraphim Space Investment Trust']),
+          ]
+          BM = ['SWDA.L', 'IWDA.AS', 'EUNL.DE', 'VWRL.L', 'IPRV.L', 'GBPEUR=X', '^FTAS']
+          for t in [x[1] for x in TR] + BM:
+              ok = False
+              for k in range(3):
+                  try:
+                      df = yf.Ticker(t).history(period='max', auto_adjust=False, actions=True)
+                      if len(df):
+                          df.to_csv('data/pe/prices/' + t.replace('^', 'IDX_').replace('=', '_') + '.csv')
+                          log.append(f'price {t},{len(df)},{df.index[0].date()},{df.index[-1].date()}')
+                          ok = True
+                          break
+                  except Exception as e:
+                      print(t, e)
+                  time.sleep(8 * (k + 1))
+              if not ok:
+                  log.append(f'price {t},FAIL')
+              time.sleep(2)
+          # NAV ueber Morningstar (mstarpy), Rohdaten werden gespeichert
+          from mstarpy.security import Security
+          start, end = dt.datetime(1995, 1, 1), dt.datetime.today()
+          FIELDS = ['nav', 'totalReturn', 'price', 'marketPrice', 'marketTotalReturn', 'close', 'marketNav']
+          search = {}
+          for key, yt, terms in TR:
+              sec = None
+              for term in terms:
+                  for ir in range(0, 5):
+                      try:
+                          s = Security(term=term, pageSize=10, itemRange=ir)
+                          search.setdefault(key, []).append({'term': term, 'item': ir, 'code': s.code, 'name': s.name, 'isin': s.isin, 'type': s.asset_type})
+                          if s.asset_type == 'cef':
+                              sec = s
+                              break
+                      except Exception as e:
+                          search.setdefault(key, []).append({'term': term, 'item': ir, 'error': str(e)[:150]})
+                          break
+                  if sec:
+                      break
+              if not sec:
+                  log.append(f'nav {key},NO_CEF_FOUND')
+                  continue
+              got = {}
+              for f in FIELDS:
+                  for freq in ['daily', 'monthly']:
+                      try:
+                          ser = sec.TimeSeries(f, start_date=start, end_date=end, frequency=freq)
+                          json.dump(ser, open(f'data/pe/raw/{key}_{f}_{freq}.json', 'w'))
+                          log.append(f'nav {key} {sec.code} {f} {freq},{len(ser)}')
+                          if ser:
+                              got[(f, freq)] = ser
+                              break
+                      except Exception as e:
+                          log.append(f'nav {key} {f} {freq},ERR {str(e)[:120]}')
+                      time.sleep(1)
+              for (f, freq), ser in got.items():
+                  try:
+                      d = pd.json_normalize(ser)
+                      d.to_csv(f'data/pe/nav/{key}_{f}.csv', index=False)
+                  except Exception as e:
+                      log.append(f'nav {key} {f} csv,ERR {str(e)[:120]}')
+              time.sleep(2)
+          json.dump(search, open('data/pe/_search.json', 'w'), indent=1)
+          open('data/pe/_log.txt', 'w').write('\n'.join(log) + '\n')
+          print('\n'.join(log))
+      - name: Commit
+        run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@users.noreply.github.com'
+          git add data/pe
+          git commit -m "pe data $(date -u +%F)" || exit 0
+          git pull --rebase
+          git push
