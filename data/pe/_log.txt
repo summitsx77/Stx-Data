@@ -19,204 +19,209 @@ price EUNL.DE,4362,2009-09-25,2026-11-27
 price VWRL.L,3668,2012-05-22,2026-11-27
 price IPRV.L,4523,2009-01-02,2026-11-27
 price GBPEUR=X,6019,2003-09-17,2026-11-27
-price ^FTAS,11829,1980-02-12,2026-11-27
-nav III 0P0000JL1O nav daily,0
-nav III 0P0000JL1O nav monthly,0
-nav III 0P0000JL1O totalReturn daily,0
-nav III 0P0000JL1O totalReturn monthly,0
-nav III price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav III price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav III 0P0000JL1O marketPrice daily,0
-nav III 0P0000JL1O marketPrice monthly,0
-nav III 0P0000JL1O marketTotalReturn daily,0
-nav III 0P0000JL1O marketTotalReturn monthly,0
-nav III 0P0000JL1O close daily,1654
-nav III marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav III marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav HGT 0P0001RB22 nav daily,0
-nav HGT 0P0001RB22 nav monthly,0
-nav HGT 0P0001RB22 totalReturn daily,0
-nav HGT 0P0001RB22 totalReturn monthly,0
-nav HGT price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav HGT price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav HGT 0P0001RB22 marketPrice daily,0
-nav HGT 0P0001RB22 marketPrice monthly,0
-nav HGT 0P0001RB22 marketTotalReturn daily,0
-nav HGT 0P0001RB22 marketTotalReturn monthly,0
-nav HGT 0P0001RB22 close daily,2922
-nav HGT marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav HGT marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav OCI 0P0001R9YS nav daily,0
-nav OCI 0P0001R9YS nav monthly,0
-nav OCI 0P0001R9YS totalReturn daily,0
-nav OCI 0P0001R9YS totalReturn monthly,0
-nav OCI price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav OCI price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav OCI 0P0001R9YS marketPrice daily,0
-nav OCI 0P0001R9YS marketPrice monthly,0
-nav OCI 0P0001R9YS marketTotalReturn daily,0
-nav OCI 0P0001R9YS marketTotalReturn monthly,0
-nav OCI 0P0001R9YS close daily,248
-nav OCI marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav OCI marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav PIN 0P0001RB96 nav daily,0
-nav PIN 0P0001RB96 nav monthly,0
-nav PIN 0P0001RB96 totalReturn daily,0
-nav PIN 0P0001RB96 totalReturn monthly,0
-nav PIN price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav PIN price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav PIN 0P0001RB96 marketPrice daily,0
-nav PIN 0P0001RB96 marketPrice monthly,0
-nav PIN 0P0001RB96 marketTotalReturn daily,0
-nav PIN 0P0001RB96 marketTotalReturn monthly,0
-nav PIN 0P0001RB96 close daily,2518
-nav PIN marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav PIN marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav HVPE F00000LHM0 nav daily,4699
-nav HVPE F00000LHM0 totalReturn daily,4704
-nav HVPE price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav HVPE price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav HVPE F00000LHM0 marketPrice daily,0
-nav HVPE F00000LHM0 marketPrice monthly,0
-nav HVPE F00000LHM0 marketTotalReturn daily,4148
-nav HVPE F00000LHM0 close daily,3407
-nav HVPE marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav HVPE marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav PPET 0P0001UOOI nav daily,0
-nav PPET 0P0001UOOI nav monthly,0
-nav PPET 0P0001UOOI totalReturn daily,0
-nav PPET 0P0001UOOI totalReturn monthly,0
-nav PPET price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav PPET price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav PPET 0P0001UOOI marketPrice daily,0
-nav PPET 0P0001UOOI marketPrice monthly,0
-nav PPET 0P0001UOOI marketTotalReturn daily,0
-nav PPET 0P0001UOOI marketTotalReturn monthly,0
-nav PPET 0P0001UOOI close daily,467
-nav PPET marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav PPET marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav ICGT 0P0001RA05 nav daily,0
-nav ICGT 0P0001RA05 nav monthly,0
-nav ICGT 0P0001RA05 totalReturn daily,0
-nav ICGT 0P0001RA05 totalReturn monthly,0
-nav ICGT price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav ICGT price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav ICGT 0P0001RA05 marketPrice daily,0
-nav ICGT 0P0001RA05 marketPrice monthly,0
-nav ICGT 0P0001RA05 marketTotalReturn daily,0
-nav ICGT 0P0001RA05 marketTotalReturn monthly,0
-nav ICGT 0P0001RA05 close daily,1627
-nav ICGT marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav ICGT marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav NBPE F00001SDT9 nav daily,117
-nav NBPE F00001SDT9 totalReturn daily,3460
-nav NBPE price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav NBPE price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav NBPE F00001SDT9 marketPrice daily,0
-nav NBPE F00001SDT9 marketPrice monthly,0
-nav NBPE F00001SDT9 marketTotalReturn daily,0
-nav NBPE F00001SDT9 marketTotalReturn monthly,0
-nav NBPE F00001SDT9 close daily,0
-nav NBPE F00001SDT9 close monthly,0
-nav NBPE marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav NBPE marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav PEY,NO_CEF_FOUND
-nav APAX,NO_CEF_FOUND
-nav GROW 0P0001LJZM nav daily,0
-nav GROW 0P0001LJZM nav monthly,0
-nav GROW 0P0001LJZM totalReturn daily,0
-nav GROW 0P0001LJZM totalReturn monthly,0
-nav GROW price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav GROW price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav GROW 0P0001LJZM marketPrice daily,0
-nav GROW 0P0001LJZM marketPrice monthly,0
-nav GROW 0P0001LJZM marketTotalReturn daily,0
-nav GROW 0P0001LJZM marketTotalReturn monthly,0
-nav GROW 0P0001LJZM close daily,1452
-nav GROW marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav GROW marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav CHRY 0P0001RBLX nav daily,0
-nav CHRY 0P0001RBLX nav monthly,0
-nav CHRY 0P0001RBLX totalReturn daily,0
-nav CHRY 0P0001RBLX totalReturn monthly,0
-nav CHRY price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav CHRY price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav CHRY 0P0001RBLX marketPrice daily,0
-nav CHRY 0P0001RBLX marketPrice monthly,0
-nav CHRY 0P0001RBLX marketTotalReturn daily,0
-nav CHRY 0P0001RBLX marketTotalReturn monthly,0
-nav CHRY 0P0001RBLX close daily,1652
-nav CHRY marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav CHRY marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav INOV F00000VFUD nav daily,2939
-nav INOV F00000VFUD totalReturn daily,2943
-nav INOV price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav INOV price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav INOV F00000VFUD marketPrice daily,0
-nav INOV F00000VFUD marketPrice monthly,0
-nav INOV F00000VFUD marketTotalReturn daily,2943
-nav INOV F00000VFUD close daily,2932
-nav INOV marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav INOV marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav AUGM,NO_CEF_FOUND
-nav SSIT 0P0001RB3I nav daily,0
-nav SSIT 0P0001RB3I nav monthly,0
-nav SSIT 0P0001RB3I totalReturn daily,0
-nav SSIT 0P0001RB3I totalReturn monthly,0
-nav SSIT price daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav SSIT price monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav SSIT 0P0001RB3I marketPrice daily,0
-nav SSIT 0P0001RB3I marketPrice monthly,0
-nav SSIT 0P0001RB3I marketTotalReturn daily,0
-nav SSIT 0P0001RB3I marketTotalReturn monthly,0
-nav SSIT 0P0001RB3I close daily,783
-nav SSIT marketNav daily,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
-nav SSIT marketNav monthly,ERR Error 417
-            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+price ^FTAS,11830,1980-02-11,2026-11-27
+nav III 0P0000JPRM,200,0
+nav III 0P0000JL1O,200,0
+nav III 0P00008ZLL,200,4698
+nav III 0P0000JPRO,200,0
+nav III 0P0000JPRN,200,0
+nav III 0P0000JDDQ,200,0
+nav III 0P0000Q1WU,200,0
+nav III 0P0001T5RX,200,0
+nav III 0P0005XYQR,200,0
+nav III 0P0001LWGV,200,0
+nav III 0P00037JML,200,0
+nav III 0P0001TKN5,200,0
+nav III BEST,('0P00008ZLL', 4698)
+nav HGT 0P0001RB22,200,0
+nav HGT 0P0006AG3N,200,0
+nav HGT 0P00008ZNN,200,4683
+nav HGT BEST,('0P00008ZNN', 4683)
+nav OCI 0P0001R9YS,200,0
+nav OCI 0P0000TA9P,200,0
+nav OCI 0P0000I34Q,200,4649
+nav OCI F0000026Q0,200,4649
+nav OCI BEST,('0P0000I34Q', 4649)
+nav PIN 0P0001RB96,200,0
+nav PIN 0P00008ZP6,200,4681
+nav PIN BEST,('0P00008ZP6', 4681)
+nav HVPE 0P0000TJH7,200,4699
+nav HVPE F00000LHM0,200,4699
+nav HVPE 0P0001RBSI,200,0
+nav HVPE 0P000195TZ,200,0
+nav HVPE 0P000195NT,200,0
+nav HVPE 0P0001T90V,200,0
+nav HVPE F00001LWS0,200,0
+nav HVPE F00001PW3I,200,0
+nav HVPE 0P0001UN1O,200,0
+nav HVPE F00001LW18,200,594
+nav HVPE 0P0001T8RF,200,594
+nav HVPE F00001LW17,200,594
+nav HVPE 0P0001T8RE,200,594
+nav HVPE F00001LW19,200,594
+nav HVPE 0P0001T8RG,200,594
+nav HVPE F000013NE7,200,2764
+nav HVPE 0P0001HN8N,200,2764
+nav HVPE F00001QT82,200,367
+nav HVPE 0P0001VPHG,200,367
+nav HVPE F00001QT80,200,367
+nav HVPE 0P0001VPHE,200,367
+nav HVPE 0P0001VPHF,200,367
+nav HVPE F00001QT81,200,367
+nav HVPE 0P0001HN87,200,2094
+nav HVPE F000013NDR,200,2094
+nav HVPE BEST,('0P0000TJH7', 4699)
+nav PPET 0P0001UOOI,200,0
+nav PPET 0P0001UOOH,200,0
+nav PPET 0P0001P7GJ,200,0
+nav PPET 0P00008ZPW,200,4681
+nav PPET F000013GGW,200,1913
+nav PPET 0P0001H7EE,200,1913
+nav PPET 0P0001RAFL,200,0
+nav PPET 0P0001O3JV,200,1239
+nav PPET F00001D7D8,200,1239
+nav PPET 0P0001OEQG,200,1239
+nav PPET 0P0001OMRE,200,1239
+nav PPET 0P0001O3K2,200,1239
+nav PPET 0P0001OMRD,200,1239
+nav PPET 0P00008ZHT,200,4682
+nav PPET F000000EW8,200,4682
+nav PPET F00000XOQS,200,2585
+nav PPET 0P00018MB9,200,2585
+nav PPET F000013KWU,200,102
+nav PPET 0P0001HFD9,200,102
+nav PPET F00000XOQV,200,2585
+nav PPET 0P00018MBC,200,2585
+nav PPET 0P00018MBB,200,2585
+nav PPET F00000XOQU,200,2585
+nav PPET 0P0001X8G8,200,0
+nav PPET F00001S8OU,200,0
+nav PPET BEST,('0P00008ZHT', 4682)
+nav ICGT 0P0001RA05,200,0
+nav ICGT 0P00008ZNE,200,4681
+nav ICGT 0P0001EDZG,200,2034
+nav ICGT F000010ZO0,200,2034
+nav ICGT BEST,('0P00008ZNE', 4681)
+nav NBPE F00001SDT9,200,117
+nav NBPE 0P0001XE8I,200,117
+nav NBPE F00001SDT8,200,206
+nav NBPE 0P0001XE8H,200,206
+nav NBPE 0P0001Y3HA,200,16
+nav NBPE F00001SXU5,200,16
+nav NBPE 0P0001RBLL,200,0
+nav NBPE F00002JSA4,200,7
+nav NBPE 0P00035WE3,200,7
+nav NBPE F00001UIGM,200,13
+nav NBPE 0P00021H4Y,200,13
+nav NBPE F00001UIGL,200,11
+nav NBPE 0P00021H4X,200,11
+nav NBPE F00001UIGK,200,12
+nav NBPE 0P00021H4W,200,12
+nav NBPE 0P00021H4S,200,13
+nav NBPE F00001UIGG,200,13
+nav NBPE F0000026GB,200,4680
+nav NBPE 0P0000I1VS,200,4680
+nav NBPE F00001JCFB,200,11
+nav NBPE 0P0001SCS4,200,11
+nav NBPE 0P0001SCS3,200,11
+nav NBPE F00001JCFA,200,11
+nav NBPE F00001OUHS,200,10
+nav NBPE 0P0001UA9K,200,10
+nav NBPE BEST,('F0000026GB', 4680)
+nav PEY 0P0000A5HO,200,5415
+nav PEY 0P0001QXVV,200,0
+nav PEY 0P0001HFSZ,200,16
+nav PEY 0P0000EVW1,200,0
+nav PEY 0P000004PZ,200,0
+nav PEY 0P0001V7SK,200,0
+nav PEY 0P00006SX1,200,0
+nav PEY 0P0000BZXZ,200,0
+nav PEY 0P0001YG7U,200,0
+nav PEY 0P0000B79J,200,0
+nav PEY 0P0001J6DX,200,0
+nav PEY 0P0001NDLP,200,0
+nav PEY 0P0000EFDD,200,0
+nav PEY 0P0001V6EK,200,0
+nav PEY 0P0001MXZF,200,0
+nav PEY 0P0000BJMT,200,0
+nav PEY 0P00036UDZ,200,0
+nav PEY 0P0001HEG1,200,0
+nav PEY 0P0000NL3S,200,0
+nav PEY 0P0001HBSQ,200,0
+nav PEY 0P0000013F,200,0
+nav PEY 0P0001KSBW,200,0
+nav PEY 0P0001N7JX,200,0
+nav PEY 0P0000PQ8P,200,0
+nav PEY 0P0001IY3W,200,0
+nav PEY BEST,('0P0000A5HO', 5415)
+nav GROW 0P0001LJZM,200,0
+nav GROW 0P0001DJ8B,200,0
+nav GROW 0P0001LJLR,200,0
+nav GROW 0P0001P7L7,200,0
+nav GROW 0P00018874,200,0
+nav GROW 0P0001VJ9U,200,0
+nav GROW 0P00066XZB,200,0
+nav GROW 0P00036WVN,200,0
+nav GROW 0P000186OA,200,2645
+nav GROW F00000XCNK,200,2645
+nav GROW 0P00008Y4X,200,4681
+nav GROW F000000ELB,200,4681
+nav GROW BEST,('0P00008Y4X', 4681)
+nav CHRY 0P0001RBLX,200,0
+nav CHRY 0P0001EXYD,200,2036
+nav CHRY F000011G4H,200,2036
+nav CHRY 0P0001WECA,200,0
+nav CHRY BEST,('0P0001EXYD', 2036)
+nav INOV 0P00015IBA,200,2939
+nav INOV F00000VFUD,200,2939
+nav INOV 0P0001RB9E,200,0
+nav INOV F00001CU4G,200,59
+nav INOV 0P0001NKH7,200,59
+nav INOV 0P0001JLWD,200,78
+nav INOV F0000151FD,200,78
+nav INOV 0P0001M7G1,200,66
+nav INOV F000016UUE,200,66
+nav INOV F0000174BP,200,65
+nav INOV 0P0001MK2E,200,65
+nav INOV 0P0001OCXO,200,58
+nav INOV F00001DE84,200,58
+nav INOV F000014U4F,200,79
+nav INOV 0P0001JADE,200,79
+nav INOV F0000147W2,200,83
+nav INOV 0P0001IH12,200,83
+nav INOV 0P0001IH11,200,83
+nav INOV F0000147W1,200,83
+nav INOV F00001DE83,200,58
+nav INOV 0P0001OCXN,200,58
+nav INOV 0P0001JADG,200,79
+nav INOV F000014U4H,200,79
+nav INOV F00001IPNK,200,33
+nav INOV 0P0001S524,200,33
+nav INOV BEST,('0P00015IBA', 2939)
+nav AUGM BEST,None
+nav SSIT 0P0001RB3I,200,0
+nav SSIT F00001A8YM,200,1365
+nav SSIT 0P0001MVIF,200,1365
+nav SSIT 0P00000023,200,0
+nav SSIT 0P0000021X,200,0
+nav SSIT 0P000001K3,200,0
+nav SSIT 0P000004R6,200,0
+nav SSIT 0P000000UH,200,0
+nav SSIT 0P0000B50Y,200,0
+nav SSIT 0P00000241,200,0
+nav SSIT 0P0000008R,200,0
+nav SSIT 0P0000A6DZ,200,0
+nav SSIT 0P000001UP,200,0
+nav SSIT 0P0001SQOB,200,0
+nav SSIT 0P0000JDIV,200,0
+nav SSIT 0P0001KN15,200,0
+nav SSIT 0P0001J6BW,200,0
+nav SSIT 0P0001Y6T8,200,0
+nav SSIT 0P0000HSD2,200,0
+nav SSIT 0P0000T7JB,200,0
+nav SSIT 0P0001TD3O,200,0
+nav SSIT 0P0002PRAZ,200,140
+nav SSIT F000028AMT,200,140
+nav SSIT 0P0006PQIK,200,0
+nav SSIT 0P00037FJ5,200,62
+nav SSIT BEST,('F00001A8YM', 1365)
