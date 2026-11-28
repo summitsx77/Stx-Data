@@ -1,0 +1,222 @@
+price III.L,8274,1994-07-18,2026-11-27
+price HGT.L,9460,1989-12-29,2026-11-27
+price OCI.L,4884,2007-08-02,2026-11-27
+price PIN.L,10055,1987-09-18,2026-11-27
+price HVPE.L,4150,2010-06-29,2026-11-27
+price PPET.L,6483,2001-05-29,2026-11-27
+price ICGT.L,11612,1981-09-30,2026-11-27
+price NBPE.L,4402,2009-06-30,2026-11-27
+price PEY.L,5044,2006-12-12,2026-11-27
+price APAX.L,FAIL
+price GROW.L,2644,2016-06-15,2026-11-27
+price CHRY.L,2037,2018-11-06,2026-11-27
+price INOV.L,2935,2015-04-21,2026-11-27
+price AUGM.L,FAIL
+price SSIT.L,1359,2021-07-14,2026-11-27
+price SWDA.L,4339,2009-09-25,2026-11-27
+price IWDA.AS,4396,2009-09-25,2026-11-27
+price EUNL.DE,4362,2009-09-25,2026-11-27
+price VWRL.L,3668,2012-05-22,2026-11-27
+price IPRV.L,4523,2009-01-02,2026-11-27
+price GBPEUR=X,6019,2003-09-17,2026-11-27
+price ^FTAS,11829,1980-02-12,2026-11-27
+nav III 0P0000JL1O nav daily,0
+nav III 0P0000JL1O nav monthly,0
+nav III 0P0000JL1O totalReturn daily,0
+nav III 0P0000JL1O totalReturn monthly,0
+nav III price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav III price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav III 0P0000JL1O marketPrice daily,0
+nav III 0P0000JL1O marketPrice monthly,0
+nav III 0P0000JL1O marketTotalReturn daily,0
+nav III 0P0000JL1O marketTotalReturn monthly,0
+nav III 0P0000JL1O close daily,1654
+nav III marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav III marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav HGT 0P0001RB22 nav daily,0
+nav HGT 0P0001RB22 nav monthly,0
+nav HGT 0P0001RB22 totalReturn daily,0
+nav HGT 0P0001RB22 totalReturn monthly,0
+nav HGT price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav HGT price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav HGT 0P0001RB22 marketPrice daily,0
+nav HGT 0P0001RB22 marketPrice monthly,0
+nav HGT 0P0001RB22 marketTotalReturn daily,0
+nav HGT 0P0001RB22 marketTotalReturn monthly,0
+nav HGT 0P0001RB22 close daily,2922
+nav HGT marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav HGT marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav OCI 0P0001R9YS nav daily,0
+nav OCI 0P0001R9YS nav monthly,0
+nav OCI 0P0001R9YS totalReturn daily,0
+nav OCI 0P0001R9YS totalReturn monthly,0
+nav OCI price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav OCI price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav OCI 0P0001R9YS marketPrice daily,0
+nav OCI 0P0001R9YS marketPrice monthly,0
+nav OCI 0P0001R9YS marketTotalReturn daily,0
+nav OCI 0P0001R9YS marketTotalReturn monthly,0
+nav OCI 0P0001R9YS close daily,248
+nav OCI marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav OCI marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav PIN 0P0001RB96 nav daily,0
+nav PIN 0P0001RB96 nav monthly,0
+nav PIN 0P0001RB96 totalReturn daily,0
+nav PIN 0P0001RB96 totalReturn monthly,0
+nav PIN price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav PIN price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav PIN 0P0001RB96 marketPrice daily,0
+nav PIN 0P0001RB96 marketPrice monthly,0
+nav PIN 0P0001RB96 marketTotalReturn daily,0
+nav PIN 0P0001RB96 marketTotalReturn monthly,0
+nav PIN 0P0001RB96 close daily,2518
+nav PIN marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav PIN marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav HVPE F00000LHM0 nav daily,4699
+nav HVPE F00000LHM0 totalReturn daily,4704
+nav HVPE price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav HVPE price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav HVPE F00000LHM0 marketPrice daily,0
+nav HVPE F00000LHM0 marketPrice monthly,0
+nav HVPE F00000LHM0 marketTotalReturn daily,4148
+nav HVPE F00000LHM0 close daily,3407
+nav HVPE marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav HVPE marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav PPET 0P0001UOOI nav daily,0
+nav PPET 0P0001UOOI nav monthly,0
+nav PPET 0P0001UOOI totalReturn daily,0
+nav PPET 0P0001UOOI totalReturn monthly,0
+nav PPET price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav PPET price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav PPET 0P0001UOOI marketPrice daily,0
+nav PPET 0P0001UOOI marketPrice monthly,0
+nav PPET 0P0001UOOI marketTotalReturn daily,0
+nav PPET 0P0001UOOI marketTotalReturn monthly,0
+nav PPET 0P0001UOOI close daily,467
+nav PPET marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav PPET marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav ICGT 0P0001RA05 nav daily,0
+nav ICGT 0P0001RA05 nav monthly,0
+nav ICGT 0P0001RA05 totalReturn daily,0
+nav ICGT 0P0001RA05 totalReturn monthly,0
+nav ICGT price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav ICGT price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav ICGT 0P0001RA05 marketPrice daily,0
+nav ICGT 0P0001RA05 marketPrice monthly,0
+nav ICGT 0P0001RA05 marketTotalReturn daily,0
+nav ICGT 0P0001RA05 marketTotalReturn monthly,0
+nav ICGT 0P0001RA05 close daily,1627
+nav ICGT marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav ICGT marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav NBPE F00001SDT9 nav daily,117
+nav NBPE F00001SDT9 totalReturn daily,3460
+nav NBPE price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav NBPE price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav NBPE F00001SDT9 marketPrice daily,0
+nav NBPE F00001SDT9 marketPrice monthly,0
+nav NBPE F00001SDT9 marketTotalReturn daily,0
+nav NBPE F00001SDT9 marketTotalReturn monthly,0
+nav NBPE F00001SDT9 close daily,0
+nav NBPE F00001SDT9 close monthly,0
+nav NBPE marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav NBPE marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav PEY,NO_CEF_FOUND
+nav APAX,NO_CEF_FOUND
+nav GROW 0P0001LJZM nav daily,0
+nav GROW 0P0001LJZM nav monthly,0
+nav GROW 0P0001LJZM totalReturn daily,0
+nav GROW 0P0001LJZM totalReturn monthly,0
+nav GROW price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav GROW price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav GROW 0P0001LJZM marketPrice daily,0
+nav GROW 0P0001LJZM marketPrice monthly,0
+nav GROW 0P0001LJZM marketTotalReturn daily,0
+nav GROW 0P0001LJZM marketTotalReturn monthly,0
+nav GROW 0P0001LJZM close daily,1452
+nav GROW marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav GROW marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav CHRY 0P0001RBLX nav daily,0
+nav CHRY 0P0001RBLX nav monthly,0
+nav CHRY 0P0001RBLX totalReturn daily,0
+nav CHRY 0P0001RBLX totalReturn monthly,0
+nav CHRY price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav CHRY price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav CHRY 0P0001RBLX marketPrice daily,0
+nav CHRY 0P0001RBLX marketPrice monthly,0
+nav CHRY 0P0001RBLX marketTotalReturn daily,0
+nav CHRY 0P0001RBLX marketTotalReturn monthly,0
+nav CHRY 0P0001RBLX close daily,1652
+nav CHRY marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav CHRY marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav INOV F00000VFUD nav daily,2939
+nav INOV F00000VFUD totalReturn daily,2943
+nav INOV price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav INOV price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav INOV F00000VFUD marketPrice daily,0
+nav INOV F00000VFUD marketPrice monthly,0
+nav INOV F00000VFUD marketTotalReturn daily,2943
+nav INOV F00000VFUD close daily,2932
+nav INOV marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav INOV marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav AUGM,NO_CEF_FOUND
+nav SSIT 0P0001RB3I nav daily,0
+nav SSIT 0P0001RB3I nav monthly,0
+nav SSIT 0P0001RB3I totalReturn daily,0
+nav SSIT 0P0001RB3I totalReturn monthly,0
+nav SSIT price daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav SSIT price monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav SSIT 0P0001RB3I marketPrice daily,0
+nav SSIT 0P0001RB3I marketPrice monthly,0
+nav SSIT 0P0001RB3I marketTotalReturn daily,0
+nav SSIT 0P0001RB3I marketTotalReturn monthly,0
+nav SSIT 0P0001RB3I close daily,783
+nav SSIT marketNav daily,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un
+nav SSIT marketNav monthly,ERR Error 417
+            for the api https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries. Message : Un

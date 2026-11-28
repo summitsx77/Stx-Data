@@ -1,0 +1,143 @@
+{
+ "III": [
+  {
+   "term": "GB00B1YW4409",
+   "item": 0,
+   "code": "0P0000JL1O",
+   "name": "3i Group Plc",
+   "isin": "GB00B1YW4409",
+   "type": "cef"
+  }
+ ],
+ "HGT": [
+  {
+   "term": "GB00BJ0LT190",
+   "item": 0,
+   "code": "0P0001RB22",
+   "name": "HgCapital Trust Plc",
+   "isin": "GB00BJ0LT190",
+   "type": "cef"
+  }
+ ],
+ "OCI": [
+  {
+   "term": "Oakley Capital Investments",
+   "item": 0,
+   "code": "0P0001R9YS",
+   "name": "Oakley Capital Investments Limited",
+   "isin": "BMG670131058",
+   "type": "cef"
+  }
+ ],
+ "PIN": [
+  {
+   "term": "Pantheon International",
+   "item": 0,
+   "code": "0P0001RB96",
+   "name": "Pantheon International PLC",
+   "isin": "GB00BP37WF17",
+   "type": "cef"
+  }
+ ],
+ "HVPE": [
+  {
+   "term": "HarbourVest Global Private Equity",
+   "item": 0,
+   "code": "F00000LHM0",
+   "name": "HarbourVest Global Private Equity",
+   "isin": "GG00BR30MJ80",
+   "type": "cef"
+  }
+ ],
+ "PPET": [
+  {
+   "term": "GB0030474687",
+   "item": 0,
+   "code": "0P0001UOOI",
+   "name": "Patria Private Equity Trust plc",
+   "isin": "GB0030474687",
+   "type": "cef"
+  }
+ ],
+ "ICGT": [
+  {
+   "term": "ICG Enterprise Trust",
+   "item": 0,
+   "code": "0P0001RA05",
+   "name": "ICG Enterprise Trust Plc",
+   "isin": "GB0003292009",
+   "type": "cef"
+  }
+ ],
+ "NBPE": [
+  {
+   "term": "NB Private Equity Partners",
+   "item": 0,
+   "code": "F00001SDT9",
+   "name": "Partners Group Private Equity Fund LLC Class A",
+   "isin": "US70214G1094",
+   "type": "cef"
+  }
+ ],
+ "PEY": [
+  {
+   "term": "Princess Private Equity",
+   "item": 0,
+   "error": "'securityID'"
+  }
+ ],
+ "APAX": [
+  {
+   "term": "Apax Global Alpha",
+   "item": 0,
+   "error": "0 security found with the term Apax Global Alpha"
+  }
+ ],
+ "GROW": [
+  {
+   "term": "Molten Ventures",
+   "item": 0,
+   "code": "0P0001LJZM",
+   "name": "Molten Ventures PLC",
+   "isin": "GB00BY7QYJ50",
+   "type": "cef"
+  }
+ ],
+ "CHRY": [
+  {
+   "term": "Chrysalis Investments",
+   "item": 0,
+   "code": "0P0001RBLX",
+   "name": "Chrysalis Investments Limited",
+   "isin": "GG00C0GC7Q38",
+   "type": "cef"
+  }
+ ],
+ "INOV": [
+  {
+   "term": "Schroders Capital Global Innovation",
+   "item": 0,
+   "code": "F00000VFUD",
+   "name": "Schroders Capital Global Innovation Trust plc",
+   "isin": "GB00BVG1CF25",
+   "type": "cef"
+  }
+ ],
+ "AUGM": [
+  {
+   "term": "Augmentum Fintech",
+   "item": 0,
+   "error": "0 security found with the term Augmentum Fintech"
+  }
+ ],
+ "SSIT": [
+  {
+   "term": "Seraphim Space Investment Trust",
+   "item": 0,
+   "code": "0P0001RB3I",
+   "name": "Seraphim Space Investment Trust plc",
+   "isin": "GB00BKPG0138",
+   "type": "cef"
+  }
+ ]
+}
