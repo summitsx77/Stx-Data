@@ -60,49 +60,60 @@ jobs:
               if not ok:
                   log.append(f'price {t},FAIL')
               time.sleep(2)
-          # NAV ueber Morningstar (mstarpy), Rohdaten werden gespeichert
-          from mstarpy.security import Security
-          start, end = dt.datetime(1995, 1, 1), dt.datetime.today()
-          FIELDS = ['nav', 'totalReturn', 'price', 'marketPrice', 'marketTotalReturn', 'close', 'marketNav']
+          # NAV ueber Morningstar: alle Treffer der Suche und alle IDs je Treffer probieren
+          import requests, glob
+          from mstarpy.search import MorningstarSession
+          from mstarpy.utils import random_user_agent
+          sess = MorningstarSession()
+          tok = sess.token_chart()
+          url = 'https://www.us-api.morningstar.com/QS-markets/chartservice/v2/timeseries'
+          def ts(code, field, freq='d'):
+              h = {'user-agent': random_user_agent(), 'authorization': f'Bearer {tok}'}
+              p = {'query': f'{code}:{field}', 'frequency': freq, 'startDate': '1995-01-01',
+                   'endDate': dt.date.today().isoformat(), 'trackMarketData': '3.6.3', 'instid': 'DOTCOM'}
+              r = requests.get(url, params=p, headers=h, timeout=60)
+              if r.status_code != 200:
+                  return None, r.status_code
+              j = r.json()
+              return (j[0].get('series', []) if j else []), 200
+          EXTRA = {'III': ['3i Group plc'], 'HGT': ['HgCapital Trust plc', 'Hg Capital Trust'], 'OCI': ['Oakley Capital'],
+                   'PIN': ['Pantheon International plc'], 'PPET': ['Patria Private Equity'], 'ICGT': ['ICG Enterprise'],
+                   'NBPE': ['NB Private Equity'], 'PEY': ['Princess Private Equity Holding', 'Princess'],
+                   'GROW': ['Molten Ventures plc'], 'CHRY': ['Chrysalis'], 'SSIT': ['Seraphim Space'], 'AUGM': ['Augmentum']}
+          for f in glob.glob('data/pe/nav/*.csv'):
+              os.remove(f)
           search = {}
           for key, yt, terms in TR:
-              sec = None
-              for term in terms:
-                  for ir in range(0, 5):
-                      try:
-                          s = Security(term=term, pageSize=10, itemRange=ir)
-                          search.setdefault(key, []).append({'term': term, 'item': ir, 'code': s.code, 'name': s.name, 'isin': s.isin, 'type': s.asset_type})
-                          if s.asset_type == 'cef':
-                              sec = s
-                              break
-                      except Exception as e:
-                          search.setdefault(key, []).append({'term': term, 'item': ir, 'error': str(e)[:150]})
-                          break
-                  if sec:
-                      break
-              if not sec:
-                  log.append(f'nav {key},NO_CEF_FOUND')
+              if key in ('APAX',):
                   continue
-              got = {}
-              for f in FIELDS:
-                  for freq in ['daily', 'monthly']:
-                      try:
-                          ser = sec.TimeSeries(f, start_date=start, end_date=end, frequency=freq)
-                          json.dump(ser, open(f'data/pe/raw/{key}_{f}_{freq}.json', 'w'))
-                          log.append(f'nav {key} {sec.code} {f} {freq},{len(ser)}')
-                          if ser:
-                              got[(f, freq)] = ser
-                              break
-                      except Exception as e:
-                          log.append(f'nav {key} {f} {freq},ERR {str(e)[:120]}')
-                      time.sleep(1)
-              for (f, freq), ser in got.items():
+              cands, items = [], []
+              for term in terms + EXTRA.get(key, []):
                   try:
-                      d = pd.json_normalize(ser)
-                      d.to_csv(f'data/pe/nav/{key}_{f}.csv', index=False)
+                      cl = sess.screener_universe(term, field=['isin', 'name'], pageSize=20)
                   except Exception as e:
-                      log.append(f'nav {key} {f} csv,ERR {str(e)[:120]}')
-              time.sleep(2)
+                      items.append({'term': term, 'error': str(e)[:150]}); continue
+                  for it in cl or []:
+                      items.append({'term': term, **{k2: v2 for k2, v2 in it.items()}})
+                      flat = json.dumps(it)
+                      for c in set(__import__('re').findall(r'\b(?:F0[0-9A-Z]{8}|0P[0-9A-Z]{8}|FS[0-9A-Z]{8}|F00[0-9A-Z]{7})\b', flat)):
+                          if c not in cands:
+                              cands.append(c)
+                  time.sleep(1)
+              search[key] = {'cands': cands, 'items': items}
+              best = None
+              for c in cands[:25]:
+                  try:
+                      ser, st = ts(c, 'nav')
+                  except Exception as e:
+                      log.append(f'nav {key} {c},ERR {str(e)[:80]}'); continue
+                  n = len(ser) if ser else 0
+                  log.append(f'nav {key} {c},{st},{n}')
+                  if n:
+                      pd.json_normalize(ser).to_csv(f'data/pe/nav/{key}_{c}_nav.csv', index=False)
+                      if best is None or n > best[1]:
+                          best = (c, n)
+                  time.sleep(1)
+              log.append(f'nav {key} BEST,{best}')
           json.dump(search, open('data/pe/_search.json', 'w'), indent=1)
           open('data/pe/_log.txt', 'w').write('\n'.join(log) + '\n')
           print('\n'.join(log))
